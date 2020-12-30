@@ -1,0 +1,633 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Script for Icarus</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="b2640f67-0751-4b98-9f8a-a2a99d181b14" class="page sans"><header><h1 class="page-title">Script for Icarus</h1></header><div class="page-body"><h1 id="ad899e2d-f333-4050-99a1-399a2f42764f" class=""><strong>Background:</strong></h1><p id="d12f47d3-2511-4005-b8f0-28b1d1bd90d1" class=""><em>Prison, high tower, seagulls, chain for the prison cells,</em></p><p id="ecfdeebf-f25e-4e0b-a6d0-4a973aa3958c" class=""><em>The only thing his mother left before her death of giving birth to him is the token. Allegedly, the token is to bring him freedom and innocence.</em></p><p id="38acc957-d42a-44b2-b16d-2f33d11f0a24" class=""><em>Conversation introducing the current situation. Father and Son were held captive in the prison.</em></p><h1 id="4e68f3d2-bff1-4cc1-bcaf-e3587a2ecc5a" class="">Script:</h1><h2 id="5de94113-425a-44dc-b193-341d8b3596be" class=""><strong>Beginning （exposition, rising action）</strong></h2><p id="9a8bf93f-f49b-4251-b7ca-892494d087b8" class=""><strong>Son: </strong></p><p id="c5ba820a-2677-4c81-8d03-a60fc4bd91f2" class="">Father, it’s been 100 days since we were held captive. When the hell can we escape from this shithole?</p><p id="9048f333-083a-4c31-8354-4983f0d2bd21" class=""><strong>Father:</strong> </p><p id="067b8331-07f3-4d34-9888-9babbf863eca" class="">Patience, Son, trust me, we CAN escape from here soon.</p><p id="d3ff7aa6-25aa-461c-b6f3-5163bb8337ca" class=""><strong>Son:</strong> </p><p id="b120e56c-2bf6-489f-81a5-c4fd1bdf8044" class="">Trust you? You’ve said those words more than 100 times! How? The king locked us on the top of this prison tower. We are never gonna escape from here!</p><p id="82d06f3a-80a2-4e64-9639-991204ab5590" class=""><strong>Father: </strong>…...</p><p id="c626c08e-37af-4c98-bc01-cb0a5f77c22b" class=""><strong>Son: </strong> </p><p id="b3cb5850-f119-4cc0-adf7-0944281091de" class="">Can you stop playing with your feathers??? Are you planning to live here forever?</p><p id="84886f36-f36e-4bd0-851f-1db82b172c9d" class=""><strong>Father: </strong></p><p id="03edf2f6-fe59-4a8b-b207-f790e4acab0b" class="">We couldn&#x27;t escape from here through the ground, but…(birds voices) we can fly, just like the seagulls. I have been collecting their feathers for a while and I’m making two pairs of wings for us. Don’t you want to be free? Your mom wanted you to fight for your freedom. That’s why she left that token for you.</p><p id="d13e9040-f579-467f-9a59-ed8349f088dd" class=""><strong>Son (looked down to the token-sound effect): </strong></p><p id="6bcedec6-36ed-4c10-9387-c90d394c4dbd" class="">You are the right father. I should try harder to fight for my freedom, our freedom. I am sorry.</p><p id="a631bac0-d4a6-4089-b6a8-e65ac12a525d" class=""><strong>Father:</strong></p><p id="506168b5-ba84-40aa-943b-1c46adc4cfec" class="">If we hurry, we can finish the wings by noon and finally escape from here forever.</p><p id="35b82bef-9c9d-4e0a-837f-4503bc60ccd8" class=""><em>MONTAGE - Sounds - working sounds - wings building, seagulls sounding, construction sounds</em></p><p id="7637b1b0-2f35-4251-8549-fa1ff6b14428" class=""><strong>Father:</strong></p><p id="3ebab3e7-3056-4a9d-90e8-29b7930855f6" class="">We did it! Come here, son. Let’s put them on. Remember, be cautious when you fly. Don&#x27;t fly too high as the sun will melt the wax. Don&#x27;t fly too low, as the water will make the wings heavy. Are you ready?</p><p id="576f277f-10bc-4546-836c-b1c84d016d76" class=""><strong>Son: </strong></p><p id="0867062d-6e31-44fe-a2cd-34bac45b7865" class="">Yes, father! Finally, the day has come! I can not wait to fly! I hope my mother would be happy that I am one step closer to freedom.</p><p id="9c8700d5-5ed2-4a3f-b404-9dff0de21d76" class="">
+</p><h2 id="1c5c56b5-cec7-408b-9311-bac89b19665f" class=""><strong>Middle (climax) - them flying</strong></h2><p id="d6a03652-eeab-4ee4-b75f-d7ecfab9c4b3" class=""><em>Sounds - flapping sounds, seagulls, wind blowing</em></p><p id="99738fc6-8004-4cb6-86b6-1ead4c793f88" class=""><strong>Father: </strong></p><p id="690d26e2-263f-48d2-a995-18d810efe0c7" class="">Look son, this is freedom, and this is salvation.</p><p id="aed04cf0-9b55-449b-81bf-c46c45071cb5" class=""><strong>Son: </strong></p><p id="e35bd633-ae97-42ff-aafd-00633b40a168" class="">Yes, father! I can not believe I am flying! I feel like a god!!! Hahahaha! Everything looks soooo small. I wonder how small they can be?</p><p id="e6bb1fcd-afcc-43b5-9376-6433721a94a8" class=""><em>Sound effects: Wings flapping faster - melting sounds, burning sounds</em></p><p id="8aba8218-c619-498e-82db-c991322c95f7" class=""><em>Background music sounds ---&gt; silence</em></p><p id="f87d0263-6aa1-46d6-8df3-579ee130b93f" class=""><em>Father - keeps flying -</em></p><p id="7a4f09e5-a1a7-4fba-bfb1-93edcc004967" class=""><strong>Father: </strong></p><p id="db1d054f-50b7-46bc-8763-7b70f7fe6e5e" class="">son, look, we are almost there.</p><p id="5428365b-3fe8-44b7-b018-50ef9a99ed70" class=""><strong>Son:</strong></p><p id="1e28aba6-cf55-431c-a936-db66d95e0d48" class="">Father, father! Help! My wings! No!</p><p id="daa57a84-8d46-4a36-bd2c-d0a23f6bd697" class=""><em>Sounds: sun glaring, burning, melting, wings flapping sound slow, drop to the ocean, silence</em></p><p id="c4323a8b-0490-4d26-9e5f-63ae1e603a96" class=""><em>Sounds: flapping wings as fast as he can</em></p><p id="be9206ac-62c5-4bcd-bcd0-f934ba1ca485" class=""><strong>Father: </strong></p><p id="4fad2c0f-0264-40f4-a44b-5714a2a18f24" class="">No, my son! NOOOOOOOOO!</p><p id="26359ba9-2dcd-48f5-a815-cd66cb9869aa" class="">
+</p><h2 id="c8746885-a811-4995-bf13-1a9d48265e8f" class=""><strong>End (resolution）</strong></h2><p id="e4fa6610-dfbf-4be1-ad43-e913dd1b4684" class=""><em>Father cries. Father lands at the border of the ocean. </em></p><p id="c691a8bb-36f9-4c63-a567-d70c29174e27" class=""><em>No wings flapping. OR Father swims. only to find the token.</em></p><p id="ea014902-79ae-4c7b-9e1d-091b9d6a5006" class=""><em>Knees falling to the ground. Waves push the token.</em></p><p id="1d872fa6-2b77-408c-8714-b09dbc20fc06" class=""><em>Clashing sound of the token to the father.</em></p><p id="8ccb82c3-679d-469a-8d51-a2970b500ecd" class=""><em>Father picks up the token.</em></p><p id="4cbee6dc-5d42-4129-b310-f568db968929" class="">
+</p><p id="84e71d8a-be9a-4eb6-980f-11365f2d5968" class=""><strong>Father: </strong></p><p id="309045c1-6d51-48b7-b503-17db097837ee" class="">Oh, the token! Son! My son! <em>[reverb and repeat]</em></p><p id="8ce588fa-c1f7-4237-baf1-e43773d53cf6" class=""><strong>Father: </strong></p><p id="3834b6c4-0bd1-4573-8eaf-15a06114eddb" class="">What good does it do if my son is no longer here to enjoy his freedom? And what good does it do if it constantly reminds me of my loss of my wife and son?</p><p id="45ee4b18-546e-4924-9791-76206c72bc40" class=""><em>Father throws the token in the ocean. </em></p><p id="4e146762-2037-4105-8f91-cef8e81a6c5a" class="">
+</p><p id="b846a3e3-9ac4-49fd-9dd8-db02d3a141c2" class=""><em><strong>Notes:</strong></em></p><p id="212a7a1f-87a7-4640-8514-a56cb3e465f9" class="">Symbol given when the son is born - to maintain the innocence</p><p id="e810d045-174f-423a-a59a-62ed2238103d" class=""><strong>Father keeps working</strong></p><p id="436b5870-9ad1-4e23-a646-740e881386de" class=""><strong>Father: stop whining and come help me gather the wings. If we hurry, we can escape the tower around noon.</strong></p><p id="10430226-3501-456b-86ef-0c7ea68e8a3c" class="">
+</p><p id="3a82e02d-460c-4d80-88a7-82ad0359572d" class=""><strong>Playlist: </strong></p><p id="20c740e0-0546-4b9b-ae46-cec64e9a3e58" class=""><a href="https://www.youtube.com/playlist?list=PLy72A2GY2PfI-XBAJzEgV20ncjZp1f1OW"><strong>https://www.youtube.com/playlist?list=PLy72A2GY2PfI-XBAJzEgV20ncjZp1f1OW</strong></a></p><p id="de852ec2-3879-40fc-ad3d-a7502b7beed4" class="">
+</p><p id="a367593f-cdcb-488a-a108-a7e3fce39d83" class="">Google drive: <a href="https://drive.google.com/drive/folders/1jPI2on2wpjwsgQhUHfBWaF_Hs36NuE9c?usp=sharing">https://drive.google.com/drive/folders/1jPI2on2wpjwsgQhUHfBWaF_Hs36NuE9c?usp=sharing</a></p></div></article></body></html>

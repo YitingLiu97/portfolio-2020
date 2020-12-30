@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "Your Eye for A Prize"
+date:   2020-10-06
+description: A critique on attention economy.
+
+permalink: eye-prize
+category: Dev
+tags: [web, mobile, UI]
+preview: ../assets/eye-prize/demo.png
+---
+
+![Eyeprize Demo](assets/eye-prize/demo.png)
+
+**A critique on attention economy through a mobile web app.**
+
+[Play it first, read later.](https://eyeprize.netlify.app/) 
+
+# **Concept**
+
+How people’s attention is sold for companies to promote ads on their screen. Here is a sugarcoated warning for you, just as those ads that are trying to gain your attention for as long as they can.
+
+# Demo
+
+<!-- can use the html in md -->
+<div class="iframe-container">
+<iframe  class="responsive-iframe" src="https://www.youtube.com/embed/pUus6p_hP_Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br>
+
+# Lessons Learned
+
+## Difference between visibility and display
+ When I was creating the buttons for the bottom div, I used **visibility: hidden** and **visibility: visible** to toggle between each selection of buttons. However, the problem with that is I can not select the other divs since the hidden div is still on top of another. Therefore, I should use **display: flex** and **display: none** to solve that problem.
+
+## Move within boundary
+
+Another process is I wanted the pupil to be draggable within the range of eyeBorder. 
+I was introduced the function:
+```
+    getBoundingClientRect();
+```
+It creates the boundary of the element in the shape of a rectangle. I tried it using left, top, right, and bottom. However, it works on three sides, meaning that I can see the eye is stopped by the same border as the eyeBorder. However, there is something wrong with the right side, I always go over the border.
+

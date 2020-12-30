@@ -1,0 +1,52 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+$highlight-color: red;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "milligram/milligram",
+        "base",
+        "layout"
+;
+
+.highlight{
+ color: darkred;
+}
+
+pre{
+  border-left: 0.5rem solid pink;
+}
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$font-size: 2rem;
+$font-size-mobile: 1.5rem;
+
+$background-col: white;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  font-size: $font-size;
+  background-color: $background-col;
+}
+h1,h2,h3,h4,h5{
+  color: pink;
+  font-weight: bold;
+  
+}
+
+
+@media (max-width: 40.0rem) {
+
+body{
+  font-size: $font-size-mobile;
+}
+  
+}
