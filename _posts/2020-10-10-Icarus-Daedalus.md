@@ -50,9 +50,11 @@ Listen and close your eyes.
 
 ## Demo
 
-<div class="iframe-container">
-<iframe class="responsive-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVNfMuvNQQCAFvii2XAxidg%2FIcarus%3Fnode-id%3D7%253A6%26scaling%3Dscale-down" allowfullscreen></iframe>
+<div class="iframe-container-vertical">
+<iframe class="responsive-iframe" style="border: 1px solid rgba(0, 0, 0, 0.1);" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVNfMuvNQQCAFvii2XAxidg%2FIcarus%3Fembed_host%3Dshare%26kind%3D%26node-id%3D7%253A6%26scaling%3Dcontain" allowfullscreen></iframe>
 </div>
+
+
 ## Approach
 
 We decided to create a narrative from the father's point of view. In order to make sure the user has control of the story to get more involved. We told them they are the father at the very beginning and we also warned them their decisions are crucial in saving the son Icarus. 

@@ -17,6 +17,7 @@
     max-width: 80rem;
     margin: 0 auto;
     position: relative;
+
 }
 
 .navbar {
@@ -26,6 +27,7 @@
 .nav-item {
     display: inline-block;
     padding: 1rem;
+    margin-top: 2.5rem;
 }
 
 .post-nav {
@@ -53,6 +55,7 @@
     display: block;
     font-size: x-large;
     width: 100%;
+    margin-top: 2.5rem;
 }
 
 .post-description {
@@ -84,6 +87,10 @@
     }
 }
 
+.nav-item, .post-title{
+    margin-top: 1.5rem;
+ 
+}
 
 
 .post-img {

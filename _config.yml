@@ -4,9 +4,11 @@ email: yiting@yitingliu.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to Yiting's playground where I focus on AR/VR, web, and music. 
   I am a creative technologist designing experiences to foster meaningful 
-  interactions through AR/VR, music, and performance.
+  interactions through AR/VR, music, and performance, currently in NYC.
 # baseurl: "/urban-theme" # the subpath of your site, e.g. /blog
 url: "https://www.yitingliu.com" # the base hostname & protocol for your site
+# blogurl: "http://yitingliu97.wordpress.com/"
+
 # twitter_username: jekyllrb
 github_username:  Yitingliu97
 instagram_username: yliu.designs
