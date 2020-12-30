@@ -23,8 +23,10 @@ pre{
   border-left: 0.5rem solid pink;
 }
 
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+
 $font-size: 2rem;
 $font-size-mobile: 1.5rem;
 
@@ -36,11 +38,11 @@ body {
   font-size: $font-size;
   background-color: $background-col;
 }
-h1,h2,h3,h4,h5{
-  color: pink;
-  font-weight: bold;
+// h1,h2,h3,h4,h5{
+//   color: pink;
+//   font-weight: bold;
   
-}
+// }
 
 
 @media (max-width: 40.0rem) {

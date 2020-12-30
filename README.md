@@ -1,5 +1,5 @@
-# urban-theme
+# Yiting Liu
 
-This theme is a Jekyll port of http://erosie.net/ with some modifications. It is designed for visual artists.
+Yiting Liu's portfolio website, forked from [urban-theme](https://github.com/midzer/urban-theme)
 
-Live-Demo: http://narkotyk.net/
+[Live Demo - Portfolio](https://yl97.netlify.app/)

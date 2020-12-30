@@ -51,7 +51,7 @@
     margin: 1.6em auto 1.5em;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -61,15 +61,16 @@ a {
 
     /* padding-top: 10px; */
 }
+h2 {
+    font-style: italic;
+} */
 
 .fine-print{
     line-height: 1.5;
     font-size: large;
 
 }
-h2 {
-    font-style: italic;
-}
+
 
 a:link,
 a:visited {
