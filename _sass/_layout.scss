@@ -32,12 +32,9 @@
   
 }
 
-ul.social-media-list li::before{
+.nav-item::before, ul.social-media-list li::before, ul.contact-list li::before{    
     content: none;
-}
 
-ul.contact-list li::before{
-    content: none;
 }
 .post-nav {
     text-align: center;
