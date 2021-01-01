@@ -68,11 +68,11 @@ This will be the study for materials and textures as a collection for my researc
 ![https://github.com/YitingLiu97/moods/raw/master/assets/pinterestInspo.png](https://github.com/YitingLiu97/moods/raw/master/assets/pinterestInspo.png)
 
 # **Steps of creation**
-
-- **recommended by Max Bittker**
-1. make things in photoshop- constrains of how you make the thing
+1. make things in photoshop - constrains of how you make the thing
 2. build the make and save part of the interface
 3. ability to view all and save
+
+*recommended by Max Bittker*
 
 ## **What is your app for?**
 

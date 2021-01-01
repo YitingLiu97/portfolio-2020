@@ -14,22 +14,35 @@ dl,
 ol,
 ul {
 	list-style: none;
-	// margin-top: 0;
-	// padding-left: 0;
-
+	margin-top: 0;
+	padding-left: 0;
 	dl,
 	ol,
 	ul {
-		font-size: 75%;
+		font-size: 90%;
 		margin: 1.5rem 0 1.5rem 3.0rem;
 	}
 }
 
+//color the lists
+
 ol {
-	list-style: decimal inside;
+	// list-style: decimal inside;
+	counter-reset: item;
+}
+ol li:before {
+	content: counter(item) ". ";
+	counter-increment: item;
+	font-style: italic;
+	color: $color-quaternary;
+	margin-right: 0.5em; 
 }
 
-ul {
-	list-style: square inside;
+ul li::before{
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: $color-quaternary;
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1.5em; /* Also needed for space (tweak if needed) */
+	// margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
-

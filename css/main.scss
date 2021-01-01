@@ -6,7 +6,7 @@
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-$highlight-color: red;
+// $highlight-color:  red;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -24,8 +24,8 @@ pre{
 }
 
 
-$font-stack:    Helvetica, sans-serif;
-$primary-color: #333;
+$font-stack: Helvetica, sans-serif;
+// $primary-color: #333;
 
 $font-size: 2rem;
 $font-size-mobile: 1.5rem;
@@ -34,7 +34,7 @@ $background-col: white;
 
 body {
   font: 100% $font-stack;
-  color: $primary-color;
+  color:$color-secondary;
   font-size: $font-size;
   background-color: $background-col;
 }
