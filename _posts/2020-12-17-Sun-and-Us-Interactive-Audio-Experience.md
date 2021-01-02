@@ -7,7 +7,7 @@ description: Perform a symphony with the sun.
 
 category: Dev
 tags: [web, jekyll]
-preview: ../assets/sun-and-us/demo.png
+preview: /assets/sun-and-us/demo.png
 
 ---
 

@@ -7,7 +7,7 @@ description: Emotional input collage mobile app.
 
 category: Dev
 tags: [web, jekyll]
-preview: ../assets/moods-journal/demo.png
+preview: /assets/moods-journal/demo.png
 
 ---
 

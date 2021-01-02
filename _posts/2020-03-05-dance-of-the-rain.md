@@ -6,7 +6,7 @@ permalink: rain-dance
 description: A light visualization of historical rain data of cities around the globe.
 category: 
 tags: [ ]
-preview: ../assets/dance-of-the-rain/demo.png
+preview: /assets/dance-of-the-rain/demo.png
 
 ---
 

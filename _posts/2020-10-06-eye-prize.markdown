@@ -7,7 +7,7 @@ description: A critique on attention economy.
 permalink: eye-prize
 category: Dev
 tags: [web, mobile, UI]
-preview: ../assets/eye-prize/demo.png
+preview: /assets/eye-prize/demo.png
 ---
 
 ![Eyeprize Demo](assets/eye-prize/demo.png)

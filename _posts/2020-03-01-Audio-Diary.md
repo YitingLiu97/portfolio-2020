@@ -6,7 +6,7 @@ description: Talk about your feelings to get through hard times.
 permalink: audio-diary
 category: Dev
 tags: [web, interactive]
-preview: ../assets/audio-diary/demo.png
+preview: /assets/audio-diary/demo.png
 ---
 
 

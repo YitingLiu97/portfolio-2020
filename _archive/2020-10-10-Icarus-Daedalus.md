@@ -6,7 +6,7 @@ description: Same Story - Two Presentations
 permalink: icarus
 category: Dev
 tags: [web, jekyll]
-preview: ../assets/icarus/demo.png
+preview: /assets/icarus/demo.png
 ---
 <!-- Created: Dec 14, 2020 3:07 PM
 Tags: mobile, storytelling

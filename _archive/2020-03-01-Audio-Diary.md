@@ -7,7 +7,7 @@ baseurl: archive/
 permalink: audio-diary
 category: Dev
 tags: [web, jekyll]
-preview: ../assets/audio-diary/demo.png
+preview: /assets/audio-diary/demo.png
 ---
 
 

@@ -6,7 +6,7 @@ permalink: tuna-world
 description: A short film of loneliness in an unreal world. 
 category: storytelling
 tags: [UE4, film, storytelling]
-preview: ../assets/tuna-world/demo1.png
+preview: /assets/tuna-world/demo1.png
 
 ---
 

@@ -6,7 +6,7 @@ permalink: /about/
 
 Hi, Yiting here!
 
-![../assets/profile_square.jpg](../assets/profile_square.jpg){:class="img-responsive"}
+![/assets/profile_square.jpg](/assets/profile_square.jpg){:class="img-responsive"}
 
 I am a creative technologist designing experiences to foster meaningful interactions through AR/VR, music, and performance.
 
@@ -14,7 +14,7 @@ I want the design to expand what is possible in perceiving how to tell stories i
 
 I am open to having conversations with agency heads, creative & art directors, and senior creative technologists, about how I can assist you to realize your project.
 
-# [Resume](../assets/resume.pdf)
+# [Resume](/assets/resume.pdf)
 
 
 <style>

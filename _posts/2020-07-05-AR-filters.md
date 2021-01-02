@@ -6,11 +6,11 @@ permalink: ar-filters
 description: A collection of AR filters exploring identity issues.
 category: storytelling
 tags: [SparkAR, film, 3D, Blender, storytelling]
-preview: ../assets/ar-filters/demo.png
+preview: /assets/AR-filters/demo.png
 
 ---
 
-![assets/ar-filters/demo.png](assets/ar-filters/demo.png)
+![assets/AR-filters/demo.png](assets/AR-filters/demo.png)
 
 **A collection of AR filters exploring identity issues.**
 
