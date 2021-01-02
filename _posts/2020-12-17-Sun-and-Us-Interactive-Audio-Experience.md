@@ -4,22 +4,20 @@ title:  "Sun and Us"
 date:   2020-12-17
 permalink: sun-and-us
 description: Perform a symphony with the sun.
-
 category: Dev
 tags: [web, jekyll]
 preview: /assets/sun-and-us/demo.png
 
 ---
 
-
 ![/assets/sun-and-us/demo.png](/assets/sun-and-us/demo.png)
 
 **An interactive audio experience that creates a symphony of field recordings from the sun and us.** 
 # Highlights
 
-Exhibitions:
+Exhibition:
 
-2020 ITP Winter Show - Yorb 
+[2020 ITP Winter Show](https://itp.nyu.edu/shows/winter2020/sun-and-us/)
 
 # Concept
 

@@ -6,9 +6,9 @@ description: An interactive game to learn recipes visually.
 permalink: authentic
 category: Immersive
 tags: [game, p5.js, interactive, Arduino, microcontroller]
-preview: assets/authentic-or-not/authenticornot-demo.png
+preview: assets/authentic-or-not/authenticornot-demo.jpg
 ---
-![assets/authentic-or-not/authenticornot-demo.png](assets/authentic-or-not/authenticornot-demo.png)
+![assets/authentic-or-not/authenticornot-demo.jpg](assets/authentic-or-not/authenticornot-demo.jpg)
 
 **An interactive cooking game to learn recipes visually.**
 
@@ -36,7 +36,7 @@ This project is created to educate people to cook traditional authentic food. As
 
 **How to teach people authentic food to carry on the heritage of our culture?**
 <div class="img-container">
-<img class="img-responsive" src="assets/authentic-or-not/authenticornot-demo.jpeg">
+<img class="img-responsive" src="assets/authentic-or-not/authenticornot-demo.jpg">
 <img class="img-responsive" src="assets/authentic-or-not/authenticornot-enclosure-inside.jpeg">
 </div>
 
@@ -125,19 +125,19 @@ Based on the feedback, I adjusted a few to make the interactive experience smoot
 
 **Interface Design Highlights**
 
-Start the game
+#### Start the game
 
 ![assets/authentic-or-not/UI-begin-the-game.gif](assets/authentic-or-not/UI-begin-the-game.gif)
 
-Select the recipes
+#### Select the recipes
 
 ![assets/authentic-or-not/UI-recipe-layer-turn-to-select.gif](assets/authentic-or-not/UI-recipe-layer-turn-to-select.gif)
 
-Select the ingredients
+#### Select the ingredients
 
 ![assets/authentic-or-not/UI-selectingingredients-aon.gif](assets/authentic-or-not/UI-selectingingredients-aon.gif)
 
-End of the game
+#### End of the game
 
 ![assets/authentic-or-not/UI-end-of-the-game.gif](assets/authentic-or-not/UI-end-of-the-game.gif)
 
