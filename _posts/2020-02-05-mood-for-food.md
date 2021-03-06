@@ -7,6 +7,8 @@ permalink: mood-for-food
 category: Web
 tags: [fullstack, heroku, node, client-server, web, database, mongodb]
 preview: assets/mood-for-food/demo.png
+author: Yiting Liu 
+
 ---
 
 ![assets/mood-for-food/demo.png](assets/mood-for-food/demo.png)

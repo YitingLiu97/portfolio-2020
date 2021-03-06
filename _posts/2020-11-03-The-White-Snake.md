@@ -4,10 +4,10 @@ title:  "The White Snake"
 date:   2020-11-03
 permalink: white-snake
 description: A non-linear immersive storytelling of a Chinese myth. 
-
 category: Dev
 tags: [web, jekyll]
 preview: /assets/white-snake/demo.png
+author: Yiting Liu 
 
 ---
 

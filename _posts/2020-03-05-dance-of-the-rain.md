@@ -5,8 +5,9 @@ date:   2020-03-05
 permalink: rain-dance
 description: A light visualization of historical rain data of cities around the globe.
 category: 
-tags: [ ]
+# tags: [ ]
 preview: /assets/dance-of-the-rain/demo.png
+author: Yiting Liu 
 
 ---
 

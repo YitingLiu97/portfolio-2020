@@ -1,15 +1,16 @@
 ---
 layout: post
 title:  "AR Filters"
-date:   2020-07-05
+date:   2021-01-01 
 permalink: ar-filters
 description: A collection of AR filters exploring identity issues.
 category: storytelling
 tags: [SparkAR, film, 3D, Blender, storytelling]
 preview: /assets/AR-filters/demo.png
+author: Yiting Liu 
 
 ---
-
+<!-- //2020-07-05 -->
 ![assets/AR-filters/demo.png](assets/AR-filters/demo.png)
 
 **A collection of AR filters exploring identity issues.**

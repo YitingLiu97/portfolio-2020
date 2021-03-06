@@ -7,6 +7,8 @@ permalink: icarus
 category: Dev
 tags: [web, storytelling, audio]
 preview: /assets/icarus/demo.png
+author: Yiting Liu 
+
 ---
 <!-- Created: Dec 14, 2020 3:07 PM
 Tags: mobile, storytelling

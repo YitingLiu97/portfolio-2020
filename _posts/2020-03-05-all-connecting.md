@@ -7,6 +7,8 @@ permalink: all-connect
 category: Immersive
 tags: [interactive, projection, storytelling, video sculpture, processing]
 preview: assets/all-connecting/demo.png 
+author: Yiting Liu 
+
 ---
 
 <!-- collaborator: Wenjing Liu; Stefan Skripak. -->

@@ -7,7 +7,7 @@ description: A short film of loneliness in an unreal world.
 category: storytelling
 tags: [UE4, film, storytelling]
 preview: /assets/tuna-world/demo1.png
-
+author: Yiting Liu 
 ---
 
 ![assets/tuna-world/demo1.png](assets/tuna-world/demo1.png)

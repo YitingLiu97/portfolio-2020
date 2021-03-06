@@ -7,7 +7,7 @@ description: Perform a symphony with the sun.
 category: Dev
 tags: [web, jekyll]
 preview: /assets/sun-and-us/demo.png
-
+author: Yiting Liu 
 ---
 
 ![/assets/sun-and-us/demo.png](/assets/sun-and-us/demo.png)

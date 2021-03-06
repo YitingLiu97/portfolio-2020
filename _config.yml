@@ -1,6 +1,7 @@
 # Site settings
 title: Yiting Liu - Creative Technologist  
 email: yiting@yitingliu.com
+# id: index
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to Yiting's playground where I focus on AR/VR, web, and music. 
   I am a creative technologist designing experiences to foster meaningful 
@@ -9,7 +10,15 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "https://www.yitingliu.com" # the base hostname & protocol for your site
 # blogurl: "http://yitingliu97.wordpress.com/"
 
-# twitter_username: jekyllrb
+# image: https://www.yitingliu.com/assets/profile_square.jpg
+# width: 300
+# height: 200
+
+# image:
+#   path: https://www.yitingliu.com/assets/profile_square.jpg
+#   height: 100
+#   width: 100
+
 github_username:  Yitingliu97
 instagram_username: yliu.designs
 linkedin_username: yitingliu97

@@ -3,11 +3,12 @@ layout: post
 title:  "Your Eye for A Prize"
 date:   2020-10-06
 description: A critique on attention economy.
-
 permalink: eye-prize
 category: Dev
 tags: [web, mobile, UI]
 preview: /assets/eye-prize/demo.png
+author: Yiting Liu 
+
 ---
 
 ![Eyeprize Demo](assets/eye-prize/demo.png)

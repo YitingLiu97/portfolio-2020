@@ -7,6 +7,7 @@ permalink: toilet-paper-mania
 category: Immersive
 tags: [web, unity, blender]
 preview: assets/toilet-paper-mania/demo3.png 
+author: Yiting Liu 
 ---
 <!-- ![assets/toilet-paper-mania/demo3.png](assets/toilet-paper-mania/demo3.png) -->
 ![demo pic](assets/toilet-paper-mania/demo3.png)

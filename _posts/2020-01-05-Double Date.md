@@ -7,6 +7,8 @@ permalink: double-date
 category: Immersive
 tags: [projection mapping, fabrication, physical computing, video sculpture]
 preview: assets/double-date/demo.png 
+author: Yiting Liu 
+
 ---
 
 ![assets/double-date/demo.png ](assets/double-date/demo.png )

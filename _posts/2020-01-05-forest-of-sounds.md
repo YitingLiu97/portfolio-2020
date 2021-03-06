@@ -7,6 +7,8 @@ permalink: forest-of-sounds
 category: Immersive
 tags: [kinect, fabrication, physical computing, music interaction]
 preview: assets/forest-of-sounds/demo.png
+author: Yiting Liu 
+
 ---
 
 ![assets/forest-of-sounds/demo.png](assets/forest-of-sounds/demo.png)

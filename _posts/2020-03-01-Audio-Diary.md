@@ -7,6 +7,8 @@ permalink: audio-diary
 category: Dev
 tags: [web, interactive]
 preview: /assets/audio-diary/demo.png
+author: Yiting Liu 
+
 ---
 
 
