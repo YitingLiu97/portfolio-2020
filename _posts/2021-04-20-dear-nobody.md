@@ -10,6 +10,6 @@ preview: /assets/dear-nobody/demo.png
 author: Yiting Liu 
 ---
 
-![assets/mograph/demo.png](assets/mograph/demo.png)
+![assets/dear-nobody/demo.png](assets/dear-nobody/demo.png)
 
 Coming soon!
