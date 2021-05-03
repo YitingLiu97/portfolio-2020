@@ -18,8 +18,11 @@ author: Yiting Liu
 Exhibitions:
 
 [2020 ITP Winter Show](https://itp.nyu.edu/shows/winter2020/sun-and-us/)
+
 [One Mile Gallery-Electric Feelings](http://onemilegallery.com/electric-feelings/)
+
 [2021 Museum of Wild and Newfangled Art Biennial](https://www.mowna.org/biennial)
+
 [ITP Buds](https://www.instagram.com/itpbuds/)
 
 # Concept

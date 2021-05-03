@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dear Nobody"
+title:  "VR - Dear Nobody"
 date:   2021-03-05
 permalink: nobody
 description: A VR love letter to embrace vulnerability and insecuity. 
