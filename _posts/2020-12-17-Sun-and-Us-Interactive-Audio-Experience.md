@@ -15,9 +15,12 @@ author: Yiting Liu
 **An interactive audio experience that creates a symphony of field recordings from the sun and us.** 
 # Highlights
 
-Exhibition:
+Exhibitions:
 
 [2020 ITP Winter Show](https://itp.nyu.edu/shows/winter2020/sun-and-us/)
+[One Mile Gallery-Electric Feelings](http://onemilegallery.com/electric-feelings/)
+[2021 Museum of Wild and Newfangled Art Biennial](https://www.mowna.org/biennial)
+[ITP Buds](https://www.instagram.com/itpbuds/)
 
 # Concept
 
@@ -33,6 +36,7 @@ That's why I want to recreate that experience for me, for you, and for all of us
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/UaJVQnPlFGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 <br>
 
 # [Play](https://sunandus.netlify.app/)
