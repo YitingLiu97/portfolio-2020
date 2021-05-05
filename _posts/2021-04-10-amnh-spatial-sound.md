@@ -6,11 +6,11 @@ permalink: amnh
 description: A spatial audio app for museums. 
 category: swift, iOS, xCode 
 tags: [xCode, iOS]
-preview: /assets/spatial-sound/demo.jpg
+preview: /assets/spatial-sound/demo.JPG
 author: Yiting Liu 
 ---
 
-![assets/spatial-sound/demo.jpg](assets/spatial-sound/demo.jpg)
+![assets/spatial-sound/demo.JPG](assets/spatial-sound/demo.JPG)
 **Immersive Sound is an iOS app that plays spatial sound hands-free. It adapts Nearby Interaction and spatial audio in Swift.**
 
 # Demo 
