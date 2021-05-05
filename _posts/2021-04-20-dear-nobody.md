@@ -31,7 +31,7 @@ This is a warm reminder to treat yourself gently and recognize that these someti
 </div>
 <br>
 
-# The VR App (coming soon)
+# The VR App 
 
 [Here is the app I created so far.](https://drive.google.com/file/d/1ESUmEQ4jitStQNuzJMfH8MYRdu0sL93K/view?usp=sharing) It was tested for the second round of playtesting. I am currently working on the third version of the app. My goal is to upload it on Oculus store! Super excited! 
 
