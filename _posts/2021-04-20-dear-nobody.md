@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "VR - Dear Nobody"
-date:   2021-03-05
+date:   2021-05-01
 permalink: nobody
 description: A VR love letter to embrace vulnerability and insecuity. 
 category: exercise 
@@ -33,7 +33,9 @@ This is a warm reminder to treat yourself gently and recognize that these someti
 
 # The VR App (coming soon)
 
-I am planning to upload that on Oculus store! Super excited! 
+[Here is the app I created so far.](https://drive.google.com/file/d/1ESUmEQ4jitStQNuzJMfH8MYRdu0sL93K/view?usp=sharing) It was tested for the second round of playtesting. I am currently working on the third version of the app. My goal is to upload it on Oculus store! Super excited! 
+
+If you want to download it, try to [follow this link](https://oneirosvr.com/how-to-sideload-apps-on-oculus-quest-oculus-go/) to download the Sideload so you can allow Unknown sources on your Quest/Quest2 to play the experience. Please share with me some of your feedback at [my email](mailto:yl3466@nyu.edu) or [DM me on Instagram](https://www.instagram.com/yliu.designs/). Thank you so much. ❤ 
 
 # Background
 
@@ -126,4 +128,4 @@ I will submit it to festivals and exhibitions to allow more people to embrace th
 
 [SoundCloud](https://soundcloud.com/yitingliu)
 
-**Presentation Slides (tbd)**
+[Presentation Slides](https://docs.google.com/presentation/d/1s24Zp0k-iXv50BFx0E3QCKzKkue-1_8FpmJhdeIjzQ4/edit?usp=sharing) 
