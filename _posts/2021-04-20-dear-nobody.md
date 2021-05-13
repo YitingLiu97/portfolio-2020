@@ -116,7 +116,12 @@ For my next steps, I would like to save the recordings from users on a database.
 
 I aim to playtest with people with different levels of VR affordances to make the experience smoother.
 
-I will submit it to festivals and exhibitions to allow more people to embrace their vulnerability and insecurities.
+I will submit it to festivals and exhibitions to allow more people to embrace their vulnerability and insecurities. Here is a demo for an ongoing exhibition/installation idea for the room. 
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/549057683" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
 
 # Read more
 
