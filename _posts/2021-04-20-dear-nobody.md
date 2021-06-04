@@ -133,4 +133,6 @@ I will submit it to festivals and exhibitions to allow more people to embrace th
 
 [SoundCloud](https://soundcloud.com/yitingliu)
 
+[ITP Thesis Week 2021 - Presentation Recording](https://vimeo.com/552083375)
+
 [Presentation Slides](https://docs.google.com/presentation/d/1s24Zp0k-iXv50BFx0E3QCKzKkue-1_8FpmJhdeIjzQ4/edit?usp=sharing) 
