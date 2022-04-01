@@ -4,7 +4,7 @@ title:  "Double Date"
 date:   2020-01-22
 description: An interactive video installation about attention between devices and people.
 permalink: double-date
-category: Immersive
+category: sculpture
 tags: [projection mapping, fabrication, physical computing, video sculpture]
 preview: assets/double-date/demo.png 
 author: Yiting Liu 

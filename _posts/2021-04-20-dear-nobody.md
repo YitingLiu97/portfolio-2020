@@ -4,7 +4,7 @@ title:  "VR - Dear Nobody"
 date:   2021-05-01
 permalink: nobody
 description: A VR love letter to embrace vulnerability and insecuity. 
-category: exercise 
+category: immersive 
 tags: [VR, Unity]
 preview: /assets/dear-nobody/demo.png
 author: Yiting Liu 

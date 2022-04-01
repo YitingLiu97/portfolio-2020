@@ -4,7 +4,7 @@ title:  "All Connecting"
 date:   2020-03-05
 description: An interactive video sculpture that exposes the systems of the Internet in real-time.
 permalink: all-connect
-category: Immersive
+category: sculpture
 tags: [interactive, projection, storytelling, video sculpture, processing]
 preview: assets/all-connecting/demo.png 
 author: Yiting Liu 

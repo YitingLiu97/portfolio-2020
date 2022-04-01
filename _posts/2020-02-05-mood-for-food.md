@@ -4,7 +4,7 @@ title:  "Mood for Food"
 date:   2020-02-05
 description: A fullstack website offers food options based on user emotions.
 permalink: mood-for-food
-category: Web
+category: web 
 tags: [fullstack, heroku, node, client-server, web, database, mongodb]
 preview: assets/mood-for-food/demo.png
 author: Yiting Liu 

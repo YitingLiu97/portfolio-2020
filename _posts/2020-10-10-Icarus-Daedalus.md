@@ -4,7 +4,7 @@ title:  "Icarus and Daedalus"
 date:   2020-10-10
 description: Same Story. Two Presentations
 permalink: icarus
-category: Dev
+category: web
 tags: [web, storytelling, audio]
 preview: /assets/icarus/demo.png
 author: Yiting Liu 

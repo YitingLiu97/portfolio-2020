@@ -5,7 +5,7 @@ date:   2020-03-01
 description: Talk about your feelings to get through hard times.
 baseurl: archive/
 permalink: audio-diary
-category: Dev
+category: Immersive Web
 tags: [web, jekyll]
 preview: /assets/audio-diary/demo.png
 ---

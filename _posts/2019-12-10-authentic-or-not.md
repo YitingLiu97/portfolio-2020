@@ -4,8 +4,8 @@ title:  "Authentic or Not"
 date:  2019-12-10
 description: An interactive game to learn recipes visually.
 permalink: authentic
-category: Immersive
-tags: [game, p5.js, interactive, Arduino, microcontroller]
+category: Product
+# tags: [game, p5.js, interactive, Arduino, microcontroller]
 preview: assets/authentic-or-not/authenticornot-demo.jpg
 author: Yiting Liu 
 ---

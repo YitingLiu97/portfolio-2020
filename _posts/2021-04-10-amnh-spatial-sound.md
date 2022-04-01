@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  " AMNH Immersive Sound"
+title:  " AMNH audio"
 date:   2021-04-10
 permalink: amnh
 description: A spatial audio app for museums. 
-category: swift, iOS, xCode 
+category: audio
 tags: [xCode, iOS]
 preview: /assets/spatial-sound/demo.JPG
 author: Yiting Liu 

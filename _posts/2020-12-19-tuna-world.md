@@ -4,7 +4,7 @@ title:  "Tuna World"
 date:   2020-12-19
 permalink: tuna-world
 description: A short film of loneliness in an unreal world. 
-category: storytelling
+category: immersive
 tags: [UE4, film, storytelling]
 preview: /assets/tuna-world/demo1.png
 author: Yiting Liu 
