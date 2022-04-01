@@ -10,7 +10,7 @@
       <ul class="contact-list">
         <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
         <!-- <li><a href="{{ site.blogurl }}">{{ site.blogurl }}</a></li> -->
-        <li><a href="http://yitingliu97.wordpress.com/">documentation blogs</a></li>
+        <li><a href="http://yitingliu97.wordpress.com/" target="_blank">documentation blogs</a></li>
         
       </ul>
     </div>
@@ -19,7 +19,7 @@
       <ul class="social-media-list">
         {% if site.github_username %}
         <li>
-          <a href="https://github.com/{{ site.github_username }}">
+          <a href="https://github.com/{{ site.github_username }}" target="_blank">
             <span class="icon  icon--github">
               <svg viewBox="0 0 16 16">
                 <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
@@ -33,7 +33,7 @@
 
         {% if site.instagram_username %}
         <li>
-          <a href="https://www.instagram.com/{{ site.instagram_username }}">
+          <a href="https://www.instagram.com/{{ site.instagram_username }} " target="_blank">
             <span class="icon  icon--instagram">
               <svg class="instagram" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
             </span>
@@ -46,7 +46,7 @@
 
         {% if site.linkedin_username %}
         <li>
-          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+          <a href="https://www.linkedin.com/in/{{ site.linkedin_username }} " target="_blank">
             <span class="icon  icon--linkedin">
               <svg class="linkedin" fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M19,19H16V13.7A1.5,1.5 0 0,0 14.5,12.2A1.5,1.5 0 0,0 13,13.7V19H10V10H13V11.2C13.5,10.36 14.59,9.8 15.5,9.8A3.5,3.5 0 0,1 19,13.3M6.5,8.31C5.5,8.31 4.69,7.5 4.69,6.5A1.81,1.81 0 0,1 6.5,4.69C7.5,4.69 8.31,5.5 8.31,6.5A1.81,1.81 0 0,1 6.5,8.31M8,19H5V10H8M20,2H4C2.89,2 2,2.89 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" /></svg>
             </span>
@@ -56,20 +56,32 @@
         </li>
         {% endif %}
 
-<!-- soundcloud not working -->
-        <!-- {% if site.soundcloud_username %}
+        {% if site.soundcloud_username %}
         <li>
-          <a href="https://www.soundcloud.com/{{ site.soundcloud_username }}">
-            <span class="icon  icon--soundcloud">
-              <svg fill="#000000" height="24"  viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M443.5 273.1c0 25.1-20.4 45.5-45.5 45.5H271.5V162.3c4.8-1.8 9.9-3.1 15.1-3.9 4.1-0.6 8.3-1 12.5-1 42.3 0 77 32.7 80.3 74.1 5.7-2.5 11.9-4 18.6-4C423.1 227.6 443.5 248 443.5 273.1zM224.2 193.2v125.4h15.1v-134.5c-3.4 3.7-6.4 7.8-9 12.1C228.4 195 226.3 194.1 224.2 193.2zM247.6 318.6h15.1v-152.4c-5.4 2.7-10.5 6.1-15.1 9.9V318.6zM151.8 208.9v109.7h15.1V196.9C161.3 200.2 156.2 204.2 151.8 208.9zM106.5 231.6v86.5c1.9 0.2 3.7 0.4 5.7 0.4h7.9v-86.6c-2.6-0.5-5.2-0.7-7.9-0.7C110.3 231.3 108.4 231.4 106.5 231.6zM86.5 310.2c3.4 2.5 7.2 4.5 11.3 5.9v-82.4c-4.1 1.4-7.9 3.4-11.3 5.9V310.2zM128.4 234.4v84.2h15.1v-98.7c-3.4 5.6-6 11.8-7.5 18.4C133.6 236.8 131.1 235.5 128.4 234.4zM175.9 318.6h15.1V188.8c-5.3 0.7-10.3 2-15.1 3.8V318.6zM200.1 318.6h15.1v-128.3c-4.8-1.2-9.9-1.9-15.1-1.9V318.6L200.1 318.6zM79.1 303.4v-56.9c-6.6 7.6-10.6 17.6-10.6 28.5C68.5 285.8 72.5 295.7 79.1 303.4z"></path>
-              </svg>  
+          <a href="https://www.soundcloud.com/{{ site.soundcloud_username }} " target="_blank">
+            <span class="soundcloud">
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M14 17.9637L18 18C21 17.9637 22 16.5 22 15C22 12.5 19 12.5 19 12.5C20 9.5 19 7.6 17.5 7C16 6.4 14 7 14 7V17.9637Z" />
+              <path d="M10 9V18" />
+              <path d="M6 9V18" />
+              <path d="M2 13V16.5" />
+            </svg>
               </span>
 
             <span class="username">{{ site.soundcloud_username }}</span>
           </a>
         </li>
-        {% endif %} -->
+        {% endif %}
    
 
       </ul>
