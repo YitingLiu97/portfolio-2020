@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  " AMNH audio"
+title:  " AMNH Spatial Audio"
 date:   2021-04-10
 permalink: amnh
 description: A spatial audio app for museums. 
