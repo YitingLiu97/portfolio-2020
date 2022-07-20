@@ -71,22 +71,23 @@ We delivered our first iteration of our product for the XR Brain Jam. We focused
 
 # Role
 
-I am the lead developer for this project. I am proud to successfully build the application of the MVP experience with spatial audio within 25 hours. I also took on the role of technical and art director where I assigned technical tasks for my teammates to work on certain features (AI companion, text to speech, Dialogflow, and voice over reocridng, and 3d assets). 
+I am the lead developer for this project. I am proud to successfully build the application of the MVP experience with spatial audio within 25 hours. I also took on the role of technical and art director where I assigned technical tasks for my teammates to work on certain features (AI companion, text to speech, Dialogflow, and voice over recording, and 3d assets). 
 
 
 # Development Process
 ![assets/sixthsense/XRBrainJamDeveloping.jpg](assets/sixthsense/XRBrainJamDeveloping.jpg)
-I enjoyed developing for Magic Leap with Unity. Although, at first, I spent around 20 hours troubleshooting: 
-- Trying out different example templates 
-- The original repo didn't have MLTK tool embeded and I found the MLTK package on github 
-- Explored the exmpale scenes of the MLTK 
-- Decided the Controler Input was the one that fits our experienc the most 
-- I also explored the spatial map and would love to explore more in the future. 
+I enjoyed developing for Magic Leap with Unity. Although, at first, I spent around 20 hours troubleshooting:
+- Trying out different example templates
+- The original repo didn't have MLTK tool embedded and I found the MLTK package on github 
+- Explored the example scenes of the MLTK
+- Decided the Controller Input was the one that fits our experience the most 
+- I also explored the spatial map and would love to explore more in the future
+
 <br>
 
 ![assets/sixthsense/spatial-map.png](assets/sixthsense/spatial-map.png)
-- It is include in the Control Input scene and I would love to dive into it more to be more calibratable to different phsycial scenes 
-- I was so happy when I finally succeed in building our application!
+- It is include in the Control Input scene and I would love to dive into it more to be more calibratable to different physical  scenes 
+- I was so happy when I finally succeeded  in building our application!
 
 ![assets/sixthsense/built-scene.png](assets/sixthsense/built-scene.png)
 - Testing out spatial audio 
@@ -139,8 +140,8 @@ I have encountered the following challenges while working with Magic Leap:
 - I enjoyed the documentation on Magic Leap’s official website. Yet there is one website that has confusing most up to date templates. Luckily github comes to the rescue. Here is the image showing that zero iteration works with the Magic Leap Unity Exmamples repo. 
 
 ![assets/sixthsense/zero-iteration-working.png](assets/sixthsense/zero-iteration-working.png)
-- Registering issues with Magic Leap. We have three magic leap to develop for yet due to the registering issue, we ended up working with one registered magic leap for our development. 
-- First time using magic leap. Learned how to use it with less than 24 hours.
+- Registering issues with Magic Leap. We have three Magic Leap devices to develop for yet due to the registering issue, we ended up working with one registered magic leap for our development. 
+- First time using magic leap. Learned how to use it in less than 24 hours.
 - Limited developing time since we agreed with our storyboard 15 hours before the end of the Jam 
 
 # Feedback from demoing 
