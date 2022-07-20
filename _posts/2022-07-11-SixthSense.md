@@ -82,7 +82,6 @@ I enjoyed developing for Magic Leap with Unity. Although, at first, I spent arou
 - Explored the example scenes of the MLTK
 - Decided the Controller Input was the one that fits our experience the most 
 - I also explored the spatial map and would love to explore more in the future
-
 <br>
 
 ![assets/sixthsense/spatial-map.png](assets/sixthsense/spatial-map.png)
