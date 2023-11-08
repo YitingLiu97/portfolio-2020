@@ -9,11 +9,13 @@ Architect of Digital Realities and Multidimensional Storyteller
 ![/assets/profile_square.jpg](/assets/profile_square.jpg){:class="img-responsive"}
 
 
-Yiting Liu is a luminary in digital innovation, her name synonymous with transformative VR/AR experiences in healthcare and the arts. A decorated technologist, she clinched the Grand Prize at the MIT XR Hackathon as a Unity Lead Developer & Designer and was celebrated at the Adobe Creative Jam, winning the People’s Choice and Runner-Up Judges’ Award. Her interactive digital storytelling prowess earned her accolades at ComplexityJam, showcasing her expertise in Unreal Engine.
+I am an award-winning designer, developer, and multi-disciplinary creative technologist working across music, healthcare, digital art, virtual production, and immersive storytelling to innovate the future of interactive experiences. 
 
-Her thought leadership shines at prominent platforms like the AIGA Conference and the XR Guild, sharing insights into the future of virtual reality. Special projects like the schizophrenia simulation featured by Unity and Games for Change 2022, and the web art exhibit 'Bucolic Terrains' at Microsoft's Spirit of Being, amplify her reputation as an innovative creator.
+I have been reinventing the interactive experience through digital content, leading multicultural corporations to develop creative platforms and solutions with Fortune 500 companies: Accenture, Disney, CitiBank, ComCast (Universal Studios), Crédit Agricole, Disney, and ESPN. 
 
-Yiting’s clientele includes industry giants such as Accenture, CitiBank, ESPN, Comcast (Universal Studios), Disney, and CAMP, A Family Experience Store, attesting to her impact across diverse sectors. Her visionary work not only defines user experience paradigms but also charts a course for future digital storytellers, intertwining technology with the human narrative to inspire the next chapter of creation.
+My mission is to utilize technology to build a better and kinder world. I deliver on that vision while creating highly collaborative environments and producing audacious experiences for the future of the internet by carrying my expertise across disciplines, storytelling, creative technology, XR/AR/VR, 3D design, music and immersive production.
+
+I am especially committed to bridging the gap between technology and people. I am devoted to the future of the next generation of storytellers, artists, and creators. I aim to challenge the norm in storytelling and immersive experiences by combining multiple mediums and technology.  
 
 # [Resume](/assets/Yiting Liu Resume.pdf)
 
