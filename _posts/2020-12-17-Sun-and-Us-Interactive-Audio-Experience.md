@@ -44,7 +44,7 @@ That's why I want to recreate that experience for me, for you, and for all of us
 
 <br>
 
-# [Play](https://sunandus.netlify.app/)
+# [Play](https://sunanus.netlify.app/)
 
 <!-- ![assets/sun-and-us/demo1.png](assets/sun-and-us/demo1.png) -->
 
