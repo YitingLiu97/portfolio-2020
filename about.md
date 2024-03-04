@@ -9,13 +9,13 @@ Architect of Digital Realities and Multidimensional Storyteller
 ![/assets/profile_square.jpg](/assets/profile_square.jpg){:class="img-responsive"}
 
 
-I am an award-winning designer, developer, and multi-disciplinary creative technologist working across music, healthcare, digital art, virtual production, and immersive storytelling to innovate the future of interactive experiences. 
+Yiting is an award-winning XR lead developer developer, technology strategist and multi-disciplinary creative technologist working across music, healthcare, digital art, virtual production, and immersive storytelling to innovate the future of interactive experiences. 
 
-I have been reinventing the interactive experience through digital content, leading multicultural corporations to develop creative platforms and solutions with Fortune 500 companies: Accenture, Disney, CitiBank, ComCast (Universal Studios), Crédit Agricole, Disney, and ESPN. 
+She has been reinventing the interactive experience through digital content, leading multicultural corporations to develop creative platforms and solutions with Fortune 500 companies: Accenture, Disney, CitiBank, ComCast (Universal Studios), Crédit Agricole, Disney, and ESPN. 
 
-My mission is to utilize technology to build a better and kinder world. I deliver on that vision while creating highly collaborative environments and producing audacious experiences for the future of the internet by carrying my expertise across disciplines, storytelling, creative technology, XR/AR/VR, 3D design, music and immersive production.
+Her mission is to utilize technology to build a better and kinder world. She delivers on that vision while creating highly collaborative environments and producing audacious experiences for the future of the internet by carrying my expertise across disciplines, storytelling, creative technology, XR/AR/VR, 3D design, music and immersive production.
 
-I am especially committed to bridging the gap between technology and people. I am devoted to the future of the next generation of storytellers, artists, and creators. I aim to challenge the norm in storytelling and immersive experiences by combining multiple mediums and technology.  
+She is especially committed to bridging the gap between technology and people. She is devoted to the future of the next generation of storytellers, artists, and creators. She aims to challenge the norm in storytelling and immersive experiences by combining multiple mediums and technology.  
 
 # [Resume](/assets/Yiting Liu Resume.pdf)
 
@@ -35,6 +35,7 @@ img {
 
 #twofive{
     width:100%;
+	
 }
 #sevenfive{
     width:100%;
