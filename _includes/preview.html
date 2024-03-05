@@ -1,13 +1,27 @@
+{% if page.title != "Archive" and page.title != "About" %}
+<p>Welcome to Yiting's playground where I focus on AR/VR, web, and music. I am a
+    creative technologist designing experiences to foster meaningful interactions through AR/VR, music, and
+    performance, currently in NYC. </p>
+{% elsif page.title == "Archive" %}
+<p>Welcome to the collections of my past projects that emphasize my capabilties in AR,
+    VR, & Immersive Installations! </p>
+{% endif %}
+
 {% for post in site.posts limit:5 %}
-    {% cycle 'add row' : '<div class="row">', '' %}
-            <div class=" column" >
-            <div class="preview-panel">
+{% cycle 'add row' : '<div class="row">', '' %}
+    <div class=" column">
+        <div class="preview-panel">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <img class="post-img" src="{{ post.preview }}">
                 <a href="{{ post.url | prepend: site.baseurl }}">
-                <img class="post-img" src="{{ post.preview }}" >
-                <a href="{{ post.url | prepend: site.baseurl }}"><div class="post-title" > <h3>{{ post.title }}</h3></div> </a>
+                    <div class="post-title">
+                        <h3>{{ post.title }}</h3>
+                    </div>
+                </a>
                 <div class="post-description">{{post.description}}</div>
-           </div>
         </div>
-{% cycle 'end row' : '',  '</div>' %}
+    </div>
+    {% cycle 'end row' : '', '
+</div>' %}
 {% endfor %}
 {% cycle 'end row' : '</div>', '</div>' %}
