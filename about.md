@@ -8,17 +8,9 @@ Architect of Digital Realities and Multidimensional Storyteller
 
 ![/assets/profile_square.jpg](/assets/profile_square.jpg){:class="img-responsive"}
 
-
-Yiting is an award-winning XR lead developer developer, technology strategist and multi-disciplinary creative technologist working across music, healthcare, digital art, virtual production, and immersive storytelling to innovate the future of interactive experiences. 
-
-She has been reinventing the interactive experience through digital content, leading multicultural corporations to develop creative platforms and solutions with Fortune 500 companies: Accenture, Disney, CitiBank, ComCast (Universal Studios), Crédit Agricole, Disney, and ESPN. 
-
-Her mission is to utilize technology to build a better and kinder world. She delivers on that vision while creating highly collaborative environments and producing audacious experiences for the future of the internet by carrying my expertise across disciplines, storytelling, creative technology, XR/AR/VR, 3D design, music and immersive production.
-
-She is especially committed to bridging the gap between technology and people. She is devoted to the future of the next generation of storytellers, artists, and creators. She aims to challenge the norm in storytelling and immersive experiences by combining multiple mediums and technology.  
+ Yiting Liu, an acclaimed XR Developer and Designer, is driving innovation in immersive tech with Fortune 500 clients like Accenture, Citibank, Disney, ESPN, and Comcast. Leading at Sia Partners, she expertly integrates XR with AI for multiplayer experiences. Her AR simulation project was notably featured in Unity, and she's a proud winner of the MIT Reality Hack 2022. Yiting's work has been highlighted at prestigious events such as the AIGA Conference and Games for Change, establishing her as a prominent figure in the field of immersive technology.
 
 # [Resume](/assets/Yiting Liu Resume.pdf)
-
 
 <style>
 mark {
@@ -30,7 +22,6 @@ img {
 }
 .column-list {
 	display: block;
-	/* justify-content: space-between; */
 }
 
 #twofive{
