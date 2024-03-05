@@ -4,8 +4,8 @@ title:  "Audio Diary"
 date:   2020-03-01
 description: Talk about your feelings to get through hard times.
 permalink: audio-diary
-category: web 
-tags: [web, interactive]
+tags: 
+- Web 
 preview: /assets/audio-diary/demo.png
 author: Yiting Liu 
 

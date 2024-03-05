@@ -3,9 +3,10 @@ layout: post
 title:  "AR - Sixth Sense"
 date:   2022-07-11
 permalink: sixthsense
-description: An AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy. Created in XR Brain Jam 2022.
+description: An AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.
 category: immersive 
-tags: [AR, Unity, MagicLeap]
+tags: 
+ - AR
 preview: /assets/sixthsense/demo.png
 author: Yiting Liu 
 ---

@@ -4,8 +4,8 @@ title:  "AR - Lifelines"
 date:   2022-03-25
 permalink: lifelines
 description: MIT Reality Hackathon 2022 Winner Lifelines is a collaborative AR therapy tool to build, visualize, and analyze the story of your life. 
-category: immersive 
-tags: [AR, Unity, Hololens]
+tags: 
+- AR
 preview: /assets/lifelines/demo.gif
 author: Yiting Liu 
 ---

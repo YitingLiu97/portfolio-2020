@@ -4,8 +4,8 @@ title:  "Your Eye for A Prize"
 date:   2020-10-06
 description: A critique on attention economy.
 permalink: eye-prize
-category: web 
-tags: [web, mobile, UI]
+tags: 
+- Web
 preview: /assets/eye-prize/demo.png
 author: Yiting Liu 
 

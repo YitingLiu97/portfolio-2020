@@ -4,9 +4,10 @@ title:  "Toilet Paper Mania"
 date:   2019-11-21
 description: An absurd virtual experience of the toilet paper mania during COVID-19.
 permalink: toilet-paper-mania
-category: immersive
-tags: jekyll
-preview: assets/toilet-paper-mania/demo3.png 
+tags: 
+    - Unity
+    - VR
+preview: /assets/toilet-paper-mania/demo3.png 
 author: Yiting Liu 
 ---
 <!-- ![assets/toilet-paper-mania/demo3.png](assets/toilet-paper-mania/demo3.png) -->

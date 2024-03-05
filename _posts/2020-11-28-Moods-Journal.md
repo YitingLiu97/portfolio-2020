@@ -4,8 +4,8 @@ title:  "Moods Journal"
 date:   2020-11-28
 permalink: moods-journal
 description: Emotional input collage mobile app. 
-category: web
-tags: [web, jekyll]
+tags: 
+- Web 
 preview: /assets/moods-journal/demo.png
 author: Yiting Liu 
 

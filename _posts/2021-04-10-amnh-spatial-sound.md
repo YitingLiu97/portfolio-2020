@@ -4,8 +4,8 @@ title:  " AMNH Spatial Audio"
 date:   2021-04-10
 permalink: amnh
 description: A spatial audio app for museums. 
-category: audio
-tags: [xCode, iOS]
+tags: 
+- iOS
 preview: /assets/spatial-sound/demo.JPG
 author: Yiting Liu 
 ---

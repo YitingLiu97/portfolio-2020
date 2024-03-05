@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="post">
   <div class="post-nav">
- 
+
     {% if page.previous.url %}
     <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"> &laquo;&nbsp;{{page.previous.title}}</a>
     {% endif %}
@@ -18,27 +18,15 @@ layout: default
 
   <article class="post-content">
     {{ content }}
-    <!-- how to add side nav with the id? -->
-    <!-- <div class="side-nav">
-      <a> hello </a>
-      <a>there </a>
-     <a> hello {{ content.h1 }}</a>
-      <a>there {{ content.h2 }}</a> 
-  
-    </div> -->
-  
-
   </article>
 
+  <!-- <div class="post-nav">
 
-
-  <div class="post-nav">
- 
     {% if page.previous.url %}
     <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"> &laquo;&nbsp;{{page.previous.title}}</a>
     {% endif %}
     {% if page.next.url %}
     <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"> {{page.next.title}} &raquo;</a>
     {% endif %}
-  </div>
+  </div> -->
 </div>

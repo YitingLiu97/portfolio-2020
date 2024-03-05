@@ -4,10 +4,8 @@ title:  "Sun and Us"
 date:   2020-12-17
 permalink: sun-and-us
 description: Perform a symphony with the sun.
-category: 
-- web
-- audio 
-tags: [web, jekyll]
+tags: 
+- Web
 preview: /assets/sun-and-us/demo.png
 author: Yiting Liu 
 ---

@@ -5,7 +5,8 @@ date:   2020-12-19
 permalink: tuna-world
 description: A short film of loneliness in an unreal world. 
 category: immersive
-tags: [UE4, film, storytelling]
+tags:
+- Unreal
 preview: /assets/tuna-world/demo1.png
 author: Yiting Liu 
 ---
