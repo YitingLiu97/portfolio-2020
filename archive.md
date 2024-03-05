@@ -1,6 +1,7 @@
 ---
 layout: archive
-title: 
+title: Archive
 permalink: /archive/
 ---
 
+Collection of all projects.
