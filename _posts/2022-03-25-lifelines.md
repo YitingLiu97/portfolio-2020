@@ -12,9 +12,19 @@ author: Yiting Liu
 
 ![assets/lifelines/demo.gif](assets/lifelines/demo.gif)
 
-**Lifelines is a collaborative therapy tool to build, visualize, and analyze the story of your life on a 3d timeline with impact moments to bring better understanding and healing. With a literal turn of the wrist, easily access common therapy tools such as an Emotions Wheel, Empty Chair, and EMDR exercises will be available for healing.** 
+<!-- **Lifelines is a collaborative therapy tool to build, visualize, and analyze the story of your life on a 3d timeline with impact moments to bring better understanding and healing. With a literal turn of the wrist, easily access common therapy tools such as an Emotions Wheel, Empty Chair, and EMDR exercises will be available for healing.**  -->
 
-We are the [winner for MIT Reality Hackathon 2022](https://devpost.com/software/lifelines). It feels so rewarding to have created a meaningful tool for good for the mass. 
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Roles                     | Lead Unity Developer & 3D Designer |
+| Tools                     | Hololens 2, MRTK, MRDL, Unity, Blender, Photoshop |                     
+| Length                    | 4 days |
+| Project                   | Lifelines is a collaborative therapy tool to build, visualize, and analyze the story of your life on a 3d timeline with impact moments to bring better understanding and healing. With a literal turn of the wrist, easily access common therapy tools such as an Emotions Wheel, Empty Chair, and EMDR exercises will be available for healing.|
+| Features | Database Storage, 3D Visualization, Hand Tracking, World Tracking, Spatial Sound Design |
+|Impact | [Winner for MIT Reality Hackathon 2022](https://devpost.com/software/lifelines).|
+| Collaborators |[Bryant Wood](https://www.linkedin.com/in/bryantwood/), [Daniel Sisson](https://www.linkedin.com/in/danielsisson/), [William de Oliveira](https://www.linkedin.com/in/wdeoliveira/), & [Jenny Fang](https://www.linkedin.com/in/jenny-fang-396124aa/)|
+
+<!-- We are the [winner for MIT Reality Hackathon 2022](https://devpost.com/software/lifelines). It feels so rewarding to have created a meaningful tool for good for the mass.  -->
 
 # Teaser
 
@@ -34,6 +44,8 @@ We built Lifelines to help users collaborate with their therapists to build, vis
 COVID 19 has a huge impact on almost everyone physically and emotionally. A lot of people also have depression during isolation. Therapy is in high demand. AR is a wonderful tool to collaborate with healthcare providers to build, visualize & analyze. therapist. We use AR to bring therapies to life by combining virtual and physical worlds. The experience with your therapist in AR is active and immersive. It assists the user to visualize the moments of their life that were most impactful, allowing them to better process the moment.
 
 # **How we built it**
+
+<!-- can have more process graph -->
 
 Hololens 2, MRTK, MRDL, Unity, Blender, Photoshop, etc.
 

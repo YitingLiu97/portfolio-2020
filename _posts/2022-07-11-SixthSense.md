@@ -4,7 +4,6 @@ title:  "AR - Sixth Sense"
 date:   2022-07-11
 permalink: sixthsense
 description: An AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.
-category: immersive 
 tags: 
  - AR
 preview: /assets/sixthsense/demo.png
@@ -13,20 +12,25 @@ author: Yiting Liu
 
 ![assets/sixthsense/demo.png](assets/sixthsense/demo.png)
 
-**Sixth Sense is an AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.** 
-
-# Motivation
-
-Understanding psychosis is critical to effective allyship and interfacing safely with affected persons.
+<!-- **Sixth Sense is an AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.**  -->
 <!-- 
   “When the term empathy was initially coined in the early 1900s, it was primarily discussed as a state of mind, an act of “feeling into” another person. In recent years it has increasingly come to also be seen as a skill that can—and arguably must—be learned and practiced.”  
 ― Kaitlin Ugolik Phillips, [The Future of Feeling: Building Empathy in a Tech-Obsessed World](https://www.goodreads.com/work/quotes/69419100) -->
 
-## Tools: 
 
-- Platform: Magic Leap 1 (spatial audio, digital objects)
-- Dynamic dialogue: Google Dialogflow v2
-- Pulse Sensor: Heart rate monitor
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                   | Lead Developer |
+| Tools                     | <br>Platform: Magic Leap 1 (spatial audio, digital objects) <br><br>Dynamic dialogue: Google Dialogflow v2 <br><br>Pulse Sensor: Heart rate monitor<br><br> |
+| Length                    | 25 hours  |
+|Features | AI companion, Text-to-Speech, Dialogflow, Sound Design, & 3D Assets|
+| Project                   |Sixth Sense is an AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.|
+|Collaborators | <br>[Destiny Guzmán](https://www.linkedin.com/in/destiny-guzm%C3%A1n-414596119/), [Julia Scott](https://www.linkedin.com/in/julia-scott-phd/), [Tingru Lian](https://www.linkedin.com/in/tingru-lian-ab77a51aa/), [Lucas Wozniak](https://www.linkedin.com/in/lucaswozniak/)<br><br> |
+
+
+# Motivation
+
+Understanding psychosis is critical to effective allyship and interfacing safely with affected persons.
 
 # Teaser
 
@@ -34,10 +38,10 @@ Understanding psychosis is critical to effective allyship and interfacing safely
 
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/a_Ka7RNQJqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 # **Exhibitions**
 - Games for Change Festival 2022 
 - XR Brain Jam 2022 Live Demo 
-
 
 <!-- # Embodied Schizophrenia Experience 
 
@@ -57,6 +61,7 @@ To open the app, download [The Lab](https://developer.magicleap.com/en-us/learn/
 
 ## User Journey 
 The player takes a walk in the shoes of someone with schizophrenia under the guidance of a benevolent friend. Typical encounters of daily life trigger auditory hallucinations. The player turns to their friend to help find their way through.
+
 ## The Features 
   
 We delivered our first iteration of our product for the XR Brain Jam. We focused on spatial audio to create auditory hallucination with simple AR objects in the real world: alarm, book, TV. 
@@ -69,11 +74,6 @@ We delivered our first iteration of our product for the XR Brain Jam. We focused
 - “It is quite intense.”  
 - “I can see how it can be useful for the medical staff to experience for better undertsanding”
 - “You can only learn so much by reading. This is a wonderful tool to train empathy.”  
-
-# Role
-
-I am the lead developer for this project. I am proud to successfully build the application of the MVP experience with spatial audio within 25 hours. I also took on the role of technical and art director where I assigned technical tasks for my teammates to work on certain features (AI companion, text to speech, Dialogflow, and voice over recording, and 3d assets). 
-
 
 # Development Process
 ![assets/sixthsense/XRBrainJamDeveloping.jpg](assets/sixthsense/XRBrainJamDeveloping.jpg)

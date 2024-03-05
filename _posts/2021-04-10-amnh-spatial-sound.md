@@ -11,7 +11,18 @@ author: Yiting Liu
 ---
 
 ![assets/spatial-sound/demo.JPG](assets/spatial-sound/demo.JPG)
-**Immersive Sound is an iOS app that plays spatial sound hands-free. It adapts Nearby Interaction and spatial audio in Swift.**
+<!-- **Immersive Sound is an iOS app that plays spatial sound hands-free. It adapts Nearby Interaction and spatial audio in Swift.** -->
+
+
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Roles                     | Lead iOS Developer |
+| Tools                     | Swift, XCode, iPhone 13 * 2 |                     
+| Length                    | 3 weeks |
+| Project                   | Immersive Sound is an iOS app that plays spatial sound hands-free. It adapts Nearby Interaction and spatial audio in Swift.|
+| Features | Nearby Interaction, Spatial Audio |
+|Impact | Pitch for AMNH|
+| Collaborators |Yihan Zhao |
 
 # Demo 
 <div class="iframe-container">

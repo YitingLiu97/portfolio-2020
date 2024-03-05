@@ -11,7 +11,18 @@ author: Yiting Liu
 ---
 
 ![assets/dear-nobody/demo.png](assets/dear-nobody/demo.png)
-**Dear Nobody is a love letter in VR to encourage us to embrace our vulnerability and insecurities.**
+<!-- **Dear Nobody is a love letter in VR to encourage us to embrace our vulnerability and insecurities.** -->
+
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Roles                     | Lead Unity Developer & 3D Designer |
+| Tools                     | Unity, Quest 2 |                     
+| Length                    | 1 month with 3 iterations |
+| Project                   | Dear Nobody is a love letter in VR to encourage us to embrace our vulnerability and insecurities.|
+| Features | 3D Text Formation, VR Interaction, UX/UI User Journey, World Building, Spatial Design, 3D Assets, Spatial Sound Design |
+|Impact | Thesis presentation at ITP|
+| Collaborators |0|
+
 
 
 This is a warm reminder to treat yourself gently and recognize that these sometimes uncomfortable feelings are part of what makes us human. 
