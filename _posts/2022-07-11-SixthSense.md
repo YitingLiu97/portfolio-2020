@@ -4,8 +4,7 @@ title:  "AR - Sixth Sense"
 date:   2022-07-11
 permalink: sixthsense
 description: An AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.
-tags: 
- - AR
+tags: AR
 preview: /assets/sixthsense/demo.png
 author: Yiting Liu 
 ---

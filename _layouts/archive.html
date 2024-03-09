@@ -4,19 +4,47 @@ layout: post
 <p>Welcome to the collections of my past projects that emphasize my capabilties in AR,
     VR, & Immersive Installations! </p>
 
-{% for post in site.posts %}
-    {% cycle 'add row' : '<div class="row">', '' %}
-            <div class=" column" >
-            <div class="preview-panel">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                <img class="post-img" src="{{ post.preview }}" >
-                <a href="{{ post.url | prepend: site.baseurl }}"><div class="post-title" > <h3>{{ post.title }}</h3></div> </a>
-                <div class="post-description">{{post.description}}</div>
-           </div>
-        </div>
-{% cycle 'end row' : '',  '</div>' %}
+<!-- <button data-filter="all">All</button>
+<button data-filter="AI">AI</button>
+<button data-filter="3D">3D</button>
+<button data-filter="VR">VR</button> -->
+
+
+<!-- {% for post in site.posts %}
+<div class="item" data-tags="{{ post.tags | map: 'handle' | join: ' ' }}">
+    <a href="{{ post.url | prepend: site.baseurl }}"></a>
+        <div class="post-title">
+            <h3>{{ post.title }}</h3>
+</div></div>
+{% endfor %} -->
+
+<!--  this is not printing  -->
+{% assign all_tags = site.tags | map: "first" | sort %}
+
+{% for tag in all_tags %}
+<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
 {% endfor %}
-{% cycle 'end row' : '</div>', '</div>' %}
 
-
-</div>
+<!-- 
+<div id="items">
+    {% for post in site.posts %}
+    <div class="item" data-tags="{{ post.tags | map: 'handle' | join: ' ' }}">
+        {% cycle 'add row' : '<div class="row">', '' %}
+            <div class=" column">
+                <div class="preview-panel">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        <img class="post-img" src="{{ post.preview }}">
+                        <a href="{{ post.url | prepend: site.baseurl }}">
+                            <div class="post-title">
+                                <h3>{{ post.title }}</h3>
+                            </div>
+                        </a>
+                        <div class="post-description">{{post.description}}</div>
+                </div>
+            </div>
+            {% cycle 'end row' : '', '
+        </div>' %}
+        {% endfor %}
+        {% cycle 'end row' : '</div>', '</div>' %}
+    </div>
+</div> -->

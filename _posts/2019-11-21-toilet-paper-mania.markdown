@@ -5,8 +5,8 @@ date:   2019-11-21
 description: An absurd virtual experience of the toilet paper mania during COVID-19.
 permalink: toilet-paper-mania
 tags: 
-    - Unity
-    - VR
+- Unity 
+
 preview: /assets/toilet-paper-mania/demo3.png 
 author: Yiting Liu 
 ---
