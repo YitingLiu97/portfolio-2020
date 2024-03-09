@@ -21,7 +21,6 @@ author: Yiting Liu
 | Project                   | Dear Nobody is a love letter in VR to encourage us to embrace our vulnerability and insecurities.|
 | Features | 3D Text Formation, VR Interaction, UX/UI User Journey, World Building, Spatial Design, 3D Assets, Spatial Sound Design |
 |Impact | Thesis presentation at ITP|
-| Collaborators |0|
 
 
 
