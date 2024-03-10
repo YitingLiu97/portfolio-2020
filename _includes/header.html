@@ -3,10 +3,10 @@
 
     <h1 class="header-heading">{{ site.title }}</h1>
 
-    <video id="headerContent" autoplay muted loop controls>
-      <source src="/assets/Small-Reel.mp4" type="video/mp4">
+    <video id="headerContent" autoplay playsinline muted loop controls preload="auto"
+      poster="/assets/AR-filters/demo.png">
+      <source src="{{ site.baseurl }}/assets/Small-Reel.mp4" type="video/mp4">
     </video>
-
     <br>
 
     <nav class="navbar">
@@ -18,6 +18,6 @@
       </ul>
     </nav>
 
-    
+
 
 </header>

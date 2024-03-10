@@ -1,46 +1,27 @@
-let headerContent = document.getElementById("headerContent");
+document.addEventListener('DOMContentLoaded', function() {
+    let headerContent = document.getElementById("headerContent");
 
-// only show when work is clicked or first loaded 
+    // Adjust display based on the current path
+    if (window.location.pathname == "/") {
+        headerContent.style.display = "inline-block"; // Corrected from 'visible' to 'inline-block'
+        console.log("Home page selected?");
+    } else {
+        headerContent.style.display = "none";
+    }
 
-// window.onload=function(){
-//     headerContent.style.display="visible";
+    // Set random playhead time when refreshing
+    // This event ensures that we access video duration only after it's available
+    headerContent.addEventListener('loadedmetadata', function () {
+        let vidLength = headerContent.duration; // Moved inside to ensure duration is available
 
-// }
-if (window.location.pathname == "/") {
-    //work selected 
- 
-    headerContent.style.display = "inline-block";
-    console.log("work selected?")
-} else {
-    headerContent.style.display = "none";
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
 
-}
+        function setCurTime() {
+            headerContent.currentTime = getRandomInt(vidLength);
+        }
 
-//set random playhead time when refreshing 
-
-
-
-let vidLength = headerContent.duration;
-
-
-function getRandomInt(max) {
-    // console.log("randomint",Math.floor(Math.random() * Math.floor(max)));
-
-    return Math.floor(Math.random() * Math.floor(max));
-}
-
-function setCurTime() {
-    headerContent.currentTime = getRandomInt(vidLength);
-    // console.log("currenttime",headerContent.currentTime);
-}
-
-// headerContent.addEventListener('loadedmetadata', function () {
-//     getRandomInt(vidLength);
-//     setCurTime();
-// });
-
-headerContent.addEventListener('onload', function () {
-    getRandomInt(vidLength);
-    setCurTime();
+        setCurTime(); // Call setCurTime() to adjust the video's current time
+    });
 });
-
