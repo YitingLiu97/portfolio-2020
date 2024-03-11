@@ -10,32 +10,35 @@ preview: /assets/audio-diary/demo.png
 author: Yiting Liu 
 
 ---
-
-
 ![assets/audio-diary/demo.png](assets/audio-diary/demo.png)
 
 **A website that welcomes people to talk about their feelings.**
 
-# Highlights
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Web Developer & Designer |
+| Tools                     | front-end,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech |                     
+| Length                    | 2 days |
+| Project                   | A website that welcomes people to talk about their feelings.|
+| Features | Speech-to-text, audio-visualization |
 
-This project is created during COVID-19 to encourage people to talk about their feelings to stay connected to their inner-selves. I made this using p5.js, and p5.speech library to convert speech to text. It has been my personal audio diary to keep track of my feelings and I hope this would help more people during hard times like this.
+<!-- # Highlights
 
-**Tools:** front-end,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech
+This project is created during COVID-19 to encourage people to talk about their feelings to stay connected to their inner-selves. I made this using p5.js, and p5.speech library to convert speech to text. It has been my personal audio diary to keep track of my feelings and I hope this would help more people during hard times like this. -->
 
-**Time:** Mar. 2019 for COVID-19
+<!-- **Tools:** front-end,Javascript, HTML5, CSS, Github, Heroku, p5.js, p5.speech
+
+**Time:** Mar. 2019 for COVID-19 -->
 
 # [Play it on your desktop Chrome.](https://audio-diary.herokuapp.com/)
 
 # Problem Statement
+
 **How might we create a welcoming space for people to talk about their feelings during COVID-19?**
 
 ## Goal
 
 To build a personal sanctuary for people to talk about their feelings during hard times. COVID-19 pandemic is just one of the hard times we are and will be going through.
-
-## Role
-
-Developer & Designer
 
 # Research
 

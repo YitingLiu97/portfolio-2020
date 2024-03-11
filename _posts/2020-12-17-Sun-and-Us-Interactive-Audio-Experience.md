@@ -12,18 +12,23 @@ author: Yiting Liu
 
 ![/assets/sun-and-us/demo.png](/assets/sun-and-us/demo.png)
 
-**An interactive audio experience that creates a symphony of field recordings from the sun and us.** 
-# Highlights
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Roles                     | Web Developer, Visual Designer |
+| Tools                     | Html, CSS, Javascript |                     
+| Length                    | 4 weeks |
+| Project                   | An interactive audio experience that creates a symphony of field recordings from the sun and us. |
+| Features | ml5.js, tone.js, API|
+| Exhibitions | [2020 ITP Winter Show](https://itp.nyu.edu/shows/winter2020/sun-and-us/), [One Mile Gallery-Electric Feelings](http://onemilegallery.com/electric-feelings/),  [2021 Museum of Wild and Newfangled Art Biennial](https://www.mowna.org/biennial),  [ITP Buds](https://www.instagram.com/itpbuds/) |
+|Special Thanks to | Udo Noll, founder for [Radio Aporee](https://aporee.org/maps/), [Luke Dubois](http://lukedubois.com/), [Max Bittker](https://maxbittker.com/), [Luisa Pereira](http://www.luisapereira.net/projects/) [Yotam Mann](https://yotammann.info/)  [Schuyler De Vos](https://lazordiak.github.io/)|
 
-Exhibitions:
 
-[2020 ITP Winter Show](https://itp.nyu.edu/shows/winter2020/sun-and-us/)
+# Demo
 
-[One Mile Gallery-Electric Feelings](http://onemilegallery.com/electric-feelings/)
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://www.youtube.com/embed/UaJVQnPlFGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-[2021 Museum of Wild and Newfangled Art Biennial](https://www.mowna.org/biennial)
-
-[ITP Buds](https://www.instagram.com/itpbuds/)
 
 # Concept
 
@@ -32,15 +37,6 @@ To make an installation that touches you the deepest and purest emotion by letti
 Nature has always been a part I want to explore. When I was little, I went to the park near our home with my grandma frequently. The wind blowing through the willows, the birds bringing their music while flying, and the people chatting and laughing are so interesting to me. They are like a symphony. Yet, as I grow older, I spend less time in the park, or with the nature. I want to forever remember the memory I had when I was little, with my grandma, playing, and listening to the sounds.
 
 That's why I want to recreate that experience for me, for you, and for all of us who yearns for connections with people, nature, and within.
-
-# Demo
-
-
-<div class="iframe-container">
-<iframe class="responsive-iframe" src="https://www.youtube.com/embed/UaJVQnPlFGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-<br>
 
 # [Play](https://sunanus.netlify.app/)
 
@@ -62,7 +58,7 @@ That's why I want to recreate that experience for me, for you, and for all of us
 
 [ml5.js](ml5js.org) to use the PoseNet
 
-# Major Issues
+<!-- # Major Issues
 
 p5.js has the tendency to block websites that do not satisfy the CORS policy. 
 
@@ -132,35 +128,33 @@ The most important lesson I learned is to have a clear picture of the steps of t
 1. Fetch all API 
 2. Update the API constantly - I set the interval to be each 2 seconds 
 3. Update the link to get the recording link
-4. Update the player link constantly in the function getAllData();
+4. Update the player link constantly in the function getAllData(); -->
 
 # Visuals
 
-I want to create a simple user interface and minimal look for my experience. What is more simple than lines and circles. While looking back at my creative coding practices, I picked [the one](https://www.openprocessing.org/sketch/927956) that used times tables cardioid with my own music. I followed the [tutorial](https://thecodingtrain.com/CodingChallenges/133-times-tables-cardioid.html) by the amazing Daniel Shiffman, a.k.a., The Coding Train.
+I want to create a simple user interface and minimal look for my experience. What is more simple than lines and circles.The left image is from my [original creative coding](https://www.openprocessing.org/sketch/927956)  and the right one is the adapted visuals for this interactive audio experience. 
 
-The left image is from my original creative coding and the right one is the adapted visuals for this interactive audio experience. 
+<!-- While looking back at my creative coding practices, I picked [the one](https://www.openprocessing.org/sketch/927956) that used times tables cardioid with my own music. I followed the [tutorial](https://thecodingtrain.com/CodingChallenges/133-times-tables-cardioid.html) by the amazing Daniel Shiffman, a.k.a., The Coding Train. -->
 
 <div class="img-container">
 <img class="img-responsive" src="assets/sun-and-us/timestable.png">
 <img class="img-responsive" src="assets/sun-and-us/demo.png">
 </div>
 
-
 # Resources
 
 Since I already know basic CSS and I do not want to focus too much on writing CSS from scratch. If you are like me, here is a list of awesome resources to generate CSS:
 
 p.s.: it works with DOM elements created inside p5.js. 
-
 - [grid generator](https://cssgrid-generator.netlify.com/)
 - [button](https://www.bestcssbuttongenerator.com/)
 - [slider](https://doodlenerd.com/html-control/css-input-range-generator)
 - [input](http://danielstern.ca/range.css/#/)
 - [button - pretty UI](https://neumorphism.io/#55b9f3)
 
-# Next Steps
+<!-- # Next Steps
 
-Originally I wanted to use Kinect and tone.js but it was giving me trouble composing the data to the same canvas so I used [ml5.js](https://ml5js.org/) which I am more familiar with. But in the future, I would love to still use [Kinectron](https://kinectron.github.io/#/) to try it out with Tone.js or Max/MSP. 
+Originally I wanted to use Kinect and tone.js but it was giving me trouble composing the data to the same canvas so I used [ml5.js](https://ml5js.org/) which I am more familiar with. But in the future, I would love to still use [Kinectron](https://kinectron.github.io/#/) to try it out with Tone.js or Max/MSP.  -->
 
 # Previous Documentations
 
@@ -168,7 +162,7 @@ Originally I wanted to use Kinect and tone.js but it was giving me trouble compo
 2. [installation plan](https://yitingliu97.wordpress.com/2020/10/27/sound-studio-installation-plan/) 
 3. [process update](https://yitingliu97.wordpress.com/2020/11/29/nature-and-us-process-update/) 
 
-# Special thanks to
+<!-- # Special thanks to
 
 Udo Noll, founder for [Radio Aporee](https://aporee.org/maps/) 
 
@@ -180,4 +174,4 @@ Udo Noll, founder for [Radio Aporee](https://aporee.org/maps/)
 
 [Yotam Mann](https://yotammann.info/) for code debugging in Tone.js
 
-[Schuyler De Vos](https://lazordiak.github.io/) for spending more than an hour helping to debug during stressful finals week!
+[Schuyler De Vos](https://lazordiak.github.io/) for spending more than an hour helping to debug during stressful finals week! -->

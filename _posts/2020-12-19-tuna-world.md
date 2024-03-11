@@ -15,6 +15,15 @@ author: Yiting Liu
 
 **A short film of loneliness in an unreal world.**
 
+
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Roles                     | Virtual Production Technologist |
+| Tools                     | Unreal, Livelink, Blender |                     
+| Length                    | 2 weeks |
+| Project                   | A short film of loneliness in an unreal world.|
+| Features | Motion Capture, Virtual Production, Environmental Art, Unreal Sequencing|
+
 # Demo
 
 <div class="iframe-container">
@@ -133,8 +142,7 @@ I wanted to work with Marvelous on Saturday but I spent the whole day working wi
 
 ![assets/tuna-world/demo.png](assets/tuna-world/demo.png)
 
-
----
+<!-- ---
 
 # Next Steps
 Here is the detailed story for further development to include the assets below. Since I have enriched the story a little bit. There are several things I need to reconsider:
@@ -170,5 +178,4 @@ Here is the detailed story for further development to include the assets below. 
         1. Sense of salvation
             1. Joyful jump and dance for a while, cry on the floor while kneeling down
         2. Over-joyously swimming in the ocean
-        3. Look up to the sky while taking in all the water she can in the ocean
-<!-- </details> -->
+        3. Look up to the sky while taking in all the water she can in the ocean -->

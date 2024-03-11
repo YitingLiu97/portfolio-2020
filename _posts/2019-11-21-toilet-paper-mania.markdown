@@ -6,7 +6,6 @@ description: An absurd virtual experience of the toilet paper mania during COVID
 permalink: toilet-paper-mania
 tags: 
 - Unity 
-- XR
 
 preview: /assets/toilet-paper-mania/demo3.png 
 author: Yiting Liu 
@@ -14,9 +13,15 @@ author: Yiting Liu
 <!-- ![assets/toilet-paper-mania/demo3.png](assets/toilet-paper-mania/demo3.png) -->
 ![demo pic](assets/toilet-paper-mania/demo3.png)
 
-**A virtual experience that invites people to relive, rethink, and reflect their responses/ their change of behaviors towards the toilet paper mania during COVID-19.**
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Unity Developer & 3D Artist|
+| Tools                     |  Blender, Unity, Spatial Audio Design, Experience Design |                     
+| Length                    | 3 weeks |
+| Project                   | A virtual experience that invites people to relive, rethink, and reflect their responses/ their change of behaviors towards the toilet paper mania during COVID-19.|
+|Exhibitions|[2020 ITP Spring Show](https://itp.nyu.edu/shows/spring2020/toilet-paper-mania-vr-museum/), [2020 Empire State Maker Faire](https://youtu.be/S8Kavu23MHk?t=772)|
 
-## Highlights
+<!-- ## Highlights
 
 This project is a response towards the panic buying of toilet paper during COVID-19.
 
@@ -24,7 +29,7 @@ This project is a response towards the panic buying of toilet paper during COVID
 
 **Time:** 3 weeks in May 2020.
 
-**Exhibitions**: [2020 ITP Spring Show](https://itp.nyu.edu/shows/spring2020/toilet-paper-mania-vr-museum/), [2020 Empire State Maker Faire](https://youtu.be/S8Kavu23MHk?t=772)
+**Exhibitions**: [2020 ITP Spring Show](https://itp.nyu.edu/shows/spring2020/toilet-paper-mania-vr-museum/), [2020 Empire State Maker Faire](https://youtu.be/S8Kavu23MHk?t=772) -->
 
 <div class="iframe-container">
 

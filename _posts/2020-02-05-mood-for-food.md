@@ -15,11 +15,19 @@ author: Yiting Liu
 
 **A fullstack website offers food options based on user emotions.**
 
-# Highlights
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Web Developer & Designer |
+| Tools                     | full-stack, HTML, CSS, Javascript, Node.js, MongoDB, Git, and Heroku |                     
+| Length                    | 3 weeks |
+| Project                   | A fullstack website offers food options based on user emotions.|
+| Features | Speech-to-text, audio-visualization |
 
-I created a full stack web application within 3 weeks providing users recipes based on their emotion inputs from ideation to execution. I conducted research, designed user webflow, graphics, and data structure for this project. I worked on both client and server side with HTML, CSS, Javascript, Node.js, MongoDB, Git, and Heroku.
+<!-- # Highlights
 
-**Time:** Feb. 2020
+I created a full stack web application within 3 weeks providing users recipes based on their emotion inputs from ideation to execution. I conducted research, designed user webflow, graphics, and data structure for this project. I worked on both client and server side with HTML, CSS, Javascript, Node.js, MongoDB, Git, and Heroku. -->
+<!-- 
+**Time:** Feb. 2020 -->
 
 <!-- [https://youtu.be/HgDYBSmwyUM](https://youtu.be/HgDYBSmwyUM) -->
 
@@ -47,9 +55,6 @@ I am a foodie and everytime I think about what I want to eat next meal after mea
 
 This project is a passion project that will benefit people who spend lots of time to figure out what to eat for their meals. Especially when they are feeling down, certain food can help lighten the mood.
 
-# Role
-
-Developer & Designer
 
 # Research
 
@@ -154,6 +159,6 @@ I build this website using pastel color palette and emojis to bring you happines
 
 *Special thanks to Cassie Tarakajian, Tirta Wening Rachman for help along the way.*
 
-Made within 3 weeks in Feb. 2020.
+<!-- Made within 3 weeks in Feb. 2020. -->
 
 [Check out my detailed documentation here.](https://github.com/YitingLiu97/mood_for_food)

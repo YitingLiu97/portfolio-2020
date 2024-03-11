@@ -11,9 +11,21 @@ author: Yiting Liu
 ---
 ![assets/authentic-or-not/authenticornot-demo.jpg](assets/authentic-or-not/authenticornot-demo.jpg)
 
-**An interactive cooking game to learn recipes visually.**
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Developer, Fabricator & Game Designer |
+| Tools                     | Arduino, P5.js, Laser-Cutter, Illustrator, Power Tools | 
+|Skills |Creative Coding, Physical Computing, Fabrication, Interaction Design, User Testing |                    
+| Length                    |4 weeks |
+| Project                   | An interactive cooking game to learn recipes visually.|
+|Exhibitions | [2019 ITP Winter Show](https://youtu.be/11M3RLmayz8?t=1209), 2020 Liberty Science Center 2020|
+|Collaborator|[Shannel Doshi](https://www.shanneldoshi.com/) |
 
-## Highlights
+<div class="iframe-container">
+ <iframe class="responsive-iframe"   src="https://www.youtube.com/embed/nBPye7sNh18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<!-- ## Highlights
 
 This project is created to educate people to cook traditional authentic food. As international students, we have seen people confusing fusion food as authentic. This interactive game welcomes people to play, learn, and embrace the traditional culture through learning authentic recipes. It has been exhibited in 2019 ITP Winter Show and Liberty Science Center Engineer Week 2020.
 
@@ -26,13 +38,10 @@ This project is created to educate people to cook traditional authentic food. As
 ## Exhibition
 
 - [2019 ITP Winter Show](https://youtu.be/11M3RLmayz8?t=1209)
-- 2020 Liberty Science Center 2020
+- 2020 Liberty Science Center 2020 -->
 
-<div class="iframe-container">
- <iframe class="responsive-iframe"   src="https://www.youtube.com/embed/nBPye7sNh18" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
-<br>
+
 ## Problem Statement
 
 **How to teach people authentic food to carry on the heritage of our culture?**

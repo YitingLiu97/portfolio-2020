@@ -12,23 +12,30 @@ author: Yiting Liu
 ---
 
 ![assets/double-date/demo.png ](assets/double-date/demo.png )
-**An interactive video installation about attention between devices and people.**
 
-## Highlights
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Developer, Fabricator, Post-Production|
+| Tools                     | Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere, Illustrator  |                     
+| Length                    | 2 week |
+| Project                   | An interactive video installation about attention between devices and people.|
+| Features |  Projection, Experience and Interaction Design |
 
-I fabricated the controller and programmed it with a media controller Sprite for the interaction.
+<!-- ## Highlights
+
+ I fabricated the controller and programmed it with a media controller Sprite for the interaction.
 
 **Tools:** Arduino, Sprite, Projector, Laser-Cutter, After Effects, Premiere, Illustrator
 
 **Skills:** Projection, Experience and Interaction Design
 
-**Time:** Jan. 2020
+**Time:** Jan. 2020 -->
 
 <div class="iframe-container">
  <iframe title="vimeo-player" src="https://player.vimeo.com/video/416687791"  class="responsive-iframe" frameborder="0" allowfullscreen></iframe>
 </div>
 
-<br />
+
 
 ## Problem Statement
 How might we make people aware of their relationships with loved ones and their phones?
@@ -39,11 +46,11 @@ How might we make people aware of their relationships with loved ones and their 
 
 Instant gratification from phones seems to be more tempting than being present at face-to-face conversations. With constant access to the world in our pockets, where should we direct our attention while trying to be present in the moment?
 
-## Role
+<!-- ## Role
 
 - Developer
 - Fabricator
-- Post-production
+- Post-production -->
 
 ## Research
 

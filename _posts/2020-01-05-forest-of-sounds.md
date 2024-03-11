@@ -13,17 +13,23 @@ author: Yiting Liu
 
 ![assets/forest-of-sounds/demo.png](assets/forest-of-sounds/demo.png)
 
-**An interactive music installation that reinterprets the daily mundane sounds.**
-
-## Highlights
-
-**Skill:** Kinect, Max/Msp, Max for Live, Ableton, Live Object Models, Fabrication
-
-**Time:** 14 weeks in Spring 2020.
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Web Developer & Designer |
+| Tools                     | Kinect, Max/Msp, Max for Live, Ableton, Live Object Models, Fabrication |                     
+| Length                    | 14 weeks |
+| Project                   | An interactive music installation that reinterprets the daily mundane sounds.|
+| Features | Skeleton Tracking, Audio Manipulation, Physical Installation |
 
 <div class="iframe-container">
  <iframe class="responsive-iframe"   src="https://www.youtube.com/embed/Ie8z0hr_sTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+<!-- ## Highlights
+
+**Skill:** Kinect, Max/Msp, Max for Live, Ableton, Live Object Models, Fabrication
+
+**Time:** 14 weeks in Spring 2020. -->
 
 ## Concept
 

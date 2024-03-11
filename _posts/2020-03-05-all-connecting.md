@@ -18,21 +18,29 @@ author: Yiting Liu
 
 **An interactive video sculpture that exposes the systems of the Internet in real-time.**
 
-## Highlights
-
-Inspired by The Wave(1965) by Hans Haacke, we aim to expose the digital systems of a simple web request. It looks effortless to search anything. However, the system covered up shows multiple packets retrieving information from different servers.
-
-I worked as a creative technologist splitting the packets into 16 strings given the sender’s IP addresses and receiver’s IP addresses. The content of the packets are then projected onto the wall with mapped paths when the performer or user interacts with the computer.
-
-**Skills:** Video Sculpture, Projection, Real-Time, MadMapper, Processing, Synphon Recorder, Max/MSP
-
-**Time:** Mar. 2020
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Developer |
+| Tools                     | Processing, Syphon Recorder, MadMapper |
+| Skills |Video Sculpture, Projection, Real-Time, MadMapper, Processing, Synphon Recorder, Max/MSP|                     
+| Length                    | 3 weeks |
+| Project                   | An interactive video sculpture that exposes the systems of the Internet in real-time.|
+|Collaborators| Wenjing Liu & Stefan Skripak|
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/416693709" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 
 
+## Highlights
+
+Inspired by The Wave(1965) by Hans Haacke, we aim to expose the digital systems of a simple web request. It looks effortless to search anything. However, the system covered up shows multiple packets retrieving information from different servers.
+
+I worked as a creative technologist splitting the packets into 16 strings given the sender’s IP addresses and receiver’s IP addresses. The content of the packets are then projected onto the wall with mapped paths when the performer or user interacts with the computer.
+
+<!-- **Skills:** Video Sculpture, Projection, Real-Time, MadMapper, Processing, Synphon Recorder, Max/MSP
+
+**Time:** Mar. 2020 -->
 
 ## Problem Statement
 How might we reinterpret the system in the digital world?
@@ -102,13 +110,13 @@ We used Syphon to project the processing content and used MadMapper to map diffe
 
 ![assets//all-connecting/madmapper.png](assets//all-connecting/madmapper.png)
 
-## Solution
+<!-- ## Solution
 
 Here is our interpretation of Hans Haacke's The Wave.
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/416693709" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div>
+</div> -->
 
 ## Conclusion
 

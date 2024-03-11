@@ -13,11 +13,20 @@ author: Yiting Liu
 
 ![assets/moods-journal/demo.png](assets/moods-journal/demo.png)
 
-**Emotional input collage mobile app.**
+
+| Title                     | Details |
+|---------------------------|-----------------------------------|
+| Role                     | Full-Stack Developer|
+| Tools                     | Javascript, HTML, CSS, Heroku, Pinterest, Photoshop, Illustrator, Figma |                     
+| Length                    | 2 weeks |
+| Project                   | Emotional input collage mobile app. |
+| Features |Manipulating of images in terms of size, scale, rotation. Uploading images/ Camera capture from phone. Changing fonts for texts.|
+
+<!-- **Emotional input collage mobile app.**
 
 # **Concept**
 
-A journal of my **material and color journey on emotions.**
+A journal of my **material and color journey on emotions.** -->
 
 
 
