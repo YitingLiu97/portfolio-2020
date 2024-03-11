@@ -4,26 +4,65 @@ layout: post
 <p>Welcome to the collections of my past projects that emphasize my capabilties in AR,
     VR, & Immersive Installations! </p>
 
-<!-- <button data-filter="all">All</button>
-<button data-filter="AI">AI</button>
-<button data-filter="3D">3D</button>
-<button data-filter="VR">VR</button> -->
+<button class="filter-button" data-filter="all">Show All</button>
+
+{% for tag in site.tags %}
+<button class="filter-button" data-filter="{{ tag[0] }}">{{ tag[0] }}</button>
+{% endfor %}
+
+
+
+<div class="items">
+    {% for post in site.posts %}
+    <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
+        <div class="preview-panel">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <img class="post-img" src="{{ post.preview }}" alt="Preview">
+                <div class="post-title">
+                    <h3>{{ post.title }}</h3>
+                </div>
+            </a>
+            <div class="post-description">{{ post.description }}</div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
 
 
 <!-- {% for post in site.posts %}
-<div class="item" data-tags="{{ post.tags | map: 'handle' | join: ' ' }}">
-    <a href="{{ post.url | prepend: site.baseurl }}"></a>
-        <div class="post-title">
-            <h3>{{ post.title }}</h3>
-</div></div>
-{% endfor %} -->
-
-<!--  this is not printing  -->
-{% assign all_tags = site.tags | map: "first" | sort %}
-
-{% for tag in all_tags %}
-<li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+<div class="item" data-tags="{{ post.tags | join: ' ' }}">
+    <div class="post-title">
+        <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </div>
+</div>
 {% endfor %}
+ -->
+
+ <!-- --- this has an issue of displaying only one side ---- -->
+<!-- <div id="items">
+    {% assign posts_per_row = 2 %}
+    {% for post in site.posts %}
+    {% if forloop.index0 == 0 or forloop.index0 | modulo: posts_per_row == 0 %}
+    <div class="row">
+        {% endif %}
+        <div class="item column" data-tags="{{ post.tags | join: ' ' }}">
+            <div class="preview-panel">
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <img class="post-img" src="{{ post.preview }}">
+                </a>
+                <div class="post-title">
+                    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+                </div>
+                <div class="post-description">{{ post.description }}</div>
+            </div>
+        </div>
+
+        {% if forloop.index | modulo: posts_per_row == 0 or forloop.last %}
+    </div> 
+    {% endif %}
+    {% endfor %}
+</div>-->
+
 
 <!-- 
 <div id="items">

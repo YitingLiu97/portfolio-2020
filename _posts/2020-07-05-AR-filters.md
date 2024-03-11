@@ -6,7 +6,7 @@ permalink: ar-filters
 description: A collection of AR filters exploring identity issues.
 category: immersive
 tags: 
-- AR
+- XR
 preview: /assets/AR-filters/demo.png
 author: Yiting Liu 
 

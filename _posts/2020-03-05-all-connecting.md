@@ -6,7 +6,7 @@ description: An interactive video sculpture that exposes the systems of the Inte
 permalink: all-connect
 category: sculpture
 tags: 
-    - Interactive Installation 
+- Installation 
 preview: /assets/all-connecting/demo.png
 author: Yiting Liu 
 

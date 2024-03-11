@@ -1,25 +1,23 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Listen for clicks on filter buttons
-    
-    const filterButtons = document.querySelectorAll('button[data-filter]');
-    filterButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const filter = this.getAttribute('data-filter'); // Get the filter from the clicked button
-        const items = document.querySelectorAll('.item');
-
-        items.forEach(item => {
-          const tags = item.getAttribute('data-tags').split(' '); // Get tags from the item
-           // console.log(tags);
-
-          if (filter === 'all' || tags.includes(filter)) {
-            console.log( filter);
-            item.classList.remove('hidden'); // Show item
-        } else {
-            console.log( "filter",filter);
-            item.classList.add('hidden'); // Hide item
-          }
+    document.querySelectorAll('.filter-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            var filter = this.getAttribute('data-filter');
+            // Display all items if 'all' is selected
+            if (filter === 'all') {
+                document.querySelectorAll('.item').forEach(function(item) {
+                    item.style.display = '';
+                });
+            } else {
+                // Otherwise, filter items based on the tag
+                document.querySelectorAll('.item').forEach(function(item) {
+                    var itemTags = item.getAttribute('data-tags').split(' ');
+                    if (itemTags.includes(filter)) {
+                        item.style.display = '';// Reset to default or use 'flex'/'block' if needed
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
         });
-      });
     });
-  });
-  
+});

@@ -5,7 +5,7 @@ date:   2020-01-05
 description: An interactive music installation that reinterprets the daily mundane sounds.
 permalink: forest-of-sounds
 tags: 
-- Interactive Installation 
+- Installation 
 preview: /assets/forest-of-sounds/demo.png
 author: Yiting Liu 
 

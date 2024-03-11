@@ -6,6 +6,7 @@ description: An absurd virtual experience of the toilet paper mania during COVID
 permalink: toilet-paper-mania
 tags: 
 - Unity 
+- XR
 
 preview: /assets/toilet-paper-mania/demo3.png 
 author: Yiting Liu 

@@ -15,6 +15,22 @@ $grey-color-dark:  darken($grey-color, 25%);
         "layout"
 ;
 
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.column {
+  flex: 1 1 50%; /* Adjust this to change how many columns per row */
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .highlight{
  color: darkred;
 }

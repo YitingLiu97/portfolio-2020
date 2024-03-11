@@ -5,7 +5,7 @@ date:   2020-01-22
 description: An interactive video installation about attention between devices and people.
 permalink: double-date
 tags: 
-- Interactive Installation 
+- Installation 
 preview: /assets/double-date/demo.png 
 author: Yiting Liu 
 

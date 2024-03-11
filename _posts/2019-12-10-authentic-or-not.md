@@ -5,7 +5,7 @@ date:  2019-12-10
 description: An interactive game to learn recipes visually.
 permalink: authentic
 tags: 
-- Interactive Installation 
+- Installation 
 preview: /assets/authentic-or-not/authenticornot-demo.jpg
 author: Yiting Liu 
 ---
