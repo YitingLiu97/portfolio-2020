@@ -7,12 +7,9 @@
 
   <main class="wrapper">
 
-
     {% include header.html %}  
-    
     <div class="container">
 
-      
       {% comment %}
       =======================
       The purpose of this snippet is to list all the tags you have in your site.
@@ -24,7 +21,6 @@
       <a href="#{{ tag | slugify }}"> {{ tag }} </a>
       <p>tags here plz</p>
       {% endfor %}
-
 
       {{ content }}
 
