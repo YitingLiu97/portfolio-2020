@@ -2,18 +2,16 @@
 layout: post
 title:  "VR - Dear Nobody"
 date:   2021-05-01
-permalink: nobody
-description: A VR love letter to embrace vulnerability and insecuity. 
+permalink: vr-dear-nobody
+description: "Experience Dear Nobody, a VR app that guides users on a journey through self-reflection and mental health, with audio and visual storytelling."
 tags: 
 - XR
 - Unity
-
 preview: /assets/dear-nobody/demo.png
 author: Yiting Liu 
 ---
 
-![assets/dear-nobody/demo.png](assets/dear-nobody/demo.png)
-<!-- **Dear Nobody is a love letter in VR to encourage us to embrace our vulnerability and insecurities.** -->
+![VR experience for mental health reflection in Dear Nobody app](assets/dear-nobody/demo.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|

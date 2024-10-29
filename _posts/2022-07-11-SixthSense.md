@@ -2,8 +2,9 @@
 layout: post
 title:  "AR - Sixth Sense"
 date:   2022-07-11
-permalink: sixthsense
-description: An AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.
+permalink: sixth-sense-ar-schizophrenia-simulation-app
+description: Sixth Sense is an augmented reality app that simulates schizophrenia symptoms to foster empathy and understanding, providing a realistic experience of auditory hallucinations.
+
 tags: 
 - XR
 - Unity
@@ -12,7 +13,7 @@ preview: /assets/sixthsense/demo.png
 author: Yiting Liu 
 ---
 
-![assets/sixthsense/demo.png](assets/sixthsense/demo.png)
+![Sixth Sense AR app demonstration simulating auditory hallucinations for schizophrenia awareness](assets/sixthsense/demo.png)
 
 <!-- **Sixth Sense is an AR app to simulate schizophrenia symptoms in an authentic and respectful way to foster understanding and empathy.**  -->
 <!-- 
@@ -69,7 +70,7 @@ In the app, the user embarks on a journey in the shoes of someone living with sc
 <ul>
 <li> <strong>Spatial Audio for Auditory Hallucinations:</strong> We used spatial audio to simulate auditory hallucinations, making everyday sounds like an alarm, book, or TV feel immersive and disturbing. This feature mirrors common symptoms of schizophrenia, where auditory hallucinations affect over 70% of patients. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2525988/">source</a>
 </li>
-<li> <strong>Augmented Reality Elements:</strong> Simple AR objects placed in the real world—such as an alarm, book, and TV—add a layer of realism, enhancing the immersive experience.
+<li> <strong>Augmented Reality Elements:<strong> Simple AR objects placed in the real world—such as an alarm, book, and TV—add a layer of realism, enhancing the immersive experience.
 </li>
 </ul>
 # Development Process

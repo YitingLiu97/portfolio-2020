@@ -2,8 +2,9 @@
 layout: post
 title:  "AR - Lifelines"
 date:   2022-03-25
-permalink: lifelines
-description: MIT Reality Hackathon 2022 Winner Lifelines is a collaborative AR therapy tool to build, visualize, and analyze the story of your life. 
+permalink: mit-reality-hackathon-ar-therapy-tool-lifelines
+description: LifelinesAR is an award-winning collaborative AR therapy tool designed to help users visualize and analyze their life stories on a 3D timeline. Winner of MIT Reality Hackathon 2022.
+
 tags: 
 - XR
 - Unity
@@ -12,7 +13,7 @@ preview: /assets/lifelines/demo.gif
 author: Yiting Liu 
 ---
 
-![assets/lifelines/demo.gif](assets/lifelines/demo.gif)
+![MIT Reality Hackathon 2022 winner Lifelines AR therapy tool on Hololens displaying 3D timeline visualization](assets/lifelines/demo.gif)
 
 <!-- **Lifelines is a collaborative therapy tool to build, visualize, and analyze the story of your life on a 3d timeline with impact moments to bring better understanding and healing. With a literal turn of the wrist, easily access common therapy tools such as an Emotions Wheel, Empty Chair, and EMDR exercises will be available for healing.**  -->
 
