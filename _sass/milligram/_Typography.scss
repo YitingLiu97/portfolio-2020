@@ -19,7 +19,6 @@ strong {
 }
 
 p {
-	margin-top: 0;
 	font-family: $secondary-font;
 }
 
@@ -31,12 +30,11 @@ h5,
 h6 {
 	font-weight: 300;
 	letter-spacing: -.1rem;
-	margin-bottom: 2.0rem;
+	margin-bottom: 1.0rem;
 	margin-top: 1.0rem;
 	color: $color-primary;
 	font-weight: bold;
 	font-family: $primary-font;
-
 }
 
 h1 {

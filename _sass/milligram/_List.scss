@@ -25,24 +25,29 @@ ul {
 }
 
 //color the lists
-
 ol {
 	// list-style: decimal inside;
 	counter-reset: item;
+	line-height: 1.5em;
+
 }
 ol li:before {
 	content: counter(item) ". ";
 	counter-increment: item;
-	font-style: italic;
+	font-style: bold;
 	color: $color-quaternary;
-	margin-right: 0.5em; 
+	width: 0.75em; /* Adjust space between bullet and text to be half of what it was */
+
 }
 
-ul li::before{
+ul li{
+	line-height: 1.5em;
+}
+
+ul li::before {
 	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
 	color: $color-quaternary;
 	font-weight: bold; /* If you want it to be bold */
 	display: inline-block; /* Needed to add space between the bullet and the text */
-	width: 1.5em; /* Also needed for space (tweak if needed) */
-	// margin-left: -1em; /* Also needed for space (tweak if needed) */
+	width: 0.75em; /* Adjust space between bullet and text to be half of what it was */
 }
