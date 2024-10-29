@@ -24,116 +24,87 @@ author: Yiting Liu
 | Features | 3D Text Formation, VR Interaction, UX/UI User Journey, World Building, Spatial Design, 3D Assets, Spatial Sound Design |
 |Impact | Thesis presentation at ITP|
 
-
-
 This is a warm reminder to treat yourself gently and recognize that these sometimes uncomfortable feelings are part of what makes us human. 
 
-# Teaser
-
+# Demo
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544688774" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
-<br>
-
-
 # User Journey 
-
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544680995" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
 <br>
 
-# The VR App 
+# App Overview
+Dear Nobody is a VR app that immerses users in an emotional exploration of self-limiting beliefs, inspired by my personal journey to confront feelings of suffocation. This app encourages users to face their own thoughts and emotions through a virtual companion, “Nobody,” guiding them to reflect on memories and gain insights into themselves. Currently in its third iteration, I am preparing Dear Nobody for submission to the Oculus Store and am actively seeking feedback to refine the experience further.
 
-[Here is the app I created so far.](https://drive.google.com/file/d/1ESUmEQ4jitStQNuzJMfH8MYRdu0sL93K/view?usp=sharing) It was tested for the second round of playtesting. I am currently working on the third version of the app. My goal is to upload it on Oculus store! Super excited! 
+[Here is the app I created so far.](https://drive.google.com/file/d/1ESUmEQ4jitStQNuzJMfH8MYRdu0sL93K/view?usp=sharing) 
 
 If you want to download it, try to [follow this link](https://oneirosvr.com/how-to-sideload-apps-on-oculus-quest-oculus-go/) to download the Sideload so you can allow Unknown sources on your Quest/Quest2 to play the experience. Please share with me some of your feedback at [my email](mailto:yl3466@nyu.edu) or [DM me on Instagram](https://www.instagram.com/yliu.designs/). Thank you so much. ❤ 
 
 # Background
+This project stems from my close-to-death experience, which led me to explore feelings of emotional suffocation through self-reflection. My goal is to help users connect with their own inner experiences and emotions, mirroring my journey of understanding and acceptance. The experience is designed to resonate on a deeply personal level, prompting users to explore their vulnerabilities.
 
-Due to my personal close-to-death experience, I realized that I always had the feeling of suffocation, but in the form of self-limiting thoughts. So my goal for this project is to figure out myself and try to coexist with my negative feelings. I want to make it a journey of getting to know myself and others on an emotional and spiritual level. My goal is to allow people to face their own emotions and thoughts and reflect upon their own memories.
-
-# Process
-
+# Development Process
 ## Research
-
 ![assets/dear-nobody/research.jpg](assets/dear-nobody/research.jpg)
-
-To create the story and build the character, I learned more about stoic and Buddhist philosophy. I became closer to my core soul. I used to limit myself from reaching my potential, but now I am slowly breaking down my invisible walls to limitless opportunities.
-
-I also kept a journal of my thoughts and feelings throughout the process. I ended up using some of them in my characterization of Nobody. 
+- Philosophical Foundations: I delved into stoic and Buddhist philosophies to shape the character “Nobody” and the app’s narrative. This research guided me toward designing a contemplative experience, fostering empathy and emotional awareness.
+- Personal Journaling: Throughout the project, I kept a journal of my thoughts, using these reflections to develop character elements that feel authentic and relatable.
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544688664" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
-<br>
 
 ## Prototyping
-
-Here are some of my iterations. 
-
 ### Iteration 1 
-In my first iteration, I created rough five scenes of certain emotions with basic interactions of grabbing the thoughts, animating the texts, and switching the scenes.
-
+Developed five scenes representing different emotions, allowing users to interact with floating thoughts, animating texts, and switching scenes.
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544680914" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
-<br>
 
 ### Iteration 2 
-After user testing, I reduced the amount of orbs in the scene, changed the white texts of voice overs into animated 3d texts, fixed the skybox issue, and made the UI more poetic to fit the experience in my second iteration.
-
-
+Based on user feedback, I reduced scene clutter, transformed white texts into animated 3D texts, fixed the skybox, and enhanced the poetic quality of the UI for a more immersive experience.
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544680954" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
-<br>
 
-### Iteration 3
+<!-- ### Iteration 3
 
-I am currently working on my third iteration from my second user testing feedback.
-
-# Technical Research
+Currently integrating feedback from a second round of user testing to improve interaction flow and emotional depth. -->
+<!-- # Technical Research
 
 ## Elements
 
 1. Adobe Audition for Voice Over
 2. Ableton for background music tracks 
 3. Cinema4d: 3d model, skybox creation
-4. Unity: Shader, VR, Interactions, Scripting, & OculusIntegration
+4. Unity: Shader, VR, Interactions, Scripting, & OculusIntegration -->
 
-# Feedback 
-**User Testing Compilation Video coming soon**
+# User Testing and Feedback
+<!-- **User Testing Compilation Video coming soon** -->
 
-I tested with 11 people and 9 out of them tried with headsets. They felt they no longer are alone in the world. They were thinking about themselves while listening to the story of Nobody.  More than 5 of them mentioned how they wanted to continue talking with the character and hug her. 
+During testing with 11 participants (9 with VR headsets), users expressed a sense of connection, with many sharing how they no longer felt alone. Some users even mentioned wanting to continue conversations with “Nobody” and felt a strong emotional urge to embrace her. This feedback validated the app’s ability to evoke a personal and universal emotional response.
 
-# Lessons
-
+# Key Lessons
 ## Design for the hearts  
+This project taught me to prioritize emotional impact, translating complex feelings into VR interactions that resonate universally.
 
-This journey taught me to **design for the hearts**. I am designing from the feelings I felt and tried to translate that through VR. Some of the feelings are so complicated and personal yet they are universal among people.
+## Consistency in Practice
+I spend at least three hours daily on Unity, maintaining momentum and refining the app. I share my progress on [Instagram](https://www.instagram.com/yliu.art/) or [YouTube playlist](https://www.youtube.com/watch?v=6AeQdyQDNhE&list=PLuoLv7K_RYIEsUSnXdzKRyqfEaX8xnmpk) to document this journey.
 
-It is quite rewarding to hear that they did feel something deeply in their hearts. I enjoy all the feedback my users contributed to this project and to me.
-
-## Daily practice helps!
-
-I spend at least three hours on Unity to work on my thesis each day just to get the rhythm going. Each day I am looking forward to tackling the problems. You can check out my daily post on [Instagram](https://www.instagram.com/yliu.art/) or [YouTube playlist](https://www.youtube.com/watch?v=6AeQdyQDNhE&list=PLuoLv7K_RYIEsUSnXdzKRyqfEaX8xnmpk) that log all the process. 
-
-## Don’t let tech get in the way.
-My first version of the app has some technical hiccups. Through the user testing of six people, four out of which did test it out using a headset. I noticed there are some struggles when they try to grab certain things in the scene. Some of them complained about how it takes them out of the experience. So I fixed it in my second version of the technical hiccups such as the flipping texts, audio echoing too strong, etc.
+## Tech as a Tool, Not a Barrier
+Early feedback revealed technical issues that disrupted immersion. By addressing these issues—such as interaction glitches and audio tuning—I was able to create a smoother, more cohesive experience.
 
 # Next Steps
 
-For my next steps, I would like to save the recordings from users on a database. When they enter the end scene, they get to hear five responses from others that are drawn randomly from the database.
-
-I aim to playtest with people with different levels of VR affordances to make the experience smoother.
-
-I will submit it to festivals and exhibitions to allow more people to embrace their vulnerability and insecurities. Here is a demo for an ongoing exhibition/installation idea for the room. 
+- User-Generated Reflections: I plan to record user responses and save them in a database, allowing new users to hear reflections from previous participants, creating a shared community experience.
+- Broader Playtesting: I aim to test with users of varying VR experience levels to optimize accessibility and interaction intuitiveness.
+- Festival and Exhibition Submissions: To expand the impact of Dear Nobody, I will submit the app to festivals and exhibitions, encouraging more people to confront and embrace their emotions.
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/549057683" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
-
 
 # Read more
 
