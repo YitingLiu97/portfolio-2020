@@ -19,8 +19,9 @@ permalink: /about/
       <!-- Right Column -->
       <div class="about-right">
         <div >
-		<p>
-Yiting Liu, an acclaimed XR Developer and Designer, is driving innovation in immersive tech with Fortune 500 clients like Accenture, Citibank, Disney, ESPN, and Comcast. Leading at Sia Partners, she expertly integrates XR with AI for multiplayer experiences. Her AR simulation project was notably featured in Unity, and she's a proud winner of the MIT Reality Hack 2022. Yiting's work has been highlighted at prestigious events such as the AIGA Conference and Games for Change, establishing her as a prominent figure in the field of immersive technology.</p>
+			<p>
+			Yiting Liu, an acclaimed XR Developer and Designer, is driving innovation in immersive tech with Fortune 500 clients like Accenture, Citibank, Disney, ESPN, and Comcast. Leading at Sia Partners, she expertly integrates XR with AI for multiplayer experiences. Her AR simulation project was notably featured in Unity, and she's a proud winner of the MIT Reality Hack 2022. Yiting's work has been highlighted at prestigious events such as the AIGA Conference and Games for Change, establishing her as a prominent figure in the field of immersive technology.
+			</p>
         </div>
         
         <!-- Social Links -->
