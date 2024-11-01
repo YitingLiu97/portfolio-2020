@@ -6,16 +6,10 @@ permalink: /contact
 
 <section class="container">
   <h1>Contact Me</h1>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
   
   <form 
-    id="contact-form"
-    action="https://docs.google.com/forms/d/e/1FAIpQLSfo_jZecxU8FtYGniXLRnjWKQjUCP4FVM_HlDABhd3gwcr6RQ/formResponse" 
-    method="post" 
-    target="hidden_iframe"
-    onsubmit="return handleSubmit();">
+    id="contact-form">
     <fieldset>
-      <!-- Replace the entry.XXXXXX with your actual Google Form field IDs -->
       <label for="nameField">Name</label>
       <input 
         type="text" 
@@ -30,36 +24,69 @@ permalink: /contact
         required>
      <label for="subjectField">Subject</label>
       <input 
+        type="text" 
         id="subjectField" 
         name="entry.645715719" 
         required>
         <label for="messageField">Message</label>
-      <textarea 
+       <textarea 
         id="messageField" 
         name="entry.378702278" 
         required></textarea>
         <input 
+        id="submit-button"
         class="button-primary" 
         type="submit" 
         value="Send Message">
     </fieldset>
   </form>
+
+   <div id="success-message" style="display: none;" class="message success">
+    Thanks! Your message has been sent successfully.
+  </div>
+
+  <!-- Error message (hidden by default) -->
+  <div id="error-message" style="display: none;" class="message error">
+    Oops! Something went wrong. Please try again.
+  </div>
+
 </section>
 
-<!-- Add this script to handle the form submission -->
 <script>
-function handleSubmit() {
-    // Submit the form
-    document.getElementById('contact-form').submit();
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent the form from submitting normally
     
-    // Wait a brief moment, then show success message and reset form
-    setTimeout(function() {
-        document.getElementById('contact-form').reset();
-        alert('Thanks! Your message has been sent.');
-        // Or use a nicer notification instead of alert
-    }, 1000);
+    const submitButton = document.getElementById('submit-button');
+    const originalButtonText = submitButton.innerHTML;
+    submitButton.innerHTML = 'Sending...';
+    submitButton.classList.add('loading');
     
-    // Prevent page reload
-    return false;
-}
+    // Hide any existing messages
+    document.getElementById('success-message').style.display = 'none';
+    document.getElementById('error-message').style.display = 'none';
+    
+    // Get form data
+    const formData = new FormData(this);
+    
+    fetch('https://docs.google.com/forms/d/e/1FAIpQLSfo_jZecxU8FtYGniXLRnjWKQjUCP4FVM_HlDABhd3gwcr6RQ/formResponse', {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors' // This is important
+    })
+    .then(() => {
+        // Show success message
+        document.getElementById('success-message').style.display = 'block';
+        // Reset form
+        this.reset();
+    })
+    .catch(() => {
+        // Show error message
+        document.getElementById('error-message').style.display = 'block';
+    })
+    .finally(() => {
+        // Reset button
+        submitButton.innerHTML = originalButtonText;
+        submitButton.classList.remove('loading');
+    });
+});
 </script>
