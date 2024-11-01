@@ -85,12 +85,89 @@ ul.contact-list li::before {
     grid-row-gap: 30px;
 }
 
+/* Container styles */
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Contact list styles */
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    list-style: none;
+    
+    li {
+      margin: 0;
+    }
+    
+    a {
+      color: #828282;
+      text-decoration: none;
+      
+      &:hover {
+        color: #2196f3;
+      }
+    }
+  }
+  
+  /* Social media list styles */
+  .social-media-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    
+    li {
+      margin: 0;
+    }
+  }
+  
+  /* Icon styles */
+  .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #828282;
+      
+      &:hover {
+        fill: #2196f3;
+      }
+    }
+  }
 
 /**
  * override column size for mobile
  */
 @media (max-width: 40.0rem) {
-
+    .contact-list,
+    .social-media-list {
+      gap: 1rem;
+    }
+    
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
     .row .column.column-33,
     .row .column.column-34 {
         flex: 0 0 100%;

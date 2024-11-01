@@ -4,34 +4,29 @@
 
   <div class="column">
   <img src="/assets/clients.png" alt="">
-
-  
   </div>
-  <div class="contact-invite">
-    <h2>Let’s Work Together</h2>
-    <p>I’m always excited to collaborate on new projects. Whether you’re looking to create an immersive experience or just want to connect, feel free to reach out!</p>
-    <a href="/contact" class="cta-button">Contact Me</a>
-  </div>
-  
-  <br>
+ 
   <h3>Skills</h3>
   <p>Development: C#, HTML/CSS/Javascript, p5.js, three.js, Node.js, Express, Heroku, MongoDB, DigitalOcean, GitHub
   </p>
   <p> Software: Unity, Unreal Engine, Max/MSP, Spark AR, Lens Studio, Effect House, Cinema 4D, Blender, Adobe Creative
     Suite, Ableton Live
   </p>
+  <div class="contact-invite">
+    <h2>Let’s Work Together</h2>
+    <p>I’m always excited to collaborate on new projects. Whether you’re looking to create an immersive experience or just want to connect, feel free to reach out!</p>
+    <a href="/contact" class="cta-button">Contact Me</a>
+  </div>
   <br>
-  <div class="row">
-    <div class="column">
-      <ul class="contact-list">
-        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        <!-- <li><a href="{{ site.blogurl }}">{{ site.blogurl }}</a></li> -->
-        <li><a href="http://yitingliu97.wordpress.com/" target="_blank">documentation blogs</a></li>
 
-      </ul>
-    </div>
+  <div class="contact-container">
+    <ul class="contact-list">
+      <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <!-- <li><a href="{{ site.blogurl }}">{{ site.blogurl }}</a></li> -->
+      <li><a href="http://yitingliu97.wordpress.com/" target="_blank">documentation blogs</a></li>
 
-    <div class="column">
+    </ul>
+
       <ul class="social-media-list">
         {% if site.github_username %}
         <li>
@@ -43,7 +38,7 @@
               </svg>
             </span>
 
-            <span class="username">{{ site.github_username }}</span>
+            <!-- <span class="username">{{ site.github_username }}</span> -->
           </a>
         </li>
         {% endif %}
@@ -59,7 +54,7 @@
               </svg>
             </span>
 
-            <span class="username">{{ site.instagram_username }}</span>
+            <!-- <span class="username">{{ site.instagram_username }}</span> -->
           </a>
         </li>
 
@@ -76,7 +71,7 @@
               </svg>
             </span>
 
-            <span class="username">{{ site.linkedin_username }}</span>
+            <!-- <span class="username">{{ site.linkedin_username }}</span> -->
           </a>
         </li>
         {% endif %}
@@ -95,15 +90,15 @@
               </svg>
             </span>
 
-            <span class="username">{{ site.soundcloud_username }}</span>
+            <!-- <span class="username">{{ site.soundcloud_username }}</span> -->
           </a>
         </li>
         {% endif %}
 
 
       </ul>
-    </div>
+    </div>  
 
-  </div>
+
 
 </footer>
