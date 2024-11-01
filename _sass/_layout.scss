@@ -23,8 +23,15 @@
 .navbar {
     text-align: center;
     display: block;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    transition: box-shadow 0.3s ease;
 }
-
+.navbar.scrolled {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .nav-item {
     display: inline-block;
     padding: 1rem;
@@ -76,7 +83,9 @@ ul.contact-list li::before {
     color: $color-tertiary;
     width: 100%;
 }
-
+.header-heading{
+  text-align: center;
+}
 .post-grid-parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -159,6 +168,16 @@ ul.contact-list li::before {
  * override column size for mobile
  */
 @media (max-width: 40.0rem) {
+    .navbar {
+        padding: 0.5rem 0;
+    }
+    
+    .nav-item {
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    
     .contact-list,
     .social-media-list {
       gap: 1rem;

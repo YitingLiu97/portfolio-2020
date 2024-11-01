@@ -24,15 +24,6 @@ instagram_username: yitingintech
 linkedin_username: yitingliu97
 soundcloud_username: yitingliu
 
-# Contact form settings
-contact:
-  email: your.email@example.com
-  placeholders:
-    name: "Your Name"
-    email: "your.email@example.com"
-    subject: "What would you like to discuss?"
-    message: "Your message here..."
-  submit_text: "Send Message"
 # Build settings
 markdown: kramdown
 permalink: none
