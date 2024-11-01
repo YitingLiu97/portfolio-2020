@@ -1,23 +1,21 @@
 # Site settings
-title: Yiting Liu - Creative Technologist  
+title: Yiting Liu - Award-winning Creative Technologist in XR and AI
+description: With a background in XR development and creative tech, I create interactive experiences that blend art and technology. My work ranges from VR mental health tools to AI-driven music video generation, always focusing on meaningful and memorable experiences.
 email: yiting@yitingliu.com
 # id: index
-description: > # this means to ignore newlines until "baseurl:"
-  Welcome to Yiting's playground where I focus on AR/VR, web, and music. 
-  I am a creative technologist designing experiences to foster meaningful 
-  interactions through AR/VR, music, and performance, currently in NYC.
+# description: > # this means to ignore newlines until "baseurl:"
+#   Welcome to Yiting's playground where I focus on AR/VR, web, and music. 
+#   I am a creative technologist designing experiences to foster meaningful 
+#   interactions through AR/VR, music, and performance, currently in NYC.
+author: "Yiting Liu"
+keywords: "creative technology, XR, AR, VR, interactive design, Unity, web development"
 # baseurl: "/urban-theme" # the subpath of your site, e.g. /blog
 url: "https://www.yitingliu.com" # the base hostname & protocol for your site
 # blogurl: "http://yitingliu97.wordpress.com/"
 
-# image: https://www.yitingliu.com/assets/profile_square.jpg
-# width: 300
-# height: 200
-
-# image:
-#   path: https://www.yitingliu.com/assets/profile_square.jpg
-#   height: 100
-#   width: 100
+image: https://www.yitingliu.com/assets/profile_square.jpg
+width: 300
+height: 200
 
 github_username:  Yitingliu97
 instagram_username: yitingintech
@@ -34,3 +32,7 @@ kramdown:
 
 plugins:
   - jekyll-archives
+
+  # Jekyll SEO Tag settings
+lang: en_US
+locale: en_US
