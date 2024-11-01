@@ -5,7 +5,8 @@
       margin: 0 auto;
       padding: 2rem;
       position: relative;
-      background-color: #f5f5f5;
+      background-color: $color-primary;
+      border-radius: 10px;
     }
   
     &-grid {
@@ -51,7 +52,7 @@
     &-text {
       font-size: 1.1rem;
       line-height: 1.6;
-      color: #666;
+      color: $color-quaternary;
       margin-top: 8rem; // Add space below the heading
       
       p {
@@ -93,10 +94,11 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 1rem; // Space between image and icons
-    padding-left: 2rem; // Align with the left edge of the image
+    // padding-left: 2rem; // Align with the left edge of the image
   
     a {
       text-decoration: none;
+      background-color: transparent;
       color: #000;
     }
   
@@ -111,7 +113,7 @@
       transition: stroke 0.3s ease;
   
       &:hover {
-        stroke: #666;
+        stroke: white;
       }
     }
   }
