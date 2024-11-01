@@ -86,13 +86,51 @@ ul.contact-list li::before {
 .header-heading{
   text-align: center;
 }
+/* Preserve existing grid layout but ensure proper scaling */
 .post-grid-parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem;
 }
+
+/* Enhanced preview panel styling */
+.preview-panel {
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  background-color: white;
+  
+  &:hover {
+      border-color: $grey-color-light;
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Ensure images maintain aspect ratio */
+  img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+  }
+}
+
+/* Specific image styling */
+img[src*="preview"],
+img[src*="demo"],
+img[src*="looks-like-demo"] {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
 
 /* Container styles */
 .contact-container {
@@ -190,7 +228,10 @@ img[src*="demo"] {
 }
 /* Optional: Add a max-width to prevent extremely wide images */
 @media (min-width: 1200px) {
-    .preview-container {
+  .post-grid-parent {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+  .preview-container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -199,7 +240,10 @@ img[src*="demo"] {
 
 /* Optional: Adjust height for mobile */
 @media (max-width: 768px) {
-    .preview-container {
+  .post-grid-parent {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.preview-container {
         height: 250px;
     }
 }
@@ -207,7 +251,10 @@ img[src*="demo"] {
  * override column size for mobile
  */
 @media (max-width: 40.0rem) {
-    .navbar {
+  .post-grid-parent {
+    grid-template-columns: 1fr;
+}
+  .navbar {
         padding: 0.5rem 0;
     }
     

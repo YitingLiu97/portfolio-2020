@@ -6,7 +6,6 @@ permalink: /contact
 
 <section class="container">
   <h1>Contact Me</h1>
-  
   <form 
     id="contact-form">
     <fieldset>

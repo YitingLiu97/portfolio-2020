@@ -11,7 +11,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "milligram/milligram",
-        "base","about","layout","contact";
+        "base","about","layout","contact","footer";
         
 .items {
   display: flex;
@@ -56,9 +56,7 @@ body {
 }
 
 @media (max-width: 40.0rem) {
-
-body{
-  font-size: $font-size-mobile;
-}
-  
+  body{
+    font-size: $font-size-mobile;
+  }
 }
