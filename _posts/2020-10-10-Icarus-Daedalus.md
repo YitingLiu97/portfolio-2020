@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Icarus and Daedalus"
+title: "Interactive Web - Icarus"
 date:   2020-10-10
-description: Same Story. Two Presentations
-permalink: icarus
+permalink: /icarus-same-story-two-presentations/
+description: "Icarus is an experimental project presenting the same story through two contrasting perspectives, exploring narrative depth and audience perception."
+
 tags: 
 - Web 
 preview: /assets/icarus/demo.png
@@ -14,7 +15,7 @@ author: Yiting Liu
 Tags: mobile, storytelling
 collaborator: RuixuanLi -->
 
-![assets/icarus/demo.png](assets/icarus/demo.png)
+![Icarus storytelling experiment exploring a story from two different perspectives, enhancing narrative depth](assets/icarus/demo.png)
 
 **Same story. Two Presentations.**
 

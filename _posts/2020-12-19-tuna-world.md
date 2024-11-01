@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Tuna World"
+title:  "Short Film - Tuna World"
 date:   2020-12-19
-permalink: tuna-world
-description: A short film of loneliness in an unreal world. 
+permalink: tuna-world-short-film-unreal
+description: "Tuna World is a short film exploring themes of loneliness and surrealism, set in a world crafted with Unreal Engine."
 category: immersive
 tags:
 - Unreal
@@ -11,7 +11,7 @@ preview: /assets/tuna-world/demo1.png
 author: Yiting Liu 
 ---
 
-![assets/tuna-world/demo1.png](assets/tuna-world/demo1.png)
+![Scene from Tuna World short film, depicting themes of loneliness in a surreal Unreal Engine world](assets/tuna-world/demo1.png)
 
 **A short film of loneliness in an unreal world.**
 

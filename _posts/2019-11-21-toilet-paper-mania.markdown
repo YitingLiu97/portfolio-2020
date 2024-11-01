@@ -1,17 +1,18 @@
 ---
 layout: post
-title:  "Toilet Paper Mania"
+title: "Virtual Experience - Toilet Paper Mania"
 date:   2019-11-21
-description: An absurd virtual experience of the toilet paper mania during COVID-19.
-permalink: toilet-paper-mania
+permalink: toilet-paper-mania-virtual-experience
+description: "Toilet Paper Mania is a humorous virtual experience that explores the absurdity of the toilet paper hoarding craze during COVID-19."
+
 tags: 
 - Unity 
 
 preview: /assets/toilet-paper-mania/demo3.png 
 author: Yiting Liu 
 ---
-<!-- ![assets/toilet-paper-mania/demo3.png](assets/toilet-paper-mania/demo3.png) -->
-![demo pic](assets/toilet-paper-mania/demo3.png)
+
+![Toilet Paper Mania virtual experience, illustrating the absurdity of toilet paper hoarding during COVID-19](assets/toilet-paper-mania/demo3.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|

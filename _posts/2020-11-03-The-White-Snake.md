@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "The White Snake"
+title:  "Interactive Web - The White Snake"
 date:   2020-11-03
-permalink: white-snake
-description: A non-linear immersive storytelling of a Chinese myth. 
+permalink: white-snake-immersive-storytelling-chinese-myth
+description: "White Snake reimagines the classic Chinese myth through non-linear, immersive storytelling, inviting users to explore layers of cultural history."
 tags: 
 - Web
 preview: /assets/white-snake/demo.png
@@ -11,8 +11,7 @@ author: Yiting Liu
 
 ---
 
-
-![assets/white-snake/demo.png](assets/white-snake/demo.png)
+![White Snake immersive storytelling experience based on Chinese mythology, using non-linear narrative techniques](assets/white-snake/demo.png)
 
 **A non-linear immersive web experience adapted from a Chinese myth.**
 

@@ -1,18 +1,16 @@
 ---
 layout: post
-title:  "AR Filters"
+title: "AR Filters Collection: Exploring Identity and Self-Expression"
 date:   2021-01-01 
-permalink: ar-filters
-description: A collection of AR filters exploring identity issues.
+permalink: ar-filters-identity-exploration
+description: A creative collection of augmented reality filters that delve into identity issues, encouraging self-expression through interactive visuals.
 category: immersive
 tags: 
 - XR
 preview: /assets/AR-filters/demo.png
 author: Yiting Liu 
-
 ---
-<!-- //2020-07-05 -->
-![assets/AR-filters/demo.png](assets/AR-filters/demo.png)
+![Collection of AR filters exploring themes of identity and self-expression through augmented reality](assets/AR-filters/demo.png)
 
 **A collection of AR filters exploring identity issues.**
 

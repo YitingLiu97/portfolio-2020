@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Mood for Food"
+title: "Full-Stack App - Mood for Food"
 date:   2020-02-05
-description: A fullstack website offers food options based on user emotions.
-permalink: mood-for-food
+permalink: mood-for-food-emotion-based-food-app
+description: "Mood for Food is an interactive web app that recommends food options based on user emotions, blending tech and gastronomy."
+
 tags: 
 - Web
 preview: /assets/mood-for-food/demo.png
@@ -11,7 +12,7 @@ author: Yiting Liu
 
 ---
 
-![assets/mood-for-food/demo.png](assets/mood-for-food/demo.png)
+![Mood for Food web app providing food recommendations based on user emotions](assets/mood-for-food/demo.png)
 
 **A fullstack website offers food options based on user emotions.**
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  " AMNH Spatial Audio"
+title: "Immersive Spatial Audio App for AMNH"
 date:   2021-04-10
-permalink: amnh
-description: A spatial audio app for museums. 
+permalink: amnh-spatial-audio-museum-app
+description: "Explore Immersive Sound, an iOS spatial audio app developed for the American Museum of Natural History. This app uses Nearby Interaction and spatial audio to enhance museum experiences."
 tags: 
 - iOS
 - Unity

@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Forest of Sounds"
+title: "Interactive Installation - Forest of Sounds"
 date:   2020-01-05
-description: An interactive music installation that reinterprets the daily mundane sounds.
-permalink: forest-of-sounds
+permalink: forest-of-sounds-interactive-music-installation
+description: "Forest of Sounds is an interactive music installation that transforms mundane daily sounds into an immersive audio experience."
+
 tags: 
 - Installation 
 preview: /assets/forest-of-sounds/demo.png
@@ -11,7 +12,7 @@ author: Yiting Liu
 
 ---
 
-![assets/forest-of-sounds/demo.png](assets/forest-of-sounds/demo.png)
+![Forest of Sounds installation transforming daily sounds into an interactive audio experience](assets/forest-of-sounds/demo.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|

@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Dance of the rain"
+title: "Interactive Installation - Rain Dance"
 date:   2020-03-05
-permalink: rain-dance
-description: A light visualization of historical rain data of cities around the globe.
+permalink: rain-dance-historical-rain-data-visualization
+description: "Rain Dance is a light-based visualization of historical rainfall data, representing rainfall patterns from cities around the world."
+
 tags:
 - Installation 
 preview: /assets/dance-of-the-rain/demo.png
@@ -11,7 +12,7 @@ author: Yiting Liu
 
 ---
 
-![assets/dance-of-the-rain/demo.png](assets/dance-of-the-rain/demo.png)
+![Rain Dance light art installation visualizing historical rain data of cities globally](assets/dance-of-the-rain/demo.png)
 
 **A light visualization of historical rain data of cities around the globe.**
 

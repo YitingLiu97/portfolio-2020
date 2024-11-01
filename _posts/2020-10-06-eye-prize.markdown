@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Your Eye for A Prize"
+title: "Interactive Web - Eye Prize"
 date:   2020-10-06
-description: A critique on attention economy.
-permalink: eye-prize
+permalink: /eye-prize-attention-economy-critique/
+description: "Eye Prize critically examines the attention economy, questioning how digital culture commodifies focus and affects human connection."
+
 tags: 
 - Web
 preview: /assets/eye-prize/demo.png
@@ -11,7 +12,7 @@ author: Yiting Liu
 
 ---
 
-![Eyeprize Demo](assets/eye-prize/demo.png)
+![Eye Prize digital art piece critiquing the attention economy and its impact on human connection in digital culture](assets/eye-prize/demo.png)
 
 **A critique on attention economy through a mobile web app.**
 

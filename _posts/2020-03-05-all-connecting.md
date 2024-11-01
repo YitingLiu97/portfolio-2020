@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "All Connecting"
+title: "Interactive Video Sculpture - All Connect"
 date:   2020-03-05
-description: An interactive video sculpture that exposes the systems of the Internet in real-time.
-permalink: all-connect
+permalink: all-connect-internet-systems-sculpture
+description: "All Connect is an interactive video sculpture that exposes the underlying systems of the Internet in real-time, providing a unique digital experience."
+
 category: sculpture
 tags: 
 - Installation 
@@ -14,7 +15,7 @@ author: Yiting Liu
 
 <!-- collaborator: Wenjing Liu; Stefan Skripak. -->
 
-![assets/all-connecting/demo.png](assets/all-connecting/demo.png)
+![All Connect interactive video sculpture displaying real-time systems of the Internet](assets/all-connecting/demo.png)
 
 **An interactive video sculpture that exposes the systems of the Internet in real-time.**
 

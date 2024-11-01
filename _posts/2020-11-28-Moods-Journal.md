@@ -1,18 +1,17 @@
 ---
 layout: post
-title:  "Moods Journal"
+title: "Fullstack Web - Emotional Input Collage App"
 date:   2020-11-28
-permalink: moods-journal
-description: Emotional input collage mobile app. 
+permalink: moods-journal-emotional-collage-app
+description: "Moods Journal is a mobile app for self-reflection, allowing users to collage their emotions and track their emotional journey over time."
+
 tags: 
 - Web 
 preview: /assets/moods-journal/demo.png
 author: Yiting Liu 
 
 ---
-
-![assets/moods-journal/demo.png](assets/moods-journal/demo.png)
-
+![Moods Journal mobile app for emotional input and self-reflection through digital collaging](assets/moods-journal/demo.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|
