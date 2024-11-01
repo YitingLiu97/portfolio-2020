@@ -29,4 +29,16 @@ layout: default
     <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"> {{page.next.title}} &raquo;</a>
     {% endif %}
   </div>
+
+  {% if page.preview %}
+  <div class="preview-container">
+      <img 
+          class="preview-image"
+          id="post-preview-image" 
+          src="{{ page.preview | relative_url }}" 
+          alt="{{ page.title }}"
+          loading="lazy"
+      >
+  </div>
+  {% endif %}  
 </div>

@@ -163,7 +163,46 @@ ul.contact-list li::before {
       }
     }
   }
+ /* Preview image specific styling */
+img[src*="looks-like-demo"] {
+  width: 100%;
+  height: 300px;  /* Adjust this height as needed */
+  object-fit: cover;
+  object-position: center;
+}
 
+/* If you have other preview images that don't contain "looks-like-demo" in their name */
+img[src*="preview"],
+img[src*="demo"] {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* For mobile screens */
+@media (max-width: 40.0rem) {
+  img[src*="looks-like-demo"],
+  img[src*="preview"],
+  img[src*="demo"] {
+      height: 250px;
+  }
+}
+/* Optional: Add a max-width to prevent extremely wide images */
+@media (min-width: 1200px) {
+    .preview-container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Optional: Adjust height for mobile */
+@media (max-width: 768px) {
+    .preview-container {
+        height: 250px;
+    }
+}
 /**
  * override column size for mobile
  */
