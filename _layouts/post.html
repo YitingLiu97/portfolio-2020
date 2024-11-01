@@ -30,15 +30,4 @@ layout: default
     {% endif %}
   </div>
 
-  {% if page.preview %}
-  <div class="preview-container">
-      <img 
-          class="preview-image"
-          id="post-preview-image" 
-          src="{{ page.preview | relative_url }}" 
-          alt="{{ page.title }}"
-          loading="lazy"
-      >
-  </div>
-  {% endif %}  
 </div>

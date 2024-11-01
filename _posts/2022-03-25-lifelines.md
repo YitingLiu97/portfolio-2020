@@ -13,10 +13,6 @@ preview: /assets/lifelines/demo.gif
 author: Yiting Liu 
 ---
 
-![MIT Reality Hackathon 2022 winner Lifelines AR therapy tool on Hololens displaying 3D timeline visualization](assets/lifelines/demo.gif)
-
-<!-- **Lifelines is a collaborative therapy tool to build, visualize, and analyze the story of your life on a 3d timeline with impact moments to bring better understanding and healing. With a literal turn of the wrist, easily access common therapy tools such as an Emotions Wheel, Empty Chair, and EMDR exercises will be available for healing.**  -->
-
 | Title                     | Details |
 |---------------------------|-----------------------------------|
 | Roles                     | Lead Unity Developer & 3D Designer |

@@ -10,9 +10,6 @@ tags:
 preview: /assets/dear-nobody/demo.png
 author: Yiting Liu 
 ---
-
-![VR experience for mental health reflection in Dear Nobody app](assets/dear-nobody/demo.png)
-
 | Title                     | Details |
 |---------------------------|-----------------------------------|
 | Roles                     | Lead Unity Developer & 3D Designer |

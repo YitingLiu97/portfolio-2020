@@ -4,15 +4,11 @@ title: "Interactive Audio App - Audio Diary"
 date:   2020-03-01
 permalink: audio-diary-express-emotions
 description: "Audio Diary is an app that encourages users to talk about their feelings, providing a space for emotional expression and support through voice."
-
 tags: 
 - Web 
 preview: /assets/audio-diary/demo.png
 author: Yiting Liu 
-
 ---
-![Audio Diary app interface designed for interactive emotional expression and support](assets/audio-diary/demo.png)
-
 **A website that welcomes people to talk about their feelings.**
 
 | Title                     | Details |

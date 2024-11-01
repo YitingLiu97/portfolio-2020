@@ -10,11 +10,6 @@ tags:
 preview: /assets/spatial-sound/demo.JPG
 author: Yiting Liu 
 ---
-
-![Spatial Sound Immersive Demo for American Museum of Natural History](assets/spatial-sound/demo.JPG)
-<!-- **Immersive Sound is an iOS app that plays spatial sound hands-free. It adapts Nearby Interaction and spatial audio in Swift.** -->
-
-
 | Title                     | Details |
 |---------------------------|-----------------------------------|
 | Roles                     | Lead iOS Developer |
