@@ -19,3 +19,17 @@ footer:
   start_project: "Start a Project"
   documentation: "Documentation Blog"
   all_rights_reserved: "All rights reserved."
+site:
+  title: "Yiting Liu - Award-winning Creative Technologist in XR and AI"
+  description: "With a background in XR development and creative tech, I create interactive experiences that blend art and technology. My work ranges from VR mental health tools to AI-driven music video generation, always focusing on meaningful and memorable experiences."
+header:
+  video_alt: "Yiting Liu's Portfolio Reel"
+preview:
+  tagline: "XR Developer and Creative Technologist: Bringing Experiences to Life with AR, VR, and AI"
+  intro: "With a background in XR development and creative tech, I create interactive experiences that blend art and technology. My work ranges from VR mental health tools to AI-driven music video generation, always focusing on meaningful and memorable experiences."
+  archive_welcome: "Welcome to the collections of my past projects that emphasize my capabilties in AR, VR, & Immersive Installations!"
+nav:
+  work: "work"
+  about: "about"
+  contact: "contact"
+  archive: "archive"

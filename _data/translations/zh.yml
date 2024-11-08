@@ -19,3 +19,17 @@ footer:
   start_project: "开始项目"
   documentation: "技术博客"
   all_rights_reserved: "版权所有。"
+site:
+  title: "刘伊婷 - 获奖XR与AI创意技术专家"
+  description: "作为一名具有XR开发和创意技术背景的专业人士，我致力于创造融合艺术与技术的互动体验。我的作品涵盖从VR心理健康工具到AI驱动的音乐视频制作，始终专注于创造有意义和难忘的体验。"
+header:
+  video_alt: "刘伊婷作品集视频"
+preview:
+  tagline: "XR开发者和创意技术专家：用AR、VR和AI带来生动体验"
+  intro: "凭借XR开发和创意技术的背景，我创造融合艺术与技术的互动体验。我的作品范围从VR心理健康工具到AI驱动的音乐视频制作，始终专注于创造有意义和难忘的体验。"
+  archive_welcome: "欢迎浏览我的项目作品集，展示我在AR、VR和沉浸式装置方面的专业能力！"
+nav:
+  work: "作品"
+  about: "关于"
+  contact: "联系"
+  archive: "档案"

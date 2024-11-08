@@ -1,5 +1,8 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
+
 <header class="site-header">
-    {% if page.url == "/" %}
+    {% if page.url == "/" or page.url == "/zh/" %}
       <video id="headerContent" 
              autoplay 
              playsinline 
@@ -7,8 +10,9 @@
              loop 
              controls 
              preload="auto"
-             poster="/assets/AR-filters/demo.png">
-        <source src="{{ site.baseurl }}/assets/Small-Reel.mp4" type="video/mp4">
+             poster="/assets/AR-filters/demo.png" 
+             alt="{{ t.header.video_alt }}"
+            source src="{{ site.baseurl }}/assets/Small-Reel.mp4" type="video/mp4">
       </video>
     {% endif %}
   </a>
