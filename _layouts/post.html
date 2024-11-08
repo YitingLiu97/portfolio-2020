@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
-<div class="post">
-  <div class="post-nav">
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
 
-    {% if page.previous.url %}
-    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"> &laquo;&nbsp;{{page.previous.title}}</a>
+<div class="post">
+  {% include language-switcher.html %}
+  
+  <div class="post-nav">
+    {% if page.previous %}
+      {% if page.previous.lang == lang %}
+        <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}">
+          &laquo;&nbsp;{{ page.previous.title }}
+        </a>
+      {% endif %}
     {% endif %}
-    {% if page.next.url %}
-    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"> {{page.next.title}} &raquo;</a>
+    
+    {% if page.next %}
+      {% if page.next.lang == lang %}
+        <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}">
+          {{ page.next.title }} &raquo;
+        </a>
+      {% endif %}
     {% endif %}
   </div>
 
@@ -20,14 +33,51 @@ layout: default
     {{ content }}
   </article>
 
-  <div class="post-nav">
-
-    {% if page.previous.url %}
-    <a class="nav-item" href="{{ page.previous.url | prepend: site.baseurl }}"> &laquo;&nbsp;{{page.previous.title}}</a>
+  {% assign posts_in_lang = site.posts | where: "lang", lang %}
+  {% for post in posts_in_lang %}
+    {% if post.url == page.url %}
+      {% assign post_index = forloop.index0 %}
+      {% capture next_index %}{{ post_index | plus: 1 }}{% endcapture %}
+      {% capture prev_index %}{{ post_index | minus: 1 }}{% endcapture %}
+      {% assign next_post = posts_in_lang[next_index] %}
+      {% assign prev_post = posts_in_lang[prev_index] %}
+      {% break %}
     {% endif %}
-    {% if page.next.url %}
-    <a class="nav-item" href="{{ page.next.url | prepend: site.baseurl }}"> {{page.next.title}} &raquo;</a>
+  {% endfor %}
+
+  <div class="post-nav">
+    {% if prev_post %}
+      <a class="nav-item" href="{{ prev_post.url | prepend: site.baseurl }}">
+        &laquo;&nbsp;{{ prev_post.title }}
+      </a>
+    {% endif %}
+    
+    {% if next_post %}
+      <a class="nav-item" href="{{ next_post.url | prepend: site.baseurl }}">
+        {{ next_post.title }} &raquo;
+      </a>
     {% endif %}
   </div>
-
-</div>
+  {% assign current_permalink = page.permalink | remove_first: '/zh/' %}
+  {% assign translation_exists = false %}
+  {% if page.lang == 'en' %}
+  {% for p in site.posts %}
+    {% if p.lang == 'zh' and p.permalink contains current_permalink %}
+      <div class="translation-link">
+        <a href="/zh/{{ current_permalink }}">查看中文版</a>
+      </div>
+      {% assign translation_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {% for p in site.posts %}
+    {% if p.lang == 'en' and p.permalink contains current_permalink %}
+      <div class="translation-link">
+        <a href="/{{ current_permalink }}">View in English</a>
+      </div>
+      {% assign translation_exists = true %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% endif %}

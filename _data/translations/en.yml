@@ -1,0 +1,10 @@
+nav:
+  home: "Home"
+  about: "About"
+  projects: "Projects"
+about:
+  title: "About Me"
+  description: "I am a developer..."
+post:
+  view_chinese: "查看中文版"
+  date_format: "%B %d, %Y"

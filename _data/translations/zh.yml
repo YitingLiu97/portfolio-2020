@@ -1,0 +1,9 @@
+nav:
+  home: "首页"
+  about: "关于"
+  projects: "项目"
+about:
+  title: "关于我"
+  description: "我是一名开发者..."
+post:
+  date_format: "%Y年%m月%d日"

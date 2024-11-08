@@ -24,7 +24,7 @@ soundcloud_username: yitingliu
 
 # Build settings
 markdown: kramdown
-permalink: none
+permalink: none 
 
 kramdown:
   input: GFM    
@@ -36,3 +36,7 @@ plugins:
   # Jekyll SEO Tag settings
 lang: en_US
 locale: en_US
+
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization: ["assets", "images"]

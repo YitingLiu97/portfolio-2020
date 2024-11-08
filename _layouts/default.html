@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-
+  {% assign lang = page.lang | default: site.default_lang %}
+  {% assign t = site.data.translations[lang] %}
 {% include head.html %}
 
 <body>
+  {% include language-switcher.html %}
 
   <main class="wrapper">
 

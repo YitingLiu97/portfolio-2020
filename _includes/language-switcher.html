@@ -1,0 +1,18 @@
+<div class="language-switcher">
+    {% for lang in site.languages %}
+      {% if lang == 'en' %}
+        {% assign target_url = page.permalink | remove: '/zh/' %}
+        <a href="/{{ target_url }}" {% if page.lang == 'en' %}class="active"{% endif %}>
+          EN
+        </a>
+      {% else %}
+        {% assign zh_url = page.permalink %}
+        {% unless zh_url contains '/zh/' %}
+          {% assign zh_url = '/zh/' | append: zh_url %}
+        {% endunless %}
+        <a href="{{ zh_url }}" {% if page.lang == 'zh' %}class="active"{% endif %}>
+          中文
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>

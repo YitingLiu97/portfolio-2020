@@ -333,3 +333,31 @@ img[src*="demo"] {
         border: 1px solid $grey-color-light;
     }
 }
+
+
+.language-switcher {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 1000;
+  
+  a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    
+    &.active {
+      background-color: #000;
+      color: #fff;
+    }
+    
+    &:hover {
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+}
