@@ -9,10 +9,9 @@ tags:
 - Installation 
 preview: /assets/dance-of-the-rain/demo.png
 author: Yiting Liu 
+lang: en
 
 ---
-
-![Rain Dance light art installation visualizing historical rain data of cities globally](assets/dance-of-the-rain/demo.png)
 
 **A light visualization of historical rain data of cities around the globe.**
 

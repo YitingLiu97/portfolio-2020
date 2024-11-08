@@ -7,12 +7,10 @@ description: "Tuna World is a short film exploring themes of loneliness and surr
 category: immersive
 tags:
 - Unreal
+lang: en
 preview: /assets/tuna-world/demo1.png
 author: Yiting Liu 
 ---
-
-![Scene from Tuna World short film, depicting themes of loneliness in a surreal Unreal Engine world](assets/tuna-world/demo1.png)
-
 **A short film of loneliness in an unreal world.**
 
 

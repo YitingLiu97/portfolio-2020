@@ -4,14 +4,12 @@ title:  "Interactive Web - Sun and Us"
 date:   2020-12-17
 permalink: sun-and-us-interactive-symphony-sun
 description: "Sun and Us is an interactive art piece where participants perform a symphony with the sun, blending music and natural rhythms in real-time."
-
+lang: en
 tags: 
 - Web
 preview: /assets/sun-and-us/demo.png
 author: Yiting Liu 
 ---
-
-![Sun and Us interactive art installation allowing participants to perform a symphony with the sun](assets/sun-and-us/demo.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|

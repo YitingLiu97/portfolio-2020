@@ -9,9 +9,9 @@ tags:
 - XR
 preview: /assets/AR-filters/demo.png
 author: Yiting Liu 
----
-![Collection of AR filters exploring themes of identity and self-expression through augmented reality](assets/AR-filters/demo.png)
+lang: en
 
+---
 **A collection of AR filters exploring identity issues.**
 
 ## Highlights

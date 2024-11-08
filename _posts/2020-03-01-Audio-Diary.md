@@ -8,6 +8,8 @@ tags:
 - Web 
 preview: /assets/audio-diary/demo.png
 author: Yiting Liu 
+lang: en
+
 ---
 **A website that welcomes people to talk about their feelings.**
 

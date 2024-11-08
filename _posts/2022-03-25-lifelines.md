@@ -4,11 +4,10 @@ title: "Lifelines: AR Mental Health App for Emotional Self-Discovery"
 date:   2022-03-25
 permalink: mit-reality-hackathon-ar-therapy-tool-lifelines
 description: LifelinesAR is an award-winning collaborative AR therapy tool designed to help users visualize and analyze their life stories on a 3D timeline. Winner of MIT Reality Hackathon 2022.
-
 tags: 
 - XR
 - Unity
-
+lang: en
 preview: /assets/lifelines/demo.gif
 author: Yiting Liu 
 ---

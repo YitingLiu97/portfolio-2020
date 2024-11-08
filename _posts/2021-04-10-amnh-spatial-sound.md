@@ -7,6 +7,7 @@ description: "Explore Immersive Sound, an iOS spatial audio app developed for th
 tags: 
 - iOS
 - Unity
+lang: en
 preview: /assets/spatial-sound/demo.JPG
 author: Yiting Liu 
 ---

@@ -4,14 +4,13 @@ title: "Interactive Game - Authentic or Not"
 date:  2019-12-10
 permalink: authentic-or-not-visual-recipe-game
 description: "Authentic or Not is an interactive game designed to help users learn recipes visually, blending education with fun and creativity."
-
 tags: 
 - Installation 
 preview: /assets/authentic-or-not/authenticornot-demo.jpg
 author: Yiting Liu 
----
-![Authentic or Not game interface for visually learning and exploring recipes](assets/authentic-or-not/authenticornot-demo.jpg)
+lang: en
 
+---
 | Title                     | Details |
 |---------------------------|-----------------------------------|
 | Role                     | Developer, Fabricator & Game Designer |

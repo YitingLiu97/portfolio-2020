@@ -9,13 +9,9 @@ tags:
 - Web 
 preview: /assets/icarus/demo.png
 author: Yiting Liu 
+lang: en
 
 ---
-<!-- Created: Dec 14, 2020 3:07 PM
-Tags: mobile, storytelling
-collaborator: RuixuanLi -->
-
-![Icarus storytelling experiment exploring a story from two different perspectives, enhancing narrative depth](assets/icarus/demo.png)
 
 **Same story. Two Presentations.**
 

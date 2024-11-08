@@ -4,16 +4,13 @@ title: "Interactive Installation - Forest of Sounds"
 date:   2020-01-05
 permalink: forest-of-sounds-interactive-music-installation
 description: "Forest of Sounds is an interactive music installation that transforms mundane daily sounds into an immersive audio experience."
-
 tags: 
 - Installation 
 preview: /assets/forest-of-sounds/demo.png
 author: Yiting Liu 
+lang: en
 
 ---
-
-![Forest of Sounds installation transforming daily sounds into an interactive audio experience](assets/forest-of-sounds/demo.png)
-
 | Title                     | Details |
 |---------------------------|-----------------------------------|
 | Role                     | Web Developer & Designer |

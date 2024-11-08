@@ -24,8 +24,7 @@ soundcloud_username: yitingliu
 
 # Build settings
 markdown: kramdown
-permalink: none 
-
+permalink: /:title/
 kramdown:
   input: GFM    
   # auto_ids: true

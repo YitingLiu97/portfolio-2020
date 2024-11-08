@@ -9,10 +9,9 @@ tags:
 - Web
 preview: /assets/eye-prize/demo.png
 author: Yiting Liu 
+lang: en
 
 ---
-
-![Eye Prize digital art piece critiquing the attention economy and its impact on human connection in digital culture](assets/eye-prize/demo.png)
 
 **A critique on attention economy through a mobile web app.**
 

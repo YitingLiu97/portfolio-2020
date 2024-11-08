@@ -4,15 +4,13 @@ title: "Interactive Installation - Double Date"
 date:   2020-01-22
 permalink: /double-date-device-and-human-attention/
 description: "Double Date is an interactive video installation that explores the attention dynamics between devices and human interactions."
-
 tags: 
 - Installation 
 preview: /assets/double-date/demo.png 
 author: Yiting Liu 
+lang: en
 
 ---
-
-![Double Date interactive installation exploring attention between devices and human interactions](assets/double-date/demo.png)
 
 | Title                     | Details |
 |---------------------------|-----------------------------------|

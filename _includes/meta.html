@@ -1,12 +1,6 @@
-<link rel="shortcut icon" href="{{ 'assets/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
-<link rel="icon" href="{{ 'assets/favicon.ico' | prepend: site.baseurl }}" type="image/x-icon">
-<meta name="referrer" content="no-referrer">
-
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
 {% if page.id == "index" %}
-   
-<meta property="og:url" content="{{site.url}}" />
-<meta property="og:image" content="{{site.image}}" />
-<meta property="og:height" content="{{site.height}}" />
-<meta property="og:width" content="{{site.width}}" />
-<meta property="og:type" content="website" />
+  <meta name="description" content="{{ t.meta.description }}">
+  <meta name="keywords" content="{{ t.meta.keywords }}">
 {% endif %}
