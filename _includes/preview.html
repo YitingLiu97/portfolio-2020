@@ -1,11 +1,16 @@
-{% if page.title != "Archive" and page.title != "About" %}
-{% elsif page.title == "Archive" %}
-<p>Welcome to the collections of my past projects that emphasize my capabilties in AR,
-    VR, & Immersive Installations! </p>
-{% endif %}
-
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign language_posts = site.posts | where: "lang", lang %}
+<div class="debug-info">
+    Current language: {{ lang }}<br>
+    Total posts found for language {{ lang }}: {{ language_posts.size }}
+    <ul>
+        {% for post in language_posts %}
+            <li>{{ post.title }} - {{ post.lang }} - {{ post.url }}</li>
+        {% endfor %}
+    </ul>
+</div>
 <div class="items">
-    {% for post in site.posts limit:5 %}
+    {% for post in language_posts limit:5 %}
     <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
         <div class="preview-panel">
             <a href="{{ post.url | prepend: site.baseurl }}">

@@ -2,20 +2,20 @@
 <html>
   {% assign lang = page.lang | default: site.default_lang %}
   {% assign t = site.data.translations[lang] %}
-{% include head.html %}
-
-<body>
+  
+  {% include head.html %}
   {% include language-switcher.html %}
+<body>
 
   <main class="wrapper">
 
-    {% include header.html %}  
+    {% include header.html %}
     <div class="container">
 
       {% comment %}
       =======================
       The purpose of this snippet is to list all the tags you have in your site.
-      below is not working. 
+      below is not working.
       =================== ====
       {% endcomment %}
 
