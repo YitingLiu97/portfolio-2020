@@ -1,27 +1,39 @@
 ---
 layout: post
 ---
-<p>Welcome to the collections of my past projects that emphasize my capabilties in XR, Web & Immersive Installations! </p>
+{% if page.url contains '/zh/' %}
+  {% assign lang = 'zh' %}
+{% else %}
+  {% assign lang = 'en' %}
+{% endif %}
+{% assign t = site.data.translations[lang] %}
 
-<button class="filter-button" data-filter="all">Show All</button>
+{% if lang == 'zh' %}
+  <p>欢迎浏览我的项目作品集，展示我在XR、Web和沉浸式装置方面的专业能力！</p>
+  <div>显示全部</div>
+{% else %}
+  <p>Welcome to the collections of my past projects that emphasize my capabilities in XR, Web & Immersive Installations!</p>
+  <div>Show All</div>
+{% endif %}
 
 {% for tag in site.tags %}
-<button class="filter-button" data-filter="{{ tag[0] }}">{{ tag[0] }}</button>
+  {{ tag[0] }}
 {% endfor %}
 
-
 <div class="items">
-    {% for post in site.posts %}
-    <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
+  {% for post in site.posts %}
+    {% if post.lang == lang %}
+      <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
         <div class="preview-panel">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <img class="post-img" src="{{ post.preview }}" alt="Preview">
-                <div class="post-title">
-                    <h3>{{ post.title }}</h3>
-                </div>
-            </a>
-            <div class="post-description">{{ post.description }}</div>
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <img class="post-img" src="{{ post.preview }}" alt="Preview">
+            <div class="post-title">
+              <h3>{{ post.title }}</h3>
+            </div>
+          </a>
+          <div class="post-description">{{ post.description }}</div>
         </div>
-    </div>
-    {% endfor %}
+      </div>
+    {% endif %}
+  {% endfor %}
 </div>

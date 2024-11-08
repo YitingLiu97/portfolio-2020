@@ -1,26 +1,35 @@
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign language_posts = site.posts | where: "lang", lang %}
-<div class="debug-info">
-    Current language: {{ lang }}<br>
-    Total posts found for language {{ lang }}: {{ language_posts.size }}
-    <ul>
-        {% for post in language_posts %}
-            <li>{{ post.title }} - {{ post.lang }} - {{ post.url }}</li>
-        {% endfor %}
-    </ul>
-</div>
 <div class="items">
+    {% assign language_posts = '' | split: '' %}
+    
+    {% if page.url contains '/zh/' %}
+        {% for post in site.posts %}
+            {% if post.lang == 'zh' %}
+                {% assign language_posts = language_posts | push: post %}
+            {% endif %}
+        {% endfor %}
+    {% else %}
+        {% for post in site.posts %}
+            {% if post.lang == 'en' %}
+                {% assign language_posts = language_posts | push: post %}
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+<!--     
+    <div style="background: #f0f0f0; padding: 10px;">
+        Number of posts to display: {{ language_posts.size }}
+    </div> -->
+    
     {% for post in language_posts limit:5 %}
-    <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
-        <div class="preview-panel">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <img class="post-img" src="{{ post.preview }}" alt="Preview">
-                <div class="post-title">
-                    <h3>{{ post.title }}</h3>
-                </div>
-            </a>
-            <div class="post-description">{{ post.description }}</div>
+        <div class="column item" data-tags="{{ post.tags | join: ' ' }}">
+            <div class="preview-panel">
+                <a href="{{ post.url }}">
+                    <img class="post-img" src="{{ post.preview }}" alt="Preview">
+                    <div class="post-title">
+                        <h3>{{ post.title }}</h3>
+                    </div>
+                </a>
+                <div class="post-description">{{ post.description }}</div>
+            </div>
         </div>
-    </div>
     {% endfor %}
 </div>

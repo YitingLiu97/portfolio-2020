@@ -33,3 +33,13 @@ nav:
   about: "关于"
   contact: "联系"
   archive: "档案"
+date:
+  format: "%Y年%m月%d日"
+tags:
+  articles_with: "标签为"
+  published: "发布于"
+  no_posts: "没有找到相关标签的文章"
+archive:
+  welcome: "欢迎浏览我的项目作品集，展示我在XR、Web和沉浸式装置方面的专业能力！"
+  show_all: "显示全部"
+

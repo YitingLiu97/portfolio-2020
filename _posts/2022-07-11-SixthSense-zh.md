@@ -2,14 +2,14 @@
 layout: post
 title:  "AR - Sixth Sense"
 date:   2022-07-11
-permalink: zh/sixth-sense-ar-schizophrenia-simulation-app
+permalink: /zh/sixth-sense-ar-schizophrenia-simulation-app
 description: Sixth Sense is an augmented reality app that simulates schizophrenia symptoms to foster empathy and understanding, providing a realistic experience of auditory hallucinations.
 tags: 
 - XR
 - Unity
 preview: /assets/sixthsense/demo.png
 author: Yiting Liu 
-lang: en
+lang: zh
 ---
 | Title                     | Details |
 |---------------------------|-----------------------------------|

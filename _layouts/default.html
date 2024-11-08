@@ -1,15 +1,16 @@
+{% assign lang = page.lang | default: site.default_lang %}
+{% assign t = site.data.translations[lang] %}
+
 <!DOCTYPE html>
-<html>
-  {% assign lang = page.lang | default: site.default_lang %}
-  {% assign t = site.data.translations[lang] %}
-  
+<html lang="{{ lang }}">
+ 
   {% include head.html %}
-  {% include language-switcher.html %}
 <body>
+  {% include header.html %}
+  {% include language-switcher.html %}
 
   <main class="wrapper">
 
-    {% include header.html %}
     <div class="container">
 
       {% comment %}

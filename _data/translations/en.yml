@@ -33,3 +33,12 @@ nav:
   about: "about"
   contact: "contact"
   archive: "archive"
+date:
+  format: "%B %d, %Y"
+tags:
+  articles_with: "Articles tagged with"
+  published: "published"
+  no_posts: "No posts found with this tag"
+archive:
+  welcome: "Welcome to the collections of my past projects that emphasize my capabilities in XR, Web & Immersive Installations!"
+  show_all: "Show All"
