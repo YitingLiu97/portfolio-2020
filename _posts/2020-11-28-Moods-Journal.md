@@ -5,7 +5,6 @@ date:   2020-11-28
 permalink: moods-journal-emotional-collage-app
 description: "Moods Journal is a mobile app for self-reflection, allowing users to collage their emotions and track their emotional journey over time."
 lang: en
-
 tags: 
 - Web 
 preview: /assets/moods-journal/demo.png

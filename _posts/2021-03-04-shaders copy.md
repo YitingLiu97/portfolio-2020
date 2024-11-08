@@ -1,0 +1,87 @@
+---
+layout: post
+title: "50 Days of Shader Art in GLSL: Exploring Creative Coding"
+date:   2021-03-04
+permalink: 50-days-glsl-shader-art
+description: "A 50-day creative journey of GLSL shader art, exploring unique patterns, colors, and interactive effects through creative coding."
+lang: en
+tags: 
+- Shader
+preview: /assets/shaders/demo.png
+author: Yiting Liu 
+---
+**A 50 days of making in shaders.**
+
+## Highlights
+
+Here is a collection of 50 days of learning shaders since January 2021. I finished the [Book of Shader](https://thebookofshaders.com/) and followed almost all the tutorials on [The Art of Code](https://www.youtube.com/c/TheArtofCodeIsCool/playlists). You can find more on my Instagram journey [@yitinginart](https://www.instagram.com/yitinginart/) here. You can find my code on [shadertoy](https://www.shadertoy.com/user/YitingLiu). 
+
+**Skills:** GLSL
+
+<div class="grid-parent2">
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520156152" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520156071" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520156333" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520156276" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520156130" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221840" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221825" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221800" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221771" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520221697" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520222622" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520222638" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520222663" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520222680" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+<div class="iframe-container">
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/520223332" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+
+
+
+
+</div>
