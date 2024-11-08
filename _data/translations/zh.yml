@@ -2,8 +2,20 @@ nav:
   home: "首页"
   about: "关于"
   projects: "项目"
+contact: "联系"
 about:
   title: "关于我"
   description: "我是一名开发者..."
 post:
   date_format: "%Y年%m月%d日"
+footer:
+  trusted_by: "合作伙伴"
+  expertise: "专业技能"
+  development: "开发"
+  development_skills: "C#, HTML/CSS/Javascript, p5.js, three.js, Node.js, Express, Heroku, MongoDB, DigitalOcean, GitHub"
+  software: "软件"
+  software_skills: "Unity, Unreal Engine, Max/MSP, Spark AR, Lens Studio, Effect House, Cinema 4D, Blender, Adobe Creative Suite, Ableton Live"
+  lets_connect: "联系我"
+  start_project: "开始项目"
+  documentation: "技术博客"
+  all_rights_reserved: "版权所有。"

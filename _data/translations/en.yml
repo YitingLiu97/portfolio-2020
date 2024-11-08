@@ -6,5 +6,16 @@ about:
   title: "About Me"
   description: "I am a developer..."
 post:
-  view_chinese: "查看中文版"
   date_format: "%B %d, %Y"
+contact: "Contact"
+footer:
+  trusted_by: "Trusted By"
+  expertise: "Expertise"
+  development: "Development"
+  development_skills: "C#, HTML/CSS/Javascript, p5.js, three.js, Node.js, Express, Heroku, MongoDB, DigitalOcean, GitHub"
+  software: "Software"
+  software_skills: "Unity, Unreal Engine, Max/MSP, Spark AR, Lens Studio, Effect House, Cinema 4D, Blender, Adobe Creative Suite, Ableton Live"
+  lets_connect: "Let's Connect"
+  start_project: "Start a Project"
+  documentation: "Documentation Blog"
+  all_rights_reserved: "All rights reserved."
