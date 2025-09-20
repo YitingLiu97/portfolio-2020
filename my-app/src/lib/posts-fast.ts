@@ -1,40 +1,10 @@
-// Simple in-memory posts data - no file system operations during runtime
-export const postsData = [
-  {
-    id: "vibes-ai-music-video-generator-app",
-    title: "Vibes: AI Music Video Generator App",
-    date: "2023-08-01",
-    description: "An AI-powered music video generator that creates stunning visuals synchronized to music using machine learning algorithms.",
-    lang: "en",
-    tags: ["AI", "Music", "Video", "Machine Learning"],
-    preview: "/assets/vibes/demo.png",
-    author: "Yiting Liu",
-    permalink: "/vibes-ai-music-video-generator-app"
-  },
-  {
-    id: "sixth-sense-ar-schizophrenia-simulation-app",
-    title: "SixthSense: AR Schizophrenia Simulation App",
-    date: "2022-07-11",
-    description: "An AR application that simulates the experience of schizophrenia to build empathy and understanding.",
-    lang: "en",
-    tags: ["AR", "Mental Health", "Unity", "Simulation"],
-    preview: "/assets/sixthsense/demo.png",
-    author: "Yiting Liu",
-    permalink: "/sixth-sense-ar-schizophrenia-simulation-app"
-  },
-  {
-    id: "lifelines-mit-reality-hackathon-ar-therapy-tool",
-    title: "Lifelines: MIT Reality Hackathon AR Therapy Tool",
-    date: "2022-03-25",
-    description: "Winner of MIT Reality Hack 2022 - An AR therapy tool for mental health support.",
-    lang: "en",
-    tags: ["AR", "Mental Health", "Hackathon", "Therapy"],
-    preview: "/assets/lifelines/demo.png",
-    author: "Yiting Liu",
-    permalink: "/lifelines-mit-reality-hackathon-ar-therapy-tool"
-  },
-  // Add more posts as needed - this is just a sample for faster loading
-];
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+import { remark } from 'remark';
+import html from 'remark-html';
+
+const postsDirectory = path.join(process.cwd(), '..', '_posts');
 
 export interface PostData {
   id: string;
@@ -49,42 +19,137 @@ export interface PostData {
   contentHtml?: string;
 }
 
+// Cache for processed posts
+let postsCache: PostData[] | null = null;
+
+function getAllPostFiles(): string[] {
+  try {
+    if (!fs.existsSync(postsDirectory)) {
+      console.warn('Posts directory not found:', postsDirectory);
+      return [];
+    }
+    return fs.readdirSync(postsDirectory).filter((name) => name.endsWith('.md'));
+  } catch (error) {
+    console.warn('Error reading posts directory:', error);
+    return [];
+  }
+}
+
+async function processMarkdown(content: string): Promise<string> {
+  const processedContent = await remark().use(html).process(content);
+  return processedContent.toString();
+}
+
+function createPostDataFromFile(fileName: string): PostData {
+  const id = fileName.replace(/\.md$/, '');
+  const fullPath = path.join(postsDirectory, fileName);
+  
+  try {
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const { data, content } = matter(fileContents);
+    
+    // Extract date from filename if not in frontmatter
+    const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
+    const fileDate = dateMatch ? dateMatch[1] : null;
+    
+    return {
+      id,
+      title: data.title || 'Untitled',
+      date: data.date || fileDate || '2020-01-01',
+      description: data.description || '',
+      lang: data.lang || 'en',
+      tags: data.tags || [],
+      preview: data.preview || '/assets/default-preview.png',
+      author: data.author || 'Yiting Liu',
+      permalink: data.permalink || id,
+    };
+  } catch (error) {
+    console.warn(`Error processing post ${fileName}:`, error);
+    return {
+      id,
+      title: 'Error Loading Post',
+      date: '2020-01-01',
+      description: 'Could not load this post',
+      lang: 'en',
+      tags: [],
+      preview: '/assets/default-preview.png',
+      author: 'Yiting Liu',
+      permalink: id,
+    };
+  }
+}
+
 export function getSortedPostsData(): PostData[] {
-  return postsData.sort((a, b) => {
+  if (postsCache) {
+    return postsCache;
+  }
+
+  const fileNames = getAllPostFiles();
+  const allPostsData = fileNames.map(createPostDataFromFile);
+
+  // Sort posts by date
+  const sortedPosts = allPostsData.sort((a, b) => {
     if (a.date < b.date) {
       return 1;
     } else {
       return -1;
     }
   });
+
+  postsCache = sortedPosts;
+  return sortedPosts;
 }
 
 export function getPostsByLanguage(lang: string): PostData[] {
-  return postsData.filter(post => 
+  const posts = getSortedPostsData();
+  return posts.filter((post) => 
     post.lang === lang || (!post.lang && lang === 'en')
   );
 }
 
 export async function getPostData(id: string): Promise<PostData> {
-  const post = postsData.find(p => p.id === id);
+  const posts = getSortedPostsData();
+  const post = posts.find((p) => p.id === id || p.permalink === id);
+  
   if (!post) {
     throw new Error(`Post not found: ${id}`);
   }
-  
-  return {
-    ...post,
-    contentHtml: `<h1>${post.title}</h1><p>${post.description}</p><p>Content loading...</p>`
-  };
+
+  // If content is already loaded, return it
+  if (post.contentHtml) {
+    return post;
+  }
+
+  // Load and process content
+  try {
+    const fullPath = path.join(postsDirectory, `${post.id}.md`);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+    const { content } = matter(fileContents);
+    const contentHtml = await processMarkdown(content);
+    
+    return {
+      ...post,
+      contentHtml,
+    };
+  } catch (error) {
+    console.warn(`Error loading content for post ${id}:`, error);
+    return {
+      ...post,
+      contentHtml: '<p>Content could not be loaded.</p>',
+    };
+  }
 }
 
 export function getPostsByTag(tag: string): PostData[] {
-  return postsData.filter(post => 
+  const posts = getSortedPostsData();
+  return posts.filter((post) => 
     post.tags && post.tags.includes(tag)
   );
 }
 
 export function getAllPostIds() {
-  return postsData.map((post) => ({
+  const posts = getSortedPostsData();
+  return posts.map((post) => ({
     params: {
       id: post.id,
     },

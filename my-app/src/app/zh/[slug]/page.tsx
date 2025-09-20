@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { getPostData, PostData } from '@/lib/posts-fast';
+import { getPostData } from '@/lib/posts-fast';
 import { format } from 'date-fns';
 import { zhCN } from 'date-fns/locale';
 import Header from '@/components/Header';
