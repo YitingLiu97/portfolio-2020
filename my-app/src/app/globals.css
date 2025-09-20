@@ -209,11 +209,28 @@ body {
 .post-content {
   line-height: 1.7;
   color: #333;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.post-content h2, .post-content h3, .post-content h4 {
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 {
   margin: 2rem 0 1rem 0;
   color: #222;
+}
+
+.post-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.post-content h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.post-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .post-content p {
@@ -225,12 +242,54 @@ body {
   padding-left: 2rem;
 }
 
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
 .post-content blockquote {
   border-left: 4px solid #ddd;
   padding-left: 1rem;
   margin: 1rem 0;
   font-style: italic;
   color: #666;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.post-content th, .post-content td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.post-content th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.post-content a {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content strong {
+  font-weight: 600;
 }
 
 /* Video/iframe containers */

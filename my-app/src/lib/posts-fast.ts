@@ -36,7 +36,9 @@ function getAllPostFiles(): string[] {
 }
 
 async function processMarkdown(content: string): Promise<string> {
-  const processedContent = await remark().use(html).process(content);
+  const processedContent = await remark()
+    .use(html, { sanitize: false }) // Allow HTML in markdown (for iframes, divs, etc.)
+    .process(content);
   return processedContent.toString();
 }
 
@@ -108,33 +110,98 @@ export function getPostsByLanguage(lang: string): PostData[] {
 }
 
 export async function getPostData(id: string): Promise<PostData> {
-  const posts = getSortedPostsData();
-  const post = posts.find((p) => p.id === id || p.permalink === id);
-  
-  if (!post) {
-    throw new Error(`Post not found: ${id}`);
-  }
-
-  // If content is already loaded, return it
-  if (post.contentHtml) {
-    return post;
-  }
-
-  // Load and process content
+  // Load and process content directly from file system
   try {
-    const fullPath = path.join(postsDirectory, `${post.id}.md`);
+    // Try to find the file by checking different patterns
+    const fileNames = getAllPostFiles();
+    let targetFile: string | null = null;
+    
+    // First, try to find by exact ID match
+    targetFile = fileNames.find(fileName => {
+      const fileId = fileName.replace(/\.md$/, '');
+      return fileId === id || fileId.includes(id);
+    }) || null;
+    
+    // If not found, try to find by permalink match
+    if (!targetFile) {
+      for (const fileName of fileNames) {
+        const fullPath = path.join(postsDirectory, fileName);
+        const fileContents = fs.readFileSync(fullPath, 'utf8');
+        const { data } = matter(fileContents);
+        if (data.permalink === id) {
+          targetFile = fileName;
+          break;
+        }
+      }
+    }
+    
+    if (!targetFile) {
+      throw new Error(`Post file not found for: ${id}`);
+    }
+
+    const fullPath = path.join(postsDirectory, targetFile);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
-    const { content } = matter(fileContents);
-    const contentHtml = await processMarkdown(content);
+    const { data, content } = matter(fileContents);
+    
+    // Process markdown content with proper image path fixing
+    let processedContent = content;
+    
+    // Fix image paths to work with Next.js public folder
+    // Replace assets/ with /assets/
+    processedContent = processedContent.replace(
+      /!\[([^\]]*)\]\(assets\//g, 
+      '![' + '$1' + '](/assets/'
+    );
+    
+    // Replace HTML img tags with assets/ 
+    processedContent = processedContent.replace(
+      /<img([^>]*)\s+src=['"]assets\//g,
+      '<img$1 src="/assets/'
+    );
+    
+    // Fix relative paths in markdown images (but not http/https or already absolute paths)
+    processedContent = processedContent.replace(
+      /!\[([^\]]*)\]\((?!http|\/|#)/g,
+      '![' + '$1' + '](/'
+    );
+    
+    // Fix relative paths in HTML img tags
+    processedContent = processedContent.replace(
+      /<img([^>]*)\s+src=['"](?!http|\/|#)/g,
+      '<img$1 src="/'
+    );
+    
+    const contentHtml = await processMarkdown(processedContent);
+    
+    // Extract date from filename if not in frontmatter
+    const dateMatch = targetFile.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
+    const fileDate = dateMatch ? dateMatch[1] : null;
+    const fileId = targetFile.replace(/\.md$/, '');
     
     return {
-      ...post,
+      id: fileId,
+      title: data.title || 'Untitled',
+      date: data.date || fileDate || '2020-01-01',
+      description: data.description || '',
+      lang: data.lang || 'en',
+      tags: data.tags || [],
+      preview: data.preview || '/assets/default-preview.png',
+      author: data.author || 'Yiting Liu',
+      permalink: data.permalink || fileId,
       contentHtml,
     };
   } catch (error) {
     console.warn(`Error loading content for post ${id}:`, error);
     return {
-      ...post,
+      id,
+      title: 'Error Loading Post',
+      date: '2020-01-01',
+      description: 'Could not load this post',
+      lang: 'en',
+      tags: [],
+      preview: '/assets/default-preview.png',
+      author: 'Yiting Liu',
+      permalink: id,
       contentHtml: '<p>Content could not be loaded.</p>',
     };
   }
