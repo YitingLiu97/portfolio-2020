@@ -9,48 +9,68 @@ export default function Home() {
 
   return (
     <div>
-      <section className="hero-section">
+      <section className="hero-section animate-fade-in">
         <div className="header-heading">
-          <h2>{t('preview.tagline')}</h2>
-          <p>{t('preview.intro')}</p>
+          <h2 className="title-large">FUTURE.<br />TECHNOLOGY.</h2>
+          <p>Award-winning immersive experiences, interactive design & emerging technology solutions.</p>
         </div>
       </section>
 
-      <section className="portfolio-section">
+      {/* Demo Video Section */}
+      <section className="demo-video-section animate-fade-in">
+        <div className="demo-video-title">
+          <h3 className="animate-float">EXPERIENCE THE FUTURE</h3>
+          <p>A showcase of cutting-edge interactive experiences and immersive technologies</p>
+        </div>
+        <div className="demo-video-container animate-glow">
+          <video 
+            className="demo-video" 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            poster="/assets/demo-poster.jpg"
+          >
+            <source src="/assets/Small-Reel.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
+      <section className="portfolio-section animate-fade-in">
+        <h2>SELECTED WORK</h2>
         <div className="post-grid-parent">
-          {posts.map((post) => (
-            <article key={post.id} className="preview-panel">
+          {posts.map((post, index) => (
+            <article key={post.id} className="preview-panel" style={{animationDelay: `${index * 0.1}s`}}>
               <Link href={`/${post.permalink || post.id}`}>
                 {post.preview && (
                   <Image
                     src={post.preview}
                     alt={post.title}
                     width={400}
-                    height={300}
+                    height={250}
                     className="preview-image"
                   />
                 )}
-                <h3 className="post-title">{post.title}</h3>
-                {post.description && (
-                  <p className="post-description">{post.description}</p>
-                )}
-                <div className="post-meta">
-                  <time dateTime={post.date}>
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </time>
-                  {post.tags && (
-                    <div className="post-tags">
-                      {post.tags.map((tag) => (
-                        <span key={tag} className="tag">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                <div className="preview-panel-content">
+                  <h3>{post.title}</h3>
+                  {post.description && (
+                    <p>{post.description}</p>
                   )}
+                  <div className="post-meta">
+                    <time dateTime={post.date}>
+                      {new Date(post.date).getFullYear()}
+                    </time>
+                    {post.tags && (
+                      <div className="post-tags">
+                        {post.tags.slice(0, 3).map((tag) => (
+                          <span key={tag} className="tag">
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </div>
               </Link>
             </article>

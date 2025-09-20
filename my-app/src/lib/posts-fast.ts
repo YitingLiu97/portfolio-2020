@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import remarkGfm from 'remark-gfm';
 
 const postsDirectory = path.join(process.cwd(), '..', '_posts');
 
@@ -37,6 +38,7 @@ function getAllPostFiles(): string[] {
 
 async function processMarkdown(content: string): Promise<string> {
   const processedContent = await remark()
+    .use(remarkGfm) // Enable GitHub Flavored Markdown (tables, strikethrough, etc.)
     .use(html, { sanitize: false }) // Allow HTML in markdown (for iframes, divs, etc.)
     .process(content);
   return processedContent.toString();
