@@ -1,0 +1,45 @@
+nav:
+  home: "首页"
+  about: "关于"
+  projects: "项目"
+contact: "联系"
+about:
+  title: "关于我"
+  description: "我是一名开发者..."
+post:
+  date_format: "%Y年%m月%d日"
+footer:
+  trusted_by: "合作伙伴"
+  expertise: "专业技能"
+  development: "开发"
+  development_skills: "C#, HTML/CSS/Javascript, p5.js, three.js, Node.js, Express, Heroku, MongoDB, DigitalOcean, GitHub"
+  software: "软件"
+  software_skills: "Unity, Unreal Engine, Max/MSP, Spark AR, Lens Studio, Effect House, Cinema 4D, Blender, Adobe Creative Suite, Ableton Live"
+  lets_connect: "联系我"
+  start_project: "开始项目"
+  documentation: "技术博客"
+  all_rights_reserved: "版权所有。"
+site:
+  title: "刘伊婷 - 获奖XR与AI创意技术专家"
+  description: "作为一名具有XR开发和创意技术背景的专业人士，我致力于创造融合艺术与技术的互动体验。我的作品涵盖从VR心理健康工具到AI驱动的音乐视频制作，始终专注于创造有意义和难忘的体验。"
+header:
+  video_alt: "刘伊婷作品集视频"
+preview:
+  tagline: "XR开发者和创意技术专家：用AR、VR和AI带来生动体验"
+  intro: "凭借XR开发和创意技术的背景，我创造融合艺术与技术的互动体验。我的作品范围从VR心理健康工具到AI驱动的音乐视频制作，始终专注于创造有意义和难忘的体验。"
+  archive_welcome: "欢迎浏览我的项目作品集，展示我在AR、VR和沉浸式装置方面的专业能力！"
+nav:
+  work: "作品"
+  about: "关于"
+  contact: "联系"
+  archive: "档案"
+date:
+  format: "%Y年%m月%d日"
+tags:
+  articles_with: "标签为"
+  published: "发布于"
+  no_posts: "没有找到相关标签的文章"
+archive:
+  welcome: "欢迎浏览我的项目作品集，展示我在XR、Web和沉浸式装置方面的专业能力！"
+  show_all: "显示全部"
+

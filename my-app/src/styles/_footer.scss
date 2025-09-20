@@ -1,0 +1,188 @@
+.site-footer {
+    background-color: #ffffff;
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Trusted By Section */
+.trusted-by-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: $color-secondary;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.brands-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.brands-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    filter: grayscale(100%) opacity(0.8);
+    transition: filter 0.3s ease;
+}
+
+.brands-image:hover {
+    filter: grayscale(0%) opacity(1);
+}
+
+/* Two-column layout */
+.footer-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.footer-col {
+    padding: 0 1rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-category h5 {
+    font-size: 1.3rem;
+    color: #444;
+    margin-bottom: 0.5rem;
+}
+
+.skill-category p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact Section */
+/* Refined social icons styling */
+.social-links {
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    width: 22px;
+    height: 22px;
+    stroke: #666;
+    stroke-width: 1.5;
+    fill: none;
+    transition: all 0.3s ease;
+}
+
+/* Container for each social icon */
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.social-links a:hover {
+    background-color: #fff5f7;
+}
+
+.social-links a:hover .social-icon {
+    stroke: #FF91A4;
+    transform: scale(1.1);
+}
+
+/* Optional: Add subtle animation */
+@keyframes socialIconFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+    100% { transform: translateY(0); }
+}
+
+.social-links a:hover {
+    animation: socialIconFloat 0.4s ease;
+}
+
+.footer-email,
+.footer-link {
+    display: block;
+    color: $color-primary;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-email:hover,
+.footer-link:hover {
+    color: #FF91A4;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #FF91A4;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff7a92;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.copyright {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .site-footer {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .footer-col {
+        padding: 0;
+    }
+    
+    .trusted-by-section {
+        margin-bottom: 3rem;
+    }
+}

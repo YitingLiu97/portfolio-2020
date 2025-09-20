@@ -1,0 +1,27 @@
+// _contact.scss
+// Add this to your SCSS directory and import it in your main.scss
+
+.container {
+    max-width: 80.0rem;
+    padding: 0 2.0rem;
+    margin: 0 auto;
+  }
+  
+  form {
+    margin-bottom: 2.5rem;
+  }
+  
+  fieldset {
+    margin-bottom: 1.5rem;
+  }
+  
+  // Optional: Add any custom styles that extend Milligram's defaults
+  .button-primary {
+    margin-top: 1.5rem;
+    
+    &:focus,
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      border-color: darken($color-primary, 10%);
+    }
+  }
