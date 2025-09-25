@@ -1,10 +1,9 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import Analytics from "@/components/Analytics";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,13 +41,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <Analytics />
-        <LanguageSwitcher />
         <Header />
-        <main className="wrapper">
-          <div className="container">
-            {children}
-          </div>
-        </main>
+        {children}
         <Footer />
       </body>
     </html>
