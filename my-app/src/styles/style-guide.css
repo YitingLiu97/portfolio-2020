@@ -1,0 +1,247 @@
+/* 
+===========================================
+STYLE GUIDE - Yiting Liu Portfolio
+===========================================
+
+This file contains all the design system variables and components.
+Easily update branding colors and fonts here.
+*/
+
+/* ===========================================
+   BRAND COLORS - Update these for rebranding
+   ========================================== */
+:root {
+  /* Primary Brand Colors - Updated from branding guideline */
+  --brand-primary: #2D2D2D;        /* Dark charcoal gray */
+  --brand-secondary: #C53030;      /* Primary red */
+  --brand-accent: #7C3AED;         /* Purple accent */
+  --brand-tertiary: #B91C1C;      /* Secondary red */
+  
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-light: #f8fafc;
+  --color-gray-mid: #64748b;
+  --color-gray-dark: #2D2D2D;      /* Match brand primary */
+  
+  /* Status Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: var(--brand-secondary);
+  --color-info: var(--brand-accent);
+  
+  /* Background Colors */
+  --bg-primary: var(--color-white);
+  --bg-secondary: var(--color-gray-light);
+  --bg-dark: var(--brand-primary);
+  
+  /* Text Colors */
+  --text-primary: var(--brand-primary);
+  --text-secondary: var(--color-gray-mid);
+  --text-light: var(--color-white);
+  
+  /* Border Colors */
+  --border-light: rgba(45, 45, 45, 0.1);
+  --border-medium: rgba(45, 45, 45, 0.2);
+  
+  /* Shadow Colors */
+  --shadow-light: rgba(45, 45, 45, 0.1);
+  --shadow-medium: rgba(45, 45, 45, 0.15);
+  --shadow-dark: rgba(45, 45, 45, 0.25);
+}
+
+/* ===========================================
+   TYPOGRAPHY - Update fonts here
+   ========================================== */
+:root {
+  /* Font Families */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  
+  /* Font Sizes */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 900;
+  
+  /* Line Heights */
+  --leading-tight: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+}
+
+/* ===========================================
+   SPACING - Consistent spacing system
+   ========================================== */
+:root {
+  --space-xs: 0.25rem;     /* 4px */
+  --space-sm: 0.5rem;      /* 8px */
+  --space-md: 1rem;        /* 16px */
+  --space-lg: 1.5rem;      /* 24px */
+  --space-xl: 2rem;        /* 32px */
+  --space-2xl: 3rem;       /* 48px */
+  --space-3xl: 4rem;       /* 64px */
+  --space-4xl: 6rem;       /* 96px */
+  --space-5xl: 8rem;       /* 128px */
+}
+
+/* ===========================================
+   BORDER RADIUS
+   ========================================== */
+:root {
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 50%;
+}
+
+/* ===========================================
+   TRANSITIONS
+   ========================================== */
+:root {
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ===========================================
+   COMPONENT STYLES
+   ========================================== */
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm) var(--space-lg);
+  font-family: var(--font-primary);
+  font-weight: var(--font-medium);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+  gap: var(--space-sm);
+}
+
+.btn-primary {
+  background: var(--brand-primary);
+  color: var(--color-white);
+  border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+  background: var(--brand-secondary);
+  border-color: var(--brand-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-medium);
+}
+
+.btn-secondary {
+  background: var(--color-white);
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.btn-secondary:hover {
+  background: var(--brand-primary);
+  color: var(--color-white);
+}
+
+/* Tags */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  background: var(--color-gray-light);
+  color: var(--text-primary);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-light);
+}
+
+.tag:hover {
+  background: var(--brand-primary);
+  color: var(--color-white);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px var(--shadow-light);
+}
+
+/* Links */
+.link {
+  color: var(--brand-accent);
+  text-decoration: underline;
+  text-decoration-color: var(--brand-accent);
+  text-underline-offset: 3px;
+  font-weight: var(--font-medium);
+  transition: all var(--transition-fast);
+}
+
+.link:hover {
+  color: var(--brand-secondary);
+  text-decoration-color: var(--brand-secondary);
+  text-decoration-thickness: 2px;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: 0 4px 6px var(--shadow-light);
+  border: 1px solid var(--border-light);
+  transition: all var(--transition-normal);
+}
+
+.card:hover {
+  box-shadow: 0 8px 25px var(--shadow-medium);
+  transform: translateY(-2px);
+}
+
+/* Form Elements */
+.form-input {
+  width: 100%;
+  padding: var(--space-md);
+  font-family: var(--font-primary);
+  font-size: var(--text-base);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+  background: var(--bg-primary);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-label {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+  margin-bottom: var(--space-xs);
+}
