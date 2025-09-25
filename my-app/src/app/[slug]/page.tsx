@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import { getPostData, getSortedPostsData, PostData } from '@/lib/posts-fast';
 import { format } from 'date-fns';
 import VideoLogoOverlay from '@/components/VideoLogoOverlay';
+import TagLink from '@/components/TagLink';
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -60,9 +61,7 @@ export default async function PostPage({ params }: PostPageProps) {
               {post.tags && (
                 <div className="post-tags">
                   {post.tags.map((tag) => (
-                    <span key={tag} className="tag">
-                      {tag}
-                    </span>
+                    <TagLink key={tag} tag={tag} />
                   ))}
                 </div>
               )}

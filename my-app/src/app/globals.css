@@ -297,11 +297,14 @@ a:hover {
   background: var(--color-white);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  text-decoration: none !important;
+  color: inherit;
 }
 
 .work-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  text-decoration: none !important;
 }
 
 .work-card img {
@@ -864,6 +867,10 @@ a:hover {
   opacity: 0.8;
   animation: bounce 2s infinite;
   z-index: 4;
+}
+
+.scroll-indicator-low {
+  bottom: calc(100vh / 3); /* Position at 2/3 screen height */
 }
 
 .scroll-indicator span {

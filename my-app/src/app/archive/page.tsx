@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getSortedPostsData } from '@/lib/posts-fast';
 import { format } from 'date-fns';
+import TagLink from '@/components/TagLink';
 
 export const metadata = {
   title: 'Work | Yiting Liu',
@@ -84,9 +85,7 @@ export default function ArchivePage() {
                         {post.tags && (
                           <div className="project-tags">
                             {post.tags.slice(0, 3).map((tag) => (
-                              <span key={tag} className="tag">
-                                {tag}
-                              </span>
+                              <TagLink key={tag} tag={tag} />
                             ))}
                           </div>
                         )}
