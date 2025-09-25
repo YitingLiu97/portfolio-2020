@@ -45,7 +45,7 @@ async function processMarkdown(content: string): Promise<string> {
 }
 
 function createPostDataFromFile(fileName: string): PostData {
-  const id = fileName.replace(/\.md$/, '');
+  const fileId = fileName.replace(/\.md$/, '');
   const fullPath = path.join(postsDirectory, fileName);
   
   try {
@@ -56,8 +56,11 @@ function createPostDataFromFile(fileName: string): PostData {
     const dateMatch = fileName.match(/^(\d{4}-\d{2}-\d{2})-(.+)\.md$/);
     const fileDate = dateMatch ? dateMatch[1] : null;
     
+    // Use permalink as ID if available, otherwise use filename
+    const postId = data.permalink?.replace(/^\//, '') || fileId;
+    
     return {
-      id,
+      id: postId,
       title: data.title || 'Untitled',
       date: data.date || fileDate || '2020-01-01',
       description: data.description || '',
@@ -65,12 +68,12 @@ function createPostDataFromFile(fileName: string): PostData {
       tags: data.tags || [],
       preview: data.preview || '/assets/default-preview.png',
       author: data.author || 'Yiting Liu',
-      permalink: data.permalink || id,
+      permalink: data.permalink || fileId,
     };
   } catch (error) {
     console.warn(`Error processing post ${fileName}:`, error);
     return {
-      id,
+      id: fileId,
       title: 'Error Loading Post',
       date: '2020-01-01',
       description: 'Could not load this post',
@@ -78,7 +81,7 @@ function createPostDataFromFile(fileName: string): PostData {
       tags: [],
       preview: '/assets/default-preview.png',
       author: 'Yiting Liu',
-      permalink: id,
+      permalink: fileId,
     };
   }
 }
@@ -118,22 +121,24 @@ export async function getPostData(id: string): Promise<PostData> {
     const fileNames = getAllPostFiles();
     let targetFile: string | null = null;
     
-    // First, try to find by exact ID match
-    targetFile = fileNames.find(fileName => {
+    // First, try to find by permalink match
+    for (const fileName of fileNames) {
+      const fullPath = path.join(postsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const { data } = matter(fileContents);
+      
+      // Check if permalink matches (with or without leading slash)
+      const permalink = data.permalink?.replace(/^\//, '') || '';
+      if (permalink === id || permalink === id.replace(/^\//, '')) {
+        targetFile = fileName;
+        break;
+      }
+      
+      // Also check if the file ID matches
       const fileId = fileName.replace(/\.md$/, '');
-      return fileId === id || fileId.includes(id);
-    }) || null;
-    
-    // If not found, try to find by permalink match
-    if (!targetFile) {
-      for (const fileName of fileNames) {
-        const fullPath = path.join(postsDirectory, fileName);
-        const fileContents = fs.readFileSync(fullPath, 'utf8');
-        const { data } = matter(fileContents);
-        if (data.permalink === id) {
-          targetFile = fileName;
-          break;
-        }
+      if (fileId === id || fileId.includes(id)) {
+        targetFile = fileName;
+        break;
       }
     }
     

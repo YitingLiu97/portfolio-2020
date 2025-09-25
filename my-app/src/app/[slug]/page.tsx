@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { getPostData, getSortedPostsData, PostData } from '@/lib/posts-fast';
 import { format } from 'date-fns';
+import VideoLogoOverlay from '@/components/VideoLogoOverlay';
 
 interface PostPageProps {
   params: Promise<{ slug: string }>;
@@ -34,30 +35,38 @@ export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
   
   try {
+    // Only load English posts - skip Chinese translations
     const post = await getPostData(slug);
+    
+    // Skip Chinese translations (they have /zh/ in their permalink)
+    if (post.permalink?.includes('/zh/')) {
+      notFound();
+    }
     
     return (
       <article className="post-article">
         <header className="post-header">
-          <h1 className="post-title">{post.title}</h1>
-          {post.description && (
-            <p className="post-description">{post.description}</p>
-          )}
-          
-          <div className="post-meta">
-            <time dateTime={post.date}>
-              {format(new Date(post.date), 'MMMM d, yyyy')}
-            </time>
-            {post.author && <span className="post-author">by {post.author}</span>}
-            {post.tags && (
-              <div className="post-tags">
-                {post.tags.map((tag) => (
-                  <span key={tag} className="tag">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+          <div className="post-header-content">
+            <h1 className="post-title">{post.title}</h1>
+            {post.description && (
+              <p className="post-description">{post.description}</p>
             )}
+            
+            <div className="post-meta">
+              <time dateTime={post.date}>
+                {format(new Date(post.date), 'MMMM d, yyyy')}
+              </time>
+              {post.author && <span className="post-author">by {post.author}</span>}
+              {post.tags && (
+                <div className="post-tags">
+                  {post.tags.map((tag) => (
+                    <span key={tag} className="tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </header>
         
@@ -65,6 +74,8 @@ export default async function PostPage({ params }: PostPageProps) {
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.contentHtml || '' }}
         />
+        
+        <VideoLogoOverlay position="top-left" />
       </article>
     );
   } catch {
