@@ -15,6 +15,10 @@ export const metadata: Metadata = {
   description: "With a background in XR development and creative tech, I create interactive experiences that blend art and technology. My work ranges from VR mental health tools to AI-driven music video generation, always focusing on meaningful and memorable experiences.",
   keywords: "creative technology, XR, AR, VR, interactive design, Unity, web development",
   authors: [{ name: "Yiting Liu" }],
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/favicon.ico',
+  },
   openGraph: {
     title: "Yiting Liu - Award-winning Creative Technologist in XR and AI",
     description: "With a background in XR development and creative tech, I create interactive experiences that blend art and technology.",

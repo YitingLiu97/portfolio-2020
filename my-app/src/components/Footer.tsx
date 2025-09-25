@@ -19,81 +19,28 @@ export default function Footer() {
     'Cinema 4D', 'Blender', 'Figma', 'React', 'Next.js', 'Three.js'
   ];
 
-  const brands = [
-    'Accenture', 'Museum of Natural History', 'NYU ITP', 'Parsons School of Design',
-    'Creative Tech Week', 'Processing Foundation', 'OpenIDEO', 'Adobe'
-  ];
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    
-    // Here you can integrate with your preferred form service like Formspree, Netlify Forms, etc.
-    const data = {
-      name: formData.get('name'),
-      email: formData.get('email'),
-      subject: formData.get('subject'),
-      message: formData.get('message')
-    };
-    
-    console.log('Form submission:', data);
-    alert('Thank you for your message! I will get back to you soon.');
-    
-    // Reset form
-    e.currentTarget.reset();
-  };
-
   return (
     <footer className="site-footer">
       <div className="footer-container">
         <div className="footer-grid">
-          {/* Contact Form */}
-          <div className="footer-section">
-            <h3>Let&apos;s Connect</h3>
-            <p>Have a project in mind? Let&apos;s create something amazing together.</p>
-            <form onSubmit={handleSubmit} className="contact-form-footer">
-              <div className="form-row">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                  className="form-input-footer"
-                />
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                  className="form-input-footer"
-                />
-              </div>
-              <input
-                type="text"
-                name="subject"
-                placeholder="Subject"
-                required
-                className="form-input-footer"
+          {/* Client Logos - Full Width */}
+          <div className="footer-section client-section">
+            <h3>Trusted By</h3>
+            <div className="client-logos">
+              <img 
+                src="/assets/clients.png" 
+                alt="Client logos including Accenture, Disney, ESPN, Citibank and more"
+                className="clients-image"
               />
-              <textarea
-                name="message"
-                placeholder="Tell me about your project..."
-                required
-                rows={4}
-                className="form-input-footer form-textarea-footer"
-              ></textarea>
-              <button type="submit" className="btn btn-primary">
-                Send Message
-              </button>
-            </form>
+            </div>
           </div>
 
           {/* Expertise */}
           <div className="footer-section">
             <h3>Expertise</h3>
-            <div className="expertise-tags">
+            <div className="expertise-list">
               {expertise.map((skill, index) => (
-                <span key={index} className="expertise-tag">
+                <span key={index} className="expertise-item">
                   {skill}
                 </span>
               ))}
@@ -103,27 +50,18 @@ export default function Footer() {
           {/* Development Software */}
           <div className="footer-section">
             <h3>Development Software</h3>
-            <div className="software-tags">
+            <div className="software-list">
               {software.map((tool, index) => (
-                <span key={index} className="software-tag">
+                <span key={index} className="software-item">
                   {tool}
                 </span>
               ))}
             </div>
           </div>
 
-          {/* Brands Worked With */}
+          {/* Social Links */}
           <div className="footer-section">
-            <h3>Brands I&apos;ve Worked With</h3>
-            <div className="brand-tags">
-              {brands.map((brand, index) => (
-                <span key={index} className="brand-tag">
-                  {brand}
-                </span>
-              ))}
-            </div>
-
-            {/* Social Links */}
+            <h3>Connect</h3>
             <div className="social-links">
               <SocialIcon href="https://github.com/Yitingliu97" label="GitHub">
                 <svg viewBox="0 0 16 16" width="20" height="20">
@@ -142,6 +80,12 @@ export default function Footer() {
                   <path fill="currentColor" d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
                 </svg>
               </SocialIcon>
+            </div>
+            
+            <div className="footer-contact-link">
+              <a href="/contact" className="btn btn-secondary">
+                Get In Touch
+              </a>
             </div>
           </div>
         </div>
