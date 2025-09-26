@@ -64,6 +64,7 @@ In the app, the user embarks on a journey in the shoes of someone living with sc
 <li> <strong>Augmented Reality Elements:</strong> Simple AR objects placed in the real world—such as an alarm, book, and TV—add a layer of realism, enhancing the immersive experience.
 </li>
 </ul>
+
 # Development Process
 I led the app’s development using Magic Leap and Unity, which included troubleshooting and optimizing our workflow for AR on Magic Leap. This involved:
 - **Testing Templates & Toolkits:** Initially, I experimented with different example templates. I discovered that the original repository lacked the Magic Leap Toolkit (MLTK), which I then sourced from GitHub. I reviewed MLTK example scenes to find the most suitable fit and settled on the Controller Input scene, which was ideal for our experience.

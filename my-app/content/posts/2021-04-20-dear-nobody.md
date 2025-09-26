@@ -27,6 +27,7 @@ This is a warm reminder to treat yourself gently and recognize that these someti
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544688774" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
+
 # User Journey 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://player.vimeo.com/video/544680995" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -44,6 +45,7 @@ If you want to download it, try to [follow this link](https://oneirosvr.com/how-
 This project stems from my close-to-death experience, which led me to explore feelings of emotional suffocation through self-reflection. My goal is to help users connect with their own inner experiences and emotions, mirroring my journey of understanding and acceptance. The experience is designed to resonate on a deeply personal level, prompting users to explore their vulnerabilities.
 
 # Development Process
+
 ## Research
 ![dear-nobody/research.jpg](dear-nobody/research.jpg)
 - Philosophical Foundations: I delved into stoic and Buddhist philosophies to shape the character “Nobody” and the app’s narrative. This research guided me toward designing a contemplative experience, fostering empathy and emotional awareness.

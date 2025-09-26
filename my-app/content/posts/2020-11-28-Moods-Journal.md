@@ -51,7 +51,7 @@ I did research on [ProjectLife](https://play.google.com/store/apps/details?id=c
 
 I created the [UI interaction](https://www.figma.com/proto/ak6rx7JdfrHBLeLCZsGZS6/Moods-Diary-App_Final?node-id=102%3A2523&scaling=min-zoom) on Figma.
 
-![https://github.com/YitingLiu97/moods/raw/masterMoodsDiaryUI.png](https://github.com/YitingLiu97/moods/raw/masterMoodsDiaryUI.png)
+![moods-journal/MoodsDiaryUI.png](moods-journal/MoodsDiaryUI.png)
 
 # **Elements**
 
@@ -72,7 +72,7 @@ This will be the study for materials and textures as a collection for my researc
 
     [Pinterest Material Moodboard](https://www.pinterest.com/yliu557/thesis/material/)
 
-![https://github.com/YitingLiu97/moods/raw/masterpinterestInspo.png](https://github.com/YitingLiu97/moods/raw/masterpinterestInspo.png)
+![moods-journal/pinterestInspo.png](moods-journal/pinterestInspo.png)
 
 # **Steps of creation**
 1. make things in photoshop - constrains of how you make the thing
@@ -105,7 +105,7 @@ They are limited to the canvas of their phone since they can not scroll in the c
 - Uploading images/ Camera capture from phone
 - Changing fonts for texts  <br />
 
-![https://github.com/YitingLiu97/moods/raw/masterfonts.png](https://github.com/YitingLiu97/moods/raw/masterfonts.png)
+![moods-journal/fonts.png](moods-journal/fonts.png)
 
 - minimalistic UI design [Inspiration: [Sanity Sketching kit](https://www.figma.com/community/file/898186441853776318)]
 - Trash individual element upon click
@@ -145,7 +145,7 @@ I have to set up a server since I hosted this on Heroku before and I was told He
 3. Make sure server port is 8080. User [forever](https://www.npmjs.com/package/forever) to keep the server running.
 4. GoDaddy setting up DNS to replace the virtual IP host name. Go to My Domains > Domain Settings > DNS. Under Records, add Type A following below.
 
-    ![https://github.com/YitingLiu97/moods/raw/mastergodaddyDNS.png](https://github.com/YitingLiu97/moods/raw/mastergodaddyDNS.png)
+    ![moods-journal/godaddyDNS.png](moods-journal/godaddyDNS.png)
 
 # Next Steps
 
