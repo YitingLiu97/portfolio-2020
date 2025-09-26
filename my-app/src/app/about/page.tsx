@@ -26,8 +26,24 @@ export default function AboutPage() {
             Yiting Liu, an acclaimed XR Developer and Designer, is driving innovation in immersive tech with Fortune 500 clients like Accenture, Citibank, Disney, ESPN, and Comcast. Leading at Sia Partners, she expertly integrates XR with AI for multiplayer experiences. Her AR simulation project was notably featured in Unity, and she&apos;s a proud winner of the MIT Reality Hack 2022. Yiting&apos;s work has been highlighted at prestigious events such as the AIGA Conference and Games for Change, establishing her as a prominent figure in the field of immersive technology.
           </p>
           
+              
+          <div>
+            <h2>Speaking & Panels</h2>
+
+            <p>I’ve spoken at events and panels on the impact of AI and XR in creative industries.
+              Organizers book me to cover:</p>
+            <ul>
+              <li>The future of AI in music, design, and XR</li>
+              <li>Creative technology and storytelling</li>
+              <li>Diversity and leadership in tech</li>
+            </ul>
+            <a href='/contact'><strong>Contact me to book a talk, workshop, or panel.</strong></a>
+
+          </div>
+
+
           <h2>Speaking Engagements</h2>
-          
+
           <h3>2024</h3>
           <ul>
             <li>
@@ -67,6 +83,7 @@ export default function AboutPage() {
             <li>XR Guild - OG first speaking engagement - 2023 July</li>
           </ul>
           
+      
           <div className="resume-download">
             <a href="/Yiting Liu Resume.pdf" target="_blank" rel="noopener noreferrer">
               <button className="resume-button">Resume</button>
