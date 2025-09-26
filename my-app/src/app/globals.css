@@ -15,7 +15,7 @@
   --color-primary: var(--brand-primary);
   --color-secondary: var(--brand-secondary);
   --color-accent: var(--brand-accent);
-  --color-white: var(--color-white);
+  --color-white: #ffffff;
   --color-gray-light: var(--color-gray-light);
   --color-gray-mid: var(--color-gray-mid);
   --color-gray-dark: var(--color-gray-dark);
@@ -937,8 +937,8 @@ a:hover {
 }
 
 .post-header {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
-  color: var(--color-white);
+  background: linear-gradient(135deg, var(--brand-secondary) 0%, var(--brand-accent) 100%);
+  color: #ffffff;
   padding: 4rem 0 6rem;
   text-align: center;
   position: relative;
@@ -1130,9 +1130,16 @@ a:hover {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   background: #000;
+}
+
+/* When iframe-container has video-description, adjust aspect ratio */
+.post-content .iframe-container:has(.video-description) {
+  aspect-ratio: auto;
+  min-height: 300px;
 }
 
 .post-content .iframe-container:hover {
@@ -1178,11 +1185,18 @@ a:hover {
   width: 100% !important;
   height: 100% !important;
   border: none !important;
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0;
   margin: 0 !important;
   min-height: unset !important;
   max-width: unset !important;
   box-shadow: none !important;
+}
+
+/* Responsive iframe in containers with descriptions */
+.post-content .iframe-container:has(.video-description) .responsive-iframe {
+  position: relative;
+  height: 250px !important;
+  border-radius: 12px 12px 0 0;
 }
 
 /* Auto-detect video grids and make them responsive */
@@ -1219,6 +1233,41 @@ a:hover {
 .post-content div:has(> .iframe-container:nth-child(n+20)) {
   grid-template-columns: repeat(5, 1fr);
   gap: 1.5rem;
+}
+
+/* Custom 4-column grid for shader showcase */
+.post-content [style*="grid-template-columns: repeat(4, 1fr)"] {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 1.5rem !important;
+  margin: 4rem 0 !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+  padding: 0 2rem !important;
+  box-sizing: border-box !important;
+}
+
+/* Responsive overrides for 4-column grid */
+@media (max-width: 1024px) {
+  .post-content [style*="grid-template-columns: repeat(4, 1fr)"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .post-content [style*="grid-template-columns: repeat(4, 1fr)"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem !important;
+    padding: 0 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .post-content [style*="grid-template-columns: repeat(4, 1fr)"] {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* Ensure consistent aspect ratios in large grids */
@@ -1906,6 +1955,45 @@ a:hover {
   font-weight: var(--font-medium);
 }
 
+/* Contact page social media icons */
+.contact-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-social-link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.contact-social-link:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--brand-accent);
+  transform: translateX(4px);
+}
+
+.contact-social-link .icon {
+  color: var(--brand-accent);
+  transition: transform 0.3s ease;
+}
+
+.contact-social-link:hover .icon {
+  transform: scale(1.1);
+}
+
+.contact-social-link .label {
+  font-weight: var(--font-medium);
+  color: var(--text-primary);
+}
+
 .collaboration-list {
   list-style: none;
   display: flex;
@@ -2008,4 +2096,40 @@ a:hover {
   .tag-page-title {
     font-size: var(--text-3xl);
   }
+}
+
+/* ===========================================
+   VIDEO DESCRIPTION STYLING
+   ========================================== */
+
+/* Video description styling for AR filters and similar posts */
+.video-description {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.02);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 0.5rem;
+}
+
+.video-description h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.video-description h3 a {
+  color: var(--brand-accent);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.video-description h3 a:hover {
+  color: var(--brand-secondary);
+}
+
+.video-description p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
 }

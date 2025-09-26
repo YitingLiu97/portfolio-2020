@@ -8,7 +8,7 @@ const mockPosts = [
     title: 'Vibes: Music Video Generation',
     description: 'AI-powered music video creation with real-time generation',
     date: '2023-08-01',
-    preview: '/vibes/demo.png',
+    preview: 'vibes/demo.png',
     tags: ['AI', 'Music', 'Video Generation']
   },
   {
@@ -16,7 +16,7 @@ const mockPosts = [
     title: 'SixthSense: Spatial Computing',
     description: 'AR interface for spatial interaction and gesture recognition',
     date: '2022-07-11',
-    preview: '/sixthsense/demo.png',
+    preview: 'sixthsense/demo.png',
     tags: ['AR', 'Spatial Computing', 'Gestures']
   },
   {
@@ -24,7 +24,7 @@ const mockPosts = [
     title: 'ACE Hives: Innovation Network',
     description: 'Interactive installation for collaborative innovation spaces',
     date: '2022-02-01',
-    preview: '/ace-hives/demo.jpg',
+    preview: 'ace-hives/demo.jpg',
     tags: ['Installation', 'Collaboration', 'Innovation']
   },
   {
@@ -32,7 +32,7 @@ const mockPosts = [
     title: 'Lifelines: Data Visualization',
     description: 'Personal data storytelling through interactive visualization',
     date: '2022-03-25',
-    preview: '/lifelines/demo.jpg',
+    preview: 'lifelines/demo.gif',
     tags: ['Data Viz', 'Personal', 'Interactive']
   },
   {
@@ -40,7 +40,7 @@ const mockPosts = [
     title: 'Dear Nobody: Mental Health VR',
     description: 'VR experience for mental health support and therapy',
     date: '2021-04-20',
-    preview: '/dear-nobody/demo.png',
+    preview: 'dear-nobody/demo.png',
     tags: ['VR', 'Mental Health', 'Therapy']
   },
   {
@@ -48,7 +48,7 @@ const mockPosts = [
     title: 'AMNH Spatial Audio App',
     description: 'Museum audio guide with spatial sound technology',
     date: '2021-04-10',
-    preview: '/spatial-sound/demo.JPG',
+    preview: 'spatial-sound/demo.JPG',
     tags: ['Spatial Audio', 'Museum', 'App']
   }
 ];
