@@ -37,7 +37,7 @@ export default function ClientHomePage({ posts }: ClientHomePageProps) {
               loop
               playsInline
             >
-              <source src="/assets/Small-Reel.mp4" type="video/mp4" />
+              <source src="Small-Reel.mp4" type="video/mp4" />
             </video>
           ) : (
             <div className="hero-placeholder" style={{
@@ -64,12 +64,12 @@ export default function ClientHomePage({ posts }: ClientHomePageProps) {
           )}
           
           {/* Scroll indicator */}
-          <div className="scroll-indicator">
+          {/* <div className="scroll-indicator">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
               <path d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6-6-6 1.41-1.42z"/>
             </svg>
             <span>Scroll to explore</span>
-          </div>
+          </div> */}
         </div>
       </div>
 
