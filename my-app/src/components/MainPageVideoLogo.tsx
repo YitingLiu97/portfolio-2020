@@ -57,7 +57,7 @@ export default function MainPageVideoLogo({
       logo.onerror = () => {
         console.log('Logo image failed to load from:', logo.src);
         if (logo.src.includes('/yiting-white-logo.png')) {
-          logo.src = '/assets/logo_yiting.png'; // Try fallback path
+          logo.src = 'yiting-white-logo.png'; // Try fallback path
         } else {
           // Hide overlay if logo can't be loaded
           overlay.style.display = 'none';

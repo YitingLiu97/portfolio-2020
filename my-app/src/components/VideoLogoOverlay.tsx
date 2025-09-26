@@ -10,7 +10,7 @@ interface VideoLogoOverlayProps {
 
 export default function VideoLogoOverlay({ 
   position = 'top-left',
-  logoSrc = '/logo_yiting.png',
+  logoSrc = 'yiting-white-logo.png',
   logoAlt = 'Yiting Liu'
 }: VideoLogoOverlayProps) {
   
@@ -50,7 +50,7 @@ export default function VideoLogoOverlay({
       // Handle image load error
       logo.onerror = () => {
         console.log('Logo image failed to load, trying alternative path');
-        logo.src = '/assets/logo_yiting.png'; // Try alternative path
+        logo.src = 'yiting-white-logo.png'; // Try alternative path
       };
       
       logo.onload = () => {
