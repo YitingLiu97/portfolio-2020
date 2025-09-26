@@ -1,7 +1,6 @@
 import { notFound } from 'next/navigation';
 import { getPostData, getSortedPostsData, PostData } from '@/lib/posts-fast';
 import { format } from 'date-fns';
-import VideoLogoOverlay from '@/components/VideoLogoOverlay';
 import TagLink from '@/components/TagLink';
 
 interface PostPageProps {
@@ -12,6 +11,13 @@ interface PostPageProps {
 
 export async function generateMetadata({ params }: PostPageProps) {
   const { slug } = await params;
+  
+  // Skip processing for asset files
+  if (slug.includes('.')) {
+    return {
+      title: 'Asset',
+    };
+  }
   
   try {
     const post = await getPostData(slug);
@@ -34,6 +40,11 @@ export async function generateMetadata({ params }: PostPageProps) {
 
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
+  
+  // Skip processing for asset files - return 404
+  if (slug.includes('.')) {
+    notFound();
+  }
   
   try {
     // Only load English posts - skip Chinese translations
@@ -73,8 +84,6 @@ export default async function PostPage({ params }: PostPageProps) {
           className="post-content"
           dangerouslySetInnerHTML={{ __html: post.contentHtml || '' }}
         />
-        
-        <VideoLogoOverlay position="top-left" />
       </article>
     );
   } catch {
