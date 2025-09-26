@@ -81,7 +81,7 @@ export default function Footer() {
                 </svg>
               </SocialIcon>
             </div>
-            
+
             <div className="footer-contact-link">
               <a href="/contact" className="btn btn-secondary">
                 Get In Touch

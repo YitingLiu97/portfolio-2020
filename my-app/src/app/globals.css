@@ -448,6 +448,7 @@ a:hover {
   color: var(--color-white);
 }
 
+
 /* Expertise tags in footer */
 .expertise-tags,
 .software-tags,
@@ -625,9 +626,9 @@ a:hover {
 }
 
 .social-link:hover {
-  background: var(--brand-secondary);
+  background: var(--color-accent);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(197, 48, 48, 0.3);
+  box-shadow: 0 4px 12px var(--color-accent);
 }
 
 .social-link .icon {
@@ -638,10 +639,26 @@ a:hover {
 
 /* Footer grid layout */
 .footer-grid {
-  display: grid;
+   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--space-2xl);
   margin-bottom: var(--space-2xl);
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.social-link .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Footer grid layout */
+.footer-grid {
+   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-2xl);
+  margin-bottom: var(--space-2xl);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 /* Client section spans full width */
@@ -670,16 +687,16 @@ a:hover {
 .clients-image:hover {
   filter: grayscale(0%) brightness(1) contrast(1.1) saturate(1.1);
   transform: translateY(-2px);
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 8px 32px rgba(197, 48, 48, 0.15);
+  /* box-shadow: 0 8px 32px rgba(197, 48, 48, 0.15); */
 }
 
 /* Simple text lists for expertise and software */
 .expertise-list,
 .software-list {
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .expertise-item,
@@ -687,6 +704,8 @@ a:hover {
   color: var(--color-white);
   font-size: var(--text-sm);
   position: relative;
+    color: rgba(255, 255, 255, 0.4);
+
 }
 
 .expertise-item:not(:last-child)::after,
@@ -698,7 +717,9 @@ a:hover {
 
 /* Footer contact link */
 .footer-contact-link {
-  margin-top: var(--space-lg);
+  /* margin-top: var(--space-lg); */
+ color: var(--color-accent);
+
 }
 
 .footer-contact-link .btn {
@@ -1731,15 +1752,15 @@ a:hover {
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-lg) var(--space-2xl);
-  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%);
+  /* background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%); */
   color: var(--color-white);
   border: none;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-md);
   font-size: var(--text-lg);
   font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all var(--transition-normal);
-  box-shadow: 0 4px 16px rgba(197, 48, 48, 0.3);
+  box-shadow: 0 4px 16px var(--brand-accent);
 }
 
 .resume-button:hover {
