@@ -28,7 +28,7 @@ export default function Footer() {
             <h3>Trusted By</h3>
             <div className="client-logos">
               <img 
-                src="/clients.png" 
+                src="clients.png" 
                 alt="Client logos including Accenture, Disney, ESPN, Citibank and more"
                 className="clients-image"
               />
