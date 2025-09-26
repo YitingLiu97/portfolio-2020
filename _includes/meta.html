@@ -1,6 +1,0 @@
-{% assign lang = page.lang | default: site.default_lang %}
-{% assign t = site.data.translations[lang] %}
-{% if page.id == "index" %}
-  <meta name="description" content="{{ t.meta.description }}">
-  <meta name="keywords" content="{{ t.meta.keywords }}">
-{% endif %}
