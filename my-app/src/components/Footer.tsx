@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Yiting Liu. All rights reserved. Built with Next.js and a passion for creative technology.</p>
+          <p>&copy; 2025 Yiting Liu. All rights reserved.</p>
         </div>
       </div>
     </footer>

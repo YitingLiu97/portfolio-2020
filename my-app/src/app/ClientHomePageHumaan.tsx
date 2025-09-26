@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import MainPageVideoLogo from '@/components/MainPageVideoLogo';
 
 interface PostData {
   id: string;
@@ -43,6 +44,9 @@ export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
 
   return (
     <>
+      {/* Main Page Video Logo Overlay */}
+      <MainPageVideoLogo position="bottom-left" />
+      
       {/* Minimal Hero Section with Video */}
       <section className="humaan-hero">
         <div className="hero-video-container">
@@ -154,9 +158,9 @@ export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
               <div className="about-text">
                 <h2>Driving innovation in immersive technology</h2>
                 <p>
-                  Leading at Sia Partners, I expertly integrate XR with AI for 
-                  multiplayer experiences. Winner of MIT Reality Hack 2022, with 
-                  work featured at AIGA Conference and Games for Change.
+                  Creating the future of AI-generated music visuals with Vibes — real-time, reactive, and built for creators.
+                  Winner of MIT Reality Hack 2022, with 
+                  work featured at Unity, AIGA Conference, MIT Reality Hack, and Games for Change.
                 </p>
                 <Link href="/about" className="btn-minimal">
                   Learn more about me
