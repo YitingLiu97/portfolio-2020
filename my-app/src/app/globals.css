@@ -3,6 +3,9 @@
 /* Import our style guide */
 @import '../styles/style-guide.css';
 
+/* Import Humaan-inspired styles */
+@import '../styles/humaan-style.css';
+
 /* Use Next.js font loading instead of Google Fonts URL */
 :root {
   --font-inter: var(--font-primary);

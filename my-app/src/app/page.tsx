@@ -1,4 +1,4 @@
-import ClientHomePage from './ClientHomePage';
+import ClientHomePageHumaan from './ClientHomePageHumaan';
 import { getPostsByLanguage } from '@/lib/posts-fast';
 
 // Static posts data for now - can be replaced with dynamic loading later
@@ -60,5 +60,5 @@ export default function HomePage() {
   // Use real posts, fallback to mock data if none found
   const postsToShow = englishPosts.length > 0 ? englishPosts : mockPosts;
   
-  return <ClientHomePage posts={postsToShow} />;
+  return <ClientHomePageHumaan posts={postsToShow} />;
 }
