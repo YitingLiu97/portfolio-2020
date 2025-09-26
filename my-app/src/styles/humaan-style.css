@@ -458,7 +458,7 @@
 
 .btn-minimal {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   background: var(--brand-primary);
   color: white !important;
   text-decoration: none !important;
@@ -470,8 +470,8 @@
 
 .btn-minimal:hover {
   background: var(--brand-accent);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(197, 48, 48, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(197, 48, 48, 0.4);
   text-decoration: none !important;
 }
 
@@ -504,7 +504,7 @@
 /* Contact CTA - Humaan Style */
 .contact-cta-humaan {
   padding: 6rem 0;
-  background: #2a2a2a;
+  background: var(--color-secondary);
   color: white;
   text-align: center;
 }
@@ -597,4 +597,79 @@
   .tag-button-humaan {
     flex-shrink: 0;
   }
+}
+
+/* ===========================================
+   VIDEO LOADING & ERROR STATES
+   ========================================== */
+
+.video-loading-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 2;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.video-loading-state p {
+  font-size: 1rem;
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+.video-error-state {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.error-placeholder {
+  text-align: center;
+}
+
+.fallback-logo {
+  opacity: 0.8;
+  filter: brightness(1.2);
+}
+
+/* Enhanced video container for better loading */
+.hero-video-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #1a1a1a; /* Fallback background */
 }
