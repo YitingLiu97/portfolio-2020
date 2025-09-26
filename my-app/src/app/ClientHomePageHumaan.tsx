@@ -63,7 +63,16 @@ export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
         
         <div className="hero-overlay">
           <div className="hero-content-minimal">
-            <h1 className="hero-title-minimal">YITING LIU</h1>
+            <div className="hero-logo-center">
+              <Image
+                src="/yiting-white-logo.png"
+                alt="Yiting Liu"
+                width={400}
+                height={120}
+                className="hero-main-logo"
+                priority
+              />
+            </div>
             <p className="hero-subtitle-minimal">
               Award-winning Creative Technologist specializing in XR, AI, and Interactive Design
             </p>
