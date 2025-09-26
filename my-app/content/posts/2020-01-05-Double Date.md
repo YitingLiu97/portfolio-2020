@@ -39,7 +39,9 @@ lang: en
 ## Problem Statement
 How might we make people aware of their relationships with loved ones and their phones?
 
+<div class="img-center">
 ![double-date/presentation.jpg](double-date/presentation.jpg)
+</div>
 
 ## Concept
 
@@ -59,7 +61,9 @@ We want to point out the digital culture of the phone in the form of interactive
 
 ## Ideation/Exploration
 
+<div class="img-center">
 ![double-date/interaction-design-double-date.png](double-date/interaction-design-double-date.png)
+</div>
 
 During our brainstorming process, we had several ideas, most of which are involved with people being controlled by the things they own.
 
@@ -95,7 +99,9 @@ The video footage of the couple was created by Dina and Patrick. The background 
 
 We then created a modern dating environment using after effects as shown below.
 
+<div class="img-center">
 ![double-date/video%201.jpg](double-date/video%201.jpg)
+</div>
 
 *Still from video one when the couple is having a good time chatting.*
 
@@ -116,7 +122,9 @@ We chose to work with Sprite for our project for several reasons:
 
 For the code, I used the Accelerometer and Arduino Uno to determine if the phone is up or down. I added the button as another condition to trigger the third video.
 
+<div class="img-center">
 ![double-date/schematics-double-date.png](double-date/schematics-double-date.png)
+</div>
 
 You can look at my [code here](https://drive.google.com/drive/folders/1M7i6hdTupYVWaKsjxRzlR7EvitTQZpEo?usp=sharing) . I used the library for the accelerometer [Arduino_LSM6DS3.h](https://www.arduino.cc/en/Reference/ArduinoLSM6DS3)
 

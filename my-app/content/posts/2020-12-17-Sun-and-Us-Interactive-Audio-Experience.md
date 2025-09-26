@@ -133,11 +133,9 @@ The most important lesson I learned is to have a clear picture of the steps of t
 
 I want to create a simple user interface and minimal look for my experience. What is more simple than lines and circles.The left image is from my [original creative coding](https://www.openprocessing.org/sketch/927956)  and the right one is the adapted visuals for this interactive audio experience. 
 
-<!-- While looking back at my creative coding practices, I picked [the one](https://www.openprocessing.org/sketch/927956) that used times tables cardioid with my own music. I followed the [tutorial](https://thecodingtrain.com/CodingChallenges/133-times-tables-cardioid.html) by the amazing Daniel Shiffman, a.k.a., The Coding Train. -->
-
 <div class="img-container">
-<img class="img-responsive" src="assets/sun-and-us/timestable.png">
-<img class="img-responsive" src="assets/sun-and-us/demo.png">
+<img class="img-responsive" src="sun-and-us/timestable.png" alt="Original creative coding">
+<img class="img-responsive" src="sun-and-us/demo.png" alt="Adapted visuals for interactive experience">
 </div>
 
 # Resources

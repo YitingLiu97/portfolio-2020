@@ -94,10 +94,12 @@ The “I am in control” is the general tone of experts who tried to analyze an
 **Blender building 3D museum**
 
 **Unity working on lighting, interactivity, and scripting**
-![toilet-paper-mania/demo3.png](toilet-paper-mania/demo3.png)
 
-![toilet-paper-mania/demo2.png](toilet-paper-mania/demo2.png){:class="img-responsive"}
-![toilet-paper-mania/demo1.png](toilet-paper-mania/demo1.png){:class="img-responsive"}
+<div class="image-carousel">
+<img src="toilet-paper-mania/demo3.png" alt="Unity Demo 3">
+<img src="toilet-paper-mania/demo2.png" alt="Unity Demo 2">
+<img src="toilet-paper-mania/demo1.png" alt="Unity Demo 1">
+</div>
 
 ## Refinement and Testing
 

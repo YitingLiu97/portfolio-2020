@@ -20,7 +20,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 
 **Skills:** Spark AR, Blender, Unity, Audition, Ableton Live, Adobe Creative Suite
 
-<div class="grid-parent2">
+<div class="video-grid-2">
 
 <div class="iframe-container">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/DOcL6WPwM3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

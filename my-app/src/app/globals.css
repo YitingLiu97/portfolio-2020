@@ -1098,10 +1098,10 @@ a:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin: 4rem 0;
-  width: 100%;
-  max-width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  position: relative;
+  left: 100%;
+  transform: translateX(-50%);
   padding: 0 2rem;
   box-sizing: border-box;
 }
@@ -1112,10 +1112,24 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin: 4rem 0;
-  width: 100%;
-  max-width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* Grid container for 4 columns */
+.post-content .video-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin: 4rem 0;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0 2rem;
   box-sizing: border-box;
 }
@@ -1292,7 +1306,9 @@ a:hover {
 .post-content .video-grid-2 iframe[src*="youtube.com"],
 .post-content .video-grid-2 iframe[src*="vimeo.com"],
 .post-content .video-grid-3 iframe[src*="youtube.com"],
-.post-content .video-grid-3 iframe[src*="vimeo.com"] {
+.post-content .video-grid-3 iframe[src*="vimeo.com"],
+.post-content .video-grid-4 iframe[src*="youtube.com"],
+.post-content .video-grid-4 iframe[src*="vimeo.com"] {
   margin-left: 0 !important;
   margin-right: 0 !important;
   max-width: 100% !important;
@@ -1305,7 +1321,8 @@ a:hover {
 @media (max-width: 1024px) {
   .post-content .grid-parent2,
   .post-content .video-grid-2,
-  .post-content .video-grid-3 {
+  .post-content .video-grid-3,
+  .post-content .video-grid-4 {
     grid-template-columns: repeat(2, 1fr);
     padding: 0 1rem;
   }
@@ -1323,7 +1340,8 @@ a:hover {
 @media (max-width: 768px) {
   .post-content .grid-parent2,
   .post-content .video-grid-2,
-  .post-content .video-grid-3 {
+  .post-content .video-grid-3,
+  .post-content .video-grid-4 {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
@@ -1364,6 +1382,57 @@ a:hover {
   border-radius: 8px;
   margin: 2rem 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Image container for grouped images */
+.img-container {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Responsive image styling */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Carousel container */
+.image-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-carousel img {
+  flex: 0 0 auto;
+  max-width: 300px;
+  height: auto;
+  scroll-snap-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Center single images */
+.post-content img.center,
+.post-content .img-center {
+  display: block;
+  margin: 2rem auto;
+  text-align: center;
 }
 
 /* Large images - make them full-width */
@@ -1375,6 +1444,23 @@ a:hover {
   margin-right: calc(-50vw + 50%);
   border-radius: 0;
   margin: 3rem 0;
+}
+
+/* Responsive image containers */
+@media (max-width: 768px) {
+  .img-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .img-responsive {
+    flex: none;
+    max-width: 100%;
+  }
+  
+  .image-carousel img {
+    max-width: 250px;
+  }
 }
 
 /* Typography in posts */
@@ -1802,7 +1888,6 @@ a:hover {
   gap: var(--space-sm);
   padding: var(--space-lg) var(--space-2xl);
   /* background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%); */
-  color: var(--color-white);
   border: none;
   border-radius: var(--radius-md);
   font-size: var(--text-lg);

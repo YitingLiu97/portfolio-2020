@@ -83,7 +83,6 @@ I wanted to work with Marvelous on Saturday but I spent the whole day working wi
 <div class="img-container">
 <img class="img-responsive" src="tuna-world/greenscreen-radical.png">
 <img class="img-responsive" src="tuna-world/radical.png">
-
 </div>
 
 
@@ -107,21 +106,21 @@ I wanted to work with Marvelous on Saturday but I spent the whole day working wi
 
 ## Animations from Mixamo
 
-![tuna-world/animationList.png](tuna-world/animationList.png)
-![tuna-world/sequencer.png](tuna-world/sequencer.png)
+<div class="image-carousel">
+<img src="tuna-world/animationList.png" alt="Animation List">
+<img src="tuna-world/sequencer.png" alt="Sequencer">
+</div>
 
 
 ## POV in UE4
 
 ![tuna-world/pov.png](tuna-world/pov.png)
 
-
 ## Fixing in UE
 
 ### UV unwrap in UE and changing the scale of iris
 
 ![tuna-world/uvtexture.png](tuna-world/uvtexture.png)
-
 
 ![tuna-world/pupilremap.png](tuna-world/pupilremap.png)
 
