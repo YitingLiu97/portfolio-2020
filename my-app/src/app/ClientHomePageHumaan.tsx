@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import MainPageVideoLogo from '@/components/MainPageVideoLogo';
 
 interface PostData {
   id: string;
@@ -21,6 +20,9 @@ interface ClientHomePageProps {
 export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
   const [selectedTag, setSelectedTag] = useState<string>('All');
   const [filteredPosts, setFilteredPosts] = useState(posts);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   // Get all unique tags from posts
   const allTags = ['All'];
@@ -42,23 +44,103 @@ export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
     }
   }, [selectedTag, posts]);
 
+  // Video management effects
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const handleLoadedData = () => {
+      setVideoLoaded(true);
+      setVideoError(false);
+    };
+
+    const handleError = () => {
+      setVideoError(true);
+      setVideoLoaded(false);
+    };
+
+    const handleCanPlayThrough = () => {
+      // Ensure video starts playing when it's ready
+      video.play().catch(err => {
+        console.warn('Video autoplay failed:', err);
+      });
+    };
+
+    video.addEventListener('loadeddata', handleLoadedData);
+    video.addEventListener('error', handleError);
+    video.addEventListener('canplaythrough', handleCanPlayThrough);
+
+    // Preload the video
+    video.load();
+
+    return () => {
+      video.removeEventListener('loadeddata', handleLoadedData);
+      video.removeEventListener('error', handleError);
+      video.removeEventListener('canplaythrough', handleCanPlayThrough);
+    };
+  }, []);
+
+  // Re-initialize video when component mounts (for navigation back)
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video && videoLoaded) {
+      // Small delay to ensure DOM is ready
+      const timer = setTimeout(() => {
+        video.currentTime = 0;
+        video.play().catch(err => {
+          console.warn('Video restart failed:', err);
+        });
+      }, 100);
+
+      return () => clearTimeout(timer);
+    }
+  }, [videoLoaded]);
+
   return (
     <>
-      {/* Main Page Video Logo Overlay */}
-      <MainPageVideoLogo position="bottom-left" />
-      
       {/* Minimal Hero Section with Video */}
       <section className="humaan-hero">
         <div className="hero-video-container">
           <video
+            ref={videoRef}
             className="hero-video"
             autoPlay
             muted
             loop
             playsInline
+            preload="auto"
+            poster="" // We'll skip poster for now since video loads quickly
+            style={{ 
+              opacity: videoLoaded ? 1 : 0, 
+              transition: 'opacity 0.5s ease-in-out' 
+            }}
           >
-            <source src="/assets/Small-Reel.mp4" type="video/mp4" />
+            <source src="/Small-Reel.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
+          
+          {/* Loading state */}
+          {!videoLoaded && !videoError && (
+            <div className="video-loading-state">
+              <div className="loading-spinner"></div>
+              <p>Loading video...</p>
+            </div>
+          )}
+          
+          {/* Error state */}
+          {videoError && (
+            <div className="video-error-state">
+              <div className="error-placeholder">
+                <Image
+                  src="/yiting-white-logo.png"
+                  alt="Yiting Liu"
+                  width={200}
+                  height={60}
+                  className="fallback-logo"
+                />
+              </div>
+            </div>
+          )}
         </div>
         
         <div className="hero-overlay">
