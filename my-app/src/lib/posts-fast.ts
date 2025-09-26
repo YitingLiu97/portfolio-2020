@@ -150,6 +150,11 @@ function createPostDataFromFile(fileName: string): PostData {
 }
 
 export function getSortedPostsData(): PostData[] {
+  // Always refresh in development to pick up file changes
+  if (process.env.NODE_ENV === 'development') {
+    postsCache = null;
+  }
+  
   if (postsCache) {
     return postsCache;
   }
@@ -191,15 +196,24 @@ export async function getPostData(id: string): Promise<PostData> {
       const { data } = matter(fileContents);
       
       // Check if permalink matches (with or without leading slash)
-      const permalink = data.permalink?.replace(/^\//, '') || '';
-      if (permalink === id || permalink === id.replace(/^\//, '')) {
+      const permalink = data.permalink?.replace(/^\//, '').replace(/\/$/, '') || '';
+      const cleanId = id.replace(/^\//, '').replace(/\/$/, '');
+      
+      if (permalink === cleanId) {
         targetFile = fileName;
         break;
       }
       
       // Also check if the file ID matches
       const fileId = fileName.replace(/\.md$/, '');
-      if (fileId === id || fileId.includes(id)) {
+      if (fileId === cleanId || fileId.includes(cleanId)) {
+        targetFile = fileName;
+        break;
+      }
+      
+      // Check if the filename without date prefix matches
+      const fileNameWithoutDate = fileName.replace(/^\d{4}-\d{2}-\d{2}-/, '').replace(/\.md$/, '');
+      if (fileNameWithoutDate === cleanId || cleanId.includes(fileNameWithoutDate)) {
         targetFile = fileName;
         break;
       }
