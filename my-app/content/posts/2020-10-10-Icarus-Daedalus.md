@@ -7,7 +7,7 @@ description: "Icarus is an experimental project presenting the same story throug
 
 tags: 
 - Web 
-preview: /assets/icarus/demo.png
+preview: icarus/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -37,7 +37,7 @@ Listen and close your eyes.
 
 <br>
 
-[Script for Icarus](assets/icarus/Icarus-Script.html)
+[Script for Icarus](icarus/Icarus-Script.html)
 
 # Version II
 
@@ -62,4 +62,4 @@ We decided to create a narrative from the father's point of view. In order to ma
 
 We chose to create two options for each option and thread them in between. For more details, contact me for the miro board link. 
 
-![assets/icarus/mindmap.png](assets/icarus/mindmap.png)
+![icarus/mindmap.png](icarus/mindmap.png)

@@ -6,7 +6,7 @@ permalink: toilet-paper-mania-virtual-experience
 description: "Toilet Paper Mania is a humorous virtual experience that explores the absurdity of the toilet paper hoarding craze during COVID-19."
 tags: 
 - Unity 
-preview: /assets/toilet-paper-mania/demo3.png 
+preview: toilet-paper-mania/demo3.png 
 author: Yiting Liu 
 lang: en
 
@@ -89,15 +89,15 @@ The “I am in control” is the general tone of experts who tried to analyze an
 
 **Sketch**
 
-![assets/toilet-paper-mania/sketch.png](assets/toilet-paper-mania/sketch.png)
+![toilet-paper-mania/sketch.png](toilet-paper-mania/sketch.png)
 
 **Blender building 3D museum**
 
 **Unity working on lighting, interactivity, and scripting**
-![assets/toilet-paper-mania/demo3.png](assets/toilet-paper-mania/demo3.png)
+![toilet-paper-mania/demo3.png](toilet-paper-mania/demo3.png)
 
-![assets/toilet-paper-mania/demo2.png](assets/toilet-paper-mania/demo2.png){:class="img-responsive"}
-![assets/toilet-paper-mania/demo1.png](assets/toilet-paper-mania/demo1.png){:class="img-responsive"}
+![toilet-paper-mania/demo2.png](toilet-paper-mania/demo2.png){:class="img-responsive"}
+![toilet-paper-mania/demo1.png](toilet-paper-mania/demo1.png){:class="img-responsive"}
 
 ## Refinement and Testing
 

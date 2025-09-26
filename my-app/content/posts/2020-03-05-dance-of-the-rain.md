@@ -7,7 +7,7 @@ description: "Rain Dance is a light-based visualization of historical rainfall d
 
 tags:
 - Installation 
-preview: /assets/dance-of-the-rain/demo.png
+preview: dance-of-the-rain/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -44,11 +44,11 @@ There are certain parts of New York that remind me of my hometown back in China.
 <!-- 
 ### Sketch for Installation
 
-![assets/dance-of-the-rain/installation-sketch.png](assets/dance-of-the-rain/installation-sketch.png) -->
+![dance-of-the-rain/installation-sketch.png](dance-of-the-rain/installation-sketch.png) -->
 
 ### System diagram
 
-![assets/dance-of-the-rain/systematic%20diargram%20-%20%20dance%20of%20the%20rain.png](assets/dance-of-the-rain/systematic%20diargram%20-%20%20dance%20of%20the%20rain.png)
+![dance-of-the-rain/systematic%20diargram%20-%20%20dance%20of%20the%20rain.png](dance-of-the-rain/systematic%20diargram%20-%20%20dance%20of%20the%20rain.png)
 
 *Special thanks to [Yeseul Song](https://yeseul.com/).*
 

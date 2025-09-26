@@ -7,7 +7,7 @@ description: "All Connect is an interactive video sculpture that exposes the und
 category: sculpture
 tags: 
 - Installation 
-preview: /assets/all-connecting/demo.png
+preview: all-connecting/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -53,7 +53,7 @@ Creative technologist working with Carnivore library in Processing to fetch and 
 
 Inspired by the artwork, The Wave by Hans Haacke (1965), in which he captured and analyzed the physical systems and presented them in a museum setting. We brainstormed in terms of the representations for the systems in the digital world in terms of information exchange and attention exchange.
 
-![assets/all-connecting/hans.png](assets/all-connecting/hans.png)
+![all-connecting/hans.png](all-connecting/hans.png)
 
 We started off by the recent exhibition of his [All Connected at the New Museum](https://www.newmuseum.org/exhibitions/view/hans-haacke).
 
@@ -64,7 +64,7 @@ It was mentioned that Haacke was inspired by the ‘System Esthetics’ by Jack 
 ## Ideation/Exploration
 <!-- remake mood board again -->
 
-![assets//all-connecting/moodboard-all-connecting.png](assets//all-connecting/moodboard-all-connecting.png)
+![/all-connecting/moodboard-all-connecting.png](/all-connecting/moodboard-all-connecting.png)
 
 We then started to branch out from here to think of forms such as
 
@@ -77,7 +77,7 @@ We were talking about how each request from the web browser generated several pa
 
 ### Rough Idea
 
-![assets/all-connecting/Interaction-design-all-connecting.png](assets/all-connecting/Interaction-design-all-connecting.png)
+![all-connecting/Interaction-design-all-connecting.png](all-connecting/Interaction-design-all-connecting.png)
 
 - A user enters a room with a computer in it
 - He/she is prompted to do something to a computer – web browser
@@ -96,15 +96,15 @@ OSC and external CNMET don’t work with my Max which was unfortunate. I used No
 
 I worked mainly on getting the packet data from the computer to processing. I then started working with processing using Carnivore library to get the packet data. I worked on getting the IP address of the receiver and sender address and compare if it is processed through my computer’s ip address. We will have 16 pipes, 8 pipes of information will be going from the sender to the receiver while the rest will be vice versa.
 
-![assets/all-connecting/elements-all-connecting.png](assets/all-connecting/elements-all-connecting.png)
+![all-connecting/elements-all-connecting.png](all-connecting/elements-all-connecting.png)
 
 I wrote some code to help divide the ip address into 8 sections. Since the first part of the IP address has a range of 0-255(reference), I made sure each part has the range of 255/8. I wrote a function in processing to get all the information needed to return the text as a string which will be transported into madmapper. Below shows the packet information in the console in Processing. [My code can be found here](https://drive.google.com/drive/folders/10VUQl0vsMkciVnkXINt0KHBGixaJ4sCt?usp=sharing) . The final combined code can be found [here](https://drive.google.com/open?id=1he5iUf8QqjOFdluyKZK_ZKAvk9P1Ll2C).
 
-![assets//all-connecting/get-packet-1.png](assets//all-connecting/get-packet-1.png)
+![/all-connecting/get-packet-1.png](/all-connecting/get-packet-1.png)
 
 We used Syphon to project the processing content and used MadMapper to map different pipes of corresponding sections of packet data.
 
-![assets//all-connecting/madmapper.png](assets//all-connecting/madmapper.png)
+![/all-connecting/madmapper.png](/all-connecting/madmapper.png)
 
 <!-- ## Solution
 

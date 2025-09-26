@@ -6,7 +6,7 @@ permalink: audio-diary-express-emotions
 description: "Audio Diary is an app that encourages users to talk about their feelings, providing a space for emotional expression and support through voice."
 tags: 
 - Web 
-preview: /assets/audio-diary/demo.png
+preview: audio-diary/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -70,13 +70,13 @@ I used p5.js and p5 speech library to create an audio diary with some visual twi
 
 For the color palette, I selected the pastel color to create a sense of calm and positivity.
 
-![assets/audio-diary/color_palette.png](assets/audio-diary/color_palette.png)
+![audio-diary/color_palette.png](audio-diary/color_palette.png)
 
 ## Interaction Flow
 
 For the user interaction, I created the experience flow as below:
 
-![assets/audio-diary/interaction.png](assets/audio-diary/interaction.png)
+![audio-diary/interaction.png](audio-diary/interaction.png)
 
 # Testing
 

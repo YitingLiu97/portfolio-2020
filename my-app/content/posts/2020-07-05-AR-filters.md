@@ -7,7 +7,7 @@ description: A creative collection of augmented reality filters that delve into 
 category: immersive
 tags: 
 - XR
-preview: /assets/AR-filters/demo.png
+preview: AR-filters/demo.png
 author: Yiting Liu 
 lang: en
 

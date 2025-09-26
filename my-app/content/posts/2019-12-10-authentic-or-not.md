@@ -6,7 +6,7 @@ permalink: authentic-or-not-visual-recipe-game
 description: "Authentic or Not is an interactive game designed to help users learn recipes visually, blending education with fun and creativity."
 tags: 
 - Installation 
-preview: /assets/authentic-or-not/authenticornot-demo.jpg
+preview: authentic-or-not/authenticornot-demo.jpg
 author: Yiting Liu 
 lang: en
 
@@ -41,18 +41,17 @@ This project is created to educate people to cook traditional authentic food. As
 - 2020 Liberty Science Center 2020 -->
 
 
-
 ## Problem Statement
 
 **How to teach people authentic food to carry on the heritage of our culture?**
 <div class="img-container">
-<img class="img-responsive" src="assets/authentic-or-not/authenticornot-demo.jpg">
-<img class="img-responsive" src="assets/authentic-or-not/authenticornot-enclosure-inside.jpeg">
+<img class="img-responsive" src="authentic-or-not/authenticornot-demo.jpg">
+<img class="img-responsive" src="authentic-or-not/authenticornot-enclosure-inside.jpeg">
 </div>
 
 <div class="img-container">
-<img class="img-responsive" src="assets/authentic-or-not/authenticornot-stand.jpeg">
-<img class="img-responsive" src="assets/authentic-or-not/authenticornot-QR.jpeg">
+<img class="img-responsive" src="authentic-or-not/authenticornot-stand.jpeg">
+<img class="img-responsive" src="authentic-or-not/authenticornot-QR.jpeg">
 </div>
 
 
@@ -89,7 +88,7 @@ Living overseas for more than five years allows me to appreciate the Chinese cul
 
 ### Interface Design
 
-![assets/authentic-or-not/interaction-design.png](assets/authentic-or-not/interaction-design.png)
+![authentic-or-not/interaction-design.png](authentic-or-not/interaction-design.png)
 
 ### Material Selection
 
@@ -137,19 +136,19 @@ Based on the feedback, I adjusted a few to make the interactive experience smoot
 
 #### Start the game
 
-![assets/authentic-or-not/UI-begin-the-game.gif](assets/authentic-or-not/UI-begin-the-game.gif)
+![authentic-or-not/UI-begin-the-game.gif](authentic-or-not/UI-begin-the-game.gif)
 
 #### Select the recipes
 
-![assets/authentic-or-not/UI-recipe-layer-turn-to-select.gif](assets/authentic-or-not/UI-recipe-layer-turn-to-select.gif)
+![authentic-or-not/UI-recipe-layer-turn-to-select.gif](authentic-or-not/UI-recipe-layer-turn-to-select.gif)
 
 #### Select the ingredients
 
-![assets/authentic-or-not/UI-selectingingredients-aon.gif](assets/authentic-or-not/UI-selectingingredients-aon.gif)
+![authentic-or-not/UI-selectingingredients-aon.gif](authentic-or-not/UI-selectingingredients-aon.gif)
 
 #### End of the game
 
-![assets/authentic-or-not/UI-end-of-the-game.gif](assets/authentic-or-not/UI-end-of-the-game.gif)
+![authentic-or-not/UI-end-of-the-game.gif](authentic-or-not/UI-end-of-the-game.gif)
 
 ### Screen Demo
 

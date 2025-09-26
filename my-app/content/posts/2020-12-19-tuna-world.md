@@ -8,7 +8,7 @@ category: immersive
 tags:
 - Unreal
 lang: en
-preview: /assets/tuna-world/demo1.png
+preview: tuna-world/demo1.png
 author: Yiting Liu 
 ---
 **A short film of loneliness in an unreal world.**
@@ -32,19 +32,19 @@ author: Yiting Liu
 
 **Tuna lives in a flower right next to the curvy roads. In order to find happiness, she has to find her way back to the ocean.**
 
-![assets/tuna-world/miro.png](assets/tuna-world/miro.png)
+![tuna-world/miro.png](tuna-world/miro.png)
 
 # World building
 
 ## Version I
 <div class="img-container">
-<img class="img-responsive" src="assets/tuna-world/green-demo.png">
-<img class="img-responsive" src="assets/tuna-world/green-demo2.png">
+<img class="img-responsive" src="tuna-world/green-demo.png">
+<img class="img-responsive" src="tuna-world/green-demo2.png">
 </div>
 
-<!-- ![assets/tuna-world/green-demo.png](assets/tuna-world/green-demo.png)
+<!-- ![tuna-world/green-demo.png](tuna-world/green-demo.png)
 
-![assets/tuna-world/green-demo2.png](assets/tuna-world/green-demo2.png)
+![tuna-world/green-demo2.png](tuna-world/green-demo2.png)
  -->
 
 <div class="iframe-container">
@@ -59,7 +59,7 @@ In order to build up my unreal skills, I also followed the manual for unreal fro
 
 Left is the photoshopped map. Right is the unreal imported height map.
 
-![assets/tuna-world/heightmap.png](assets/tuna-world/heightmap.png)
+![tuna-world/heightmap.png](tuna-world/heightmap.png)
 
 ## Version II
 
@@ -77,19 +77,19 @@ I had so much fun working in front of a green screen. But there are problems whe
 
 I wanted to work with Marvelous on Saturday but I spent the whole day working with Unreal to find better angles and create a more cohesive story. I will update the character design in terms of costume design through Marvelous design!
 
-![assets/tuna-world/motionbuilder.png](assets/tuna-world/motionbuilder.png)
+![tuna-world/motionbuilder.png](tuna-world/motionbuilder.png)
 
 
 <div class="img-container">
-<img class="img-responsive" src="assets/tuna-world/greenscreen-radical.png">
-<img class="img-responsive" src="assets/tuna-world/radical.png">
+<img class="img-responsive" src="tuna-world/greenscreen-radical.png">
+<img class="img-responsive" src="tuna-world/radical.png">
 
 </div>
 
 
-<!-- ![assets/tuna-world/greenscreen-radical.png](assets/tuna-world/greenscreen-radical.png)
+<!-- ![tuna-world/greenscreen-radical.png](tuna-world/greenscreen-radical.png)
 
-![assets/tuna-world/radical.png](assets/tuna-world/radical.png) -->
+![tuna-world/radical.png](tuna-world/radical.png) -->
 
 # Assets
 
@@ -103,42 +103,42 @@ I wanted to work with Marvelous on Saturday but I spent the whole day working wi
 
 ## LiveLink in UE
 
-![assets/tuna-world/livelink.png](assets/tuna-world/livelink.png)
+![tuna-world/livelink.png](tuna-world/livelink.png)
 
 ## Animations from Mixamo
 
-![assets/tuna-world/animationList.png](assets/tuna-world/animationList.png)
-![assets/tuna-world/sequencer.png](assets/tuna-world/sequencer.png)
+![tuna-world/animationList.png](tuna-world/animationList.png)
+![tuna-world/sequencer.png](tuna-world/sequencer.png)
 
 
 ## POV in UE4
 
-![assets/tuna-world/pov.png](assets/tuna-world/pov.png)
+![tuna-world/pov.png](tuna-world/pov.png)
 
 
 ## Fixing in UE
 
 ### UV unwrap in UE and changing the scale of iris
 
-![assets/tuna-world/uvtexture.png](assets/tuna-world/uvtexture.png)
+![tuna-world/uvtexture.png](tuna-world/uvtexture.png)
 
 
-![assets/tuna-world/pupilremap.png](assets/tuna-world/pupilremap.png)
+![tuna-world/pupilremap.png](tuna-world/pupilremap.png)
 
 
 ### Adding eyelashes
 
-![assets/tuna-world/eyelash.png](assets/tuna-world/eyelash.png)
+![tuna-world/eyelash.png](tuna-world/eyelash.png)
 
 
 ## Animation Sequences
 
-![assets/tuna-world/animationcombo.png](assets/tuna-world/animationcombo.png)
+![tuna-world/animationcombo.png](tuna-world/animationcombo.png)
 
 
 ## Setting the Intro Scene
 
-![assets/tuna-world/demo.png](assets/tuna-world/demo.png)
+![tuna-world/demo.png](tuna-world/demo.png)
 
 <!-- ---
 

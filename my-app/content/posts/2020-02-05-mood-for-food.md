@@ -6,7 +6,7 @@ permalink: mood-for-food-emotion-based-food-app
 description: "Mood for Food is an interactive web app that recommends food options based on user emotions, blending tech and gastronomy."
 tags: 
 - Web
-preview: /assets/mood-for-food/demo.png
+preview: mood-for-food/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -71,17 +71,17 @@ After several iterations, my data model looks as below:
 **Emotion Types 🠦 Recipe Info 🠦 Ingredients 🠦 Recipe URL**
 <br  />
 
-![assets/mood-for-food/data-model-mood-for-food.png](assets/mood-for-food/data-model-mood-for-food.png)
+![mood-for-food/data-model-mood-for-food.png](mood-for-food/data-model-mood-for-food.png)
 
 I build the Schema for my database using Mongoose.
 
-![assets/mood-for-food/recipeSchema.png](assets/mood-for-food/recipeSchema.png)
+![mood-for-food/recipeSchema.png](mood-for-food/recipeSchema.png)
 
 # Ideation/Exploration
 
 Web flow
 
-![assets/mood-for-food/webflow.png](assets/mood-for-food/webflow.png)
+![mood-for-food/webflow.png](mood-for-food/webflow.png)
 
 # Development
 
@@ -91,7 +91,7 @@ Front-End is so much fun!
 
 I was having trouble with flexbox to create what I wanted. Turns out I would have to make sure the whole page with the display:flex and tweak around the row and column and other details. This website is a complete guide to flexbox.
 
-![assets/mood-for-food/foodImgsDemo.jpg](assets/mood-for-food/foodImgsDemo.jpg)
+![mood-for-food/foodImgsDemo.jpg](mood-for-food/foodImgsDemo.jpg)
 
 ## Front-End - Cursor Customization
 
@@ -99,7 +99,7 @@ I wanted to customize the cursor in JS since I would ideally want the different 
 
 So I just customize the cursor in CSS. I would love to learn to customize the cursor in JS in the future.
 
-![assets/mood-for-food/cursor.png](assets/mood-for-food/cursor.png)
+![mood-for-food/cursor.png](mood-for-food/cursor.png)
 
 ## Front-End - Interaction Flow
 
@@ -120,11 +120,11 @@ There are so many detailed aspects in terms of front-end. I wanted to create the
 
 Changing background with mouse position & Hovering on image effect.
 
-![assets/mood-for-food/moodforfood_imagehoover.gif](assets/mood-for-food/moodforfood_imagehoover.gif)
+![mood-for-food/moodforfood_imagehoover.gif](mood-for-food/moodforfood_imagehoover.gif)
 
 Generating emojis by pressing keys.
 
-![assets/mood-for-food/moodforfood_emoji.gif](assets/mood-for-food/moodforfood_emoji.gif)
+![mood-for-food/moodforfood_emoji.gif](mood-for-food/moodforfood_emoji.gif)
 
 # Refinement and Testing
 
@@ -134,7 +134,7 @@ I didn't use MongoDB at first since I was building my own JSON file. It turns ou
 
 I did conquer the part of showing the content with my previous data structure before using any MongoDB, which took a long time.
 
-![assets/mood-for-food/data-model-mood-for-food.png](assets/mood-for-food/data-model-mood-for-food.png)
+![mood-for-food/data-model-mood-for-food.png](mood-for-food/data-model-mood-for-food.png)
 
 ## Data model iterated three times
 

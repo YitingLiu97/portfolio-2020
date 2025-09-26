@@ -7,7 +7,7 @@ description: "Eye Prize critically examines the attention economy, questioning h
 
 tags: 
 - Web
-preview: /assets/eye-prize/demo.png
+preview: /eye-prize/demo.png
 author: Yiting Liu 
 lang: en
 

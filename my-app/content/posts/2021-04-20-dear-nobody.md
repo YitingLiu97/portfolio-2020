@@ -7,7 +7,7 @@ description: "Experience Dear Nobody, a VR app that guides users on a journey th
 tags: 
 - XR
 - Unity
-preview: /assets/dear-nobody/demo.png
+preview: dear-nobody/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -45,7 +45,7 @@ This project stems from my close-to-death experience, which led me to explore fe
 
 # Development Process
 ## Research
-![assets/dear-nobody/research.jpg](assets/dear-nobody/research.jpg)
+![dear-nobody/research.jpg](dear-nobody/research.jpg)
 - Philosophical Foundations: I delved into stoic and Buddhist philosophies to shape the character “Nobody” and the app’s narrative. This research guided me toward designing a contemplative experience, fostering empathy and emotional awareness.
 - Personal Journaling: Throughout the project, I kept a journal of my thoughts, using these reflections to develop character elements that feel authentic and relatable.
 

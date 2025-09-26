@@ -8,7 +8,7 @@ tags:
 - iOS
 - Unity
 lang: en
-preview: /assets/spatial-sound/demo.JPG
+preview: spatial-sound/demo.JPG
 author: Yiting Liu 
 ---
 | Title                     | Details |

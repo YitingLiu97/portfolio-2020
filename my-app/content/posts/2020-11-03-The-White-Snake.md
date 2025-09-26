@@ -7,7 +7,7 @@ description: "White Snake reimagines the classic Chinese myth through non-linear
 tags: 
 - Web
 lang: en
-preview: /assets/white-snake/demo.png
+preview: white-snake/demo.png
 author: Yiting Liu 
 
 ---
@@ -57,7 +57,7 @@ In terms of using the website as the technology, we want users to solely focus o
 
 Also, everybody's attention span is finite. We want to use only text, audio, and shapes to pull users closer to their imagination. We decided on making the circles but give them individuality in their movements and color to echo the characterization in the audio design mentioned below. 
 
-![assets/white-snake/demo2.png](assets/white-snake/demo2.png)
+![white-snake/demo2.png](white-snake/demo2.png)
 
 
 ## Script development

@@ -6,7 +6,7 @@ permalink: /double-date-device-and-human-attention/
 description: "Double Date is an interactive video installation that explores the attention dynamics between devices and human interactions."
 tags: 
 - Installation 
-preview: /assets/double-date/demo.png 
+preview: double-date/demo.png 
 author: Yiting Liu 
 lang: en
 
@@ -39,7 +39,7 @@ lang: en
 ## Problem Statement
 How might we make people aware of their relationships with loved ones and their phones?
 
-![assets/double-date/presentation.jpg](assets/double-date/presentation.jpg)
+![double-date/presentation.jpg](double-date/presentation.jpg)
 
 ## Concept
 
@@ -59,7 +59,7 @@ We want to point out the digital culture of the phone in the form of interactive
 
 ## Ideation/Exploration
 
-![assets/double-date/interaction-design-double-date.png](assets/double-date/interaction-design-double-date.png)
+![double-date/interaction-design-double-date.png](double-date/interaction-design-double-date.png)
 
 During our brainstorming process, we had several ideas, most of which are involved with people being controlled by the things they own.
 
@@ -95,7 +95,7 @@ The video footage of the couple was created by Dina and Patrick. The background 
 
 We then created a modern dating environment using after effects as shown below.
 
-![assets/double-date/video%201.jpg](assets/double-date/video%201.jpg)
+![double-date/video%201.jpg](double-date/video%201.jpg)
 
 *Still from video one when the couple is having a good time chatting.*
 
@@ -116,7 +116,7 @@ We chose to work with Sprite for our project for several reasons:
 
 For the code, I used the Accelerometer and Arduino Uno to determine if the phone is up or down. I added the button as another condition to trigger the third video.
 
-![assets/double-date/schematics-double-date.png](assets/double-date/schematics-double-date.png)
+![double-date/schematics-double-date.png](double-date/schematics-double-date.png)
 
 You can look at my [code here](https://drive.google.com/drive/folders/1M7i6hdTupYVWaKsjxRzlR7EvitTQZpEo?usp=sharing) . I used the library for the accelerometer [Arduino_LSM6DS3.h](https://www.arduino.cc/en/Reference/ArduinoLSM6DS3)
 
@@ -124,8 +124,8 @@ I fabricated the phone which functions as an enclosure as well using plywood and
 
 
 <div class="img-container">
-<img class="img-responsive" src="assets/double-date/phone-paper.jpg">
-<img class="img-responsive" src="assets/double-date/phone.jpg">
+<img class="img-responsive" src="double-date/phone-paper.jpg">
+<img class="img-responsive" src="double-date/phone.jpg">
 </div>
 
 ## Solution

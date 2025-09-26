@@ -8,7 +8,7 @@ description: Sixth Sense is an augmented reality app that simulates schizophreni
 tags: 
 - XR
 - Unity
-preview: /assets/sixthsense/demo.png
+preview: sixthsense/demo.png
 author: Yiting Liu 
 lang: en
 ---
@@ -52,7 +52,7 @@ Building empathy and awareness around psychosis is crucial to effective allyship
 -  Validate the personal experience for those with schizophrenia  -->
 
 # The App 
-To experience the app, download [The Lab](https://developer.magicleap.com/en-us/learn/guides/lab) and use Device Bridge to load the [application](assets/sixthsense/AllScene.mpk) on your Magic Leap One device. 
+To experience the app, download [The Lab](https://developer.magicleap.com/en-us/learn/guides/lab) and use Device Bridge to load the [application](sixthsense/AllScene.mpk) on your Magic Leap One device. 
 
 ## User Journey 
 In the app, the user embarks on a journey in the shoes of someone living with schizophrenia, guided by a supportive friend. Routine encounters of daily life spark auditory hallucinations, and the player must rely on their friend’s guidance to navigate these unsettling experiences.
@@ -95,8 +95,8 @@ Successful Build: After around 20 hours of troubleshooting, I was thrilled to fi
 	<li>[Laughter] "Did that hurt your feelings?"</li>
 </ul>
 
-<!-- <img src="assets/sixthsense/storyboard.jpg"> -->
-<!-- ![assets/sixthsense/storyboard.jpg](assets/sixthsense/storyboard.jpg) -->
+<!-- <img src="sixthsense/storyboard.jpg"> -->
+<!-- ![sixthsense/storyboard.jpg](sixthsense/storyboard.jpg) -->
 
 
 # Challenges & Solutions
@@ -110,13 +110,13 @@ Mabu and manifest.xml Issues: Working with Mabu and manifest.xml proved challeng
 
 <!-- Challenges & Solutions
 
-<img src="assets/sixthsense/Mabu-issue.png">
+<img src="sixthsense/Mabu-issue.png">
 <br>
 
 <li> I enjoyed the documentation on Magic Leap’s official website. Yet there is one website that has confusing most up to date templates. Luckily github comes to the rescue. Here is the image showing that zero iteration works with the Magic Leap Unity Exmamples repo. </li>
 <br>
 <br>
-<img src="assets/sixthsense/zero-iteration-working.png">
+<img src="sixthsense/zero-iteration-working.png">
 <br><br>
 <li>Registering issues with Magic Leap. We have three Magic Leap devices to develop for yet due to the registering issue, we ended up working with one registered magic leap for our development. </li>
 <br>

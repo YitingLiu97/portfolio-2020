@@ -8,7 +8,7 @@ tags:
 - XR
 - Unity
 lang: en
-preview: /assets/lifelines/demo.gif
+preview: lifelines/demo.gif
 author: Yiting Liu 
 ---
 
@@ -47,7 +47,7 @@ LifelinesAR leverages augmented reality (AR) to transform therapy by meeting the
 
 ## Interaction Design 
 <div class="img-container">
-<img class="img-responsive" src="assets/lifelines/interaction.jpg">
+<img class="img-responsive" src="lifelines/interaction.jpg">
 </div>
 
 # Impact & Results
@@ -55,7 +55,7 @@ LifelinesAR helps therapists and patients connect on a deeper level, enhancing t
 
 # **Special Thanks to**
 
-![assets/lifelines/grouppic.jpg](assets/lifelines/grouppic.jpg)
+![lifelines/grouppic.jpg](lifelines/grouppic.jpg)
 
 My wonderful team: [Bryant Wood](https://www.linkedin.com/in/bryantwood/), [Daniel Sisson](https://www.linkedin.com/in/danielsisson/), [William de Oliveira](https://www.linkedin.com/in/wdeoliveira/), & [Jenny Fang](https://www.linkedin.com/in/jenny-fang-396124aa/)
 

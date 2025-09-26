@@ -6,7 +6,7 @@ permalink: forest-of-sounds-interactive-music-installation
 description: "Forest of Sounds is an interactive music installation that transforms mundane daily sounds into an immersive audio experience."
 tags: 
 - Installation 
-preview: /assets/forest-of-sounds/demo.png
+preview: forest-of-sounds/demo.png
 author: Yiting Liu 
 lang: en
 
@@ -40,25 +40,25 @@ This project is a human-size installation which is divided into four sections as
 **Development
 Physical Prototype**
 
-![assets/forest-of-sounds/demo.png](assets/forest-of-sounds/demo.png)
+![forest-of-sounds/demo.png](forest-of-sounds/demo.png)
 
-![assets/forest-of-sounds/forest-of-sounds-installation.png](assets/forest-of-sounds/forest-of-sounds-installation.png)
+![forest-of-sounds/forest-of-sounds-installation.png](forest-of-sounds/forest-of-sounds-installation.png)
 
 ### Schematics
 
-![assets//forest-of-sounds/forest-of-sounds-schematics.png](assets//forest-of-sounds/forest-of-sounds-schematics.png)
+![/forest-of-sounds/forest-of-sounds-schematics.png](/forest-of-sounds/forest-of-sounds-schematics.png)
 
 ### Drum kits made by daily sounds
 <div class="img-container">
-<img class="img-responsive" src="assets/forest-of-sounds/sounds1.png">
-<img class="img-responsive" src="assets/forest-of-sounds/sounds2.png">
+<img class="img-responsive" src="forest-of-sounds/sounds1.png">
+<img class="img-responsive" src="forest-of-sounds/sounds2.png">
 </div>
 
 ## Refinement and Testing
 
-![assets//forest-of-sounds/forest-of-sounds-idle.png](assets//forest-of-sounds/forest-of-sounds-idle.png){:class="i"}
+![/forest-of-sounds/forest-of-sounds-idle.png](/forest-of-sounds/forest-of-sounds-idle.png){:class="i"}
 
-![assets//forest-of-sounds/forest-of-sounds-active.png](assets//forest-of-sounds/forest-of-sounds-active.png)
+![/forest-of-sounds/forest-of-sounds-active.png](/forest-of-sounds/forest-of-sounds-active.png)
 
 ## Moving forward
 

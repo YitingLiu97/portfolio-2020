@@ -7,7 +7,7 @@ description: "Sun and Us is an interactive art piece where participants perform 
 lang: en
 tags: 
 - Web
-preview: /assets/sun-and-us/demo.png
+preview: sun-and-us/demo.png
 author: Yiting Liu 
 ---
 
