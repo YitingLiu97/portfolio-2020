@@ -1,0 +1,52 @@
+{
+  "files": {
+    "layout": {
+      "hasMetadataBase": true,
+      "hasCanonical": true,
+      "hasOpenGraph": true,
+      "hasTwitter": true,
+      "hasRobots": true,
+      "importsSEOHelpers": true
+    },
+    "seoHelpers": {
+      "hasSiteUrl": true,
+      "hasAbsoluteUrl": true,
+      "hasCanonicalBuilder": true,
+      "hasDateHelper": true
+    },
+    "englishPage": {
+      "hasGenerateMetadata": true,
+      "hasCanonical": true,
+      "hasOpenGraph": true,
+      "hasTwitter": true,
+      "hasJsonLd": true,
+      "hasBlogPostingSchema": true,
+      "hasRobots": true
+    },
+    "chinesePage": {
+      "hasGenerateMetadata": true,
+      "hasCanonical": true,
+      "hasLanguageAlternates": true,
+      "hasJsonLd": true,
+      "hasBlogPostingSchema": true,
+      "hasRobots": true
+    }
+  },
+  "issues": [],
+  "successes": [
+    "Layout has metadataBase",
+    "Layout has canonical URLs",
+    "Layout has Open Graph",
+    "Layout has Twitter Cards",
+    "Layout imports SEO helpers",
+    "SEO helpers have SITE_URL",
+    "SEO helpers have absoluteUrl function",
+    "SEO helpers have buildCanonicalUrl function",
+    "English page has generateMetadata",
+    "English page has JSON-LD",
+    "English page has BlogPosting schema",
+    "Chinese page has generateMetadata",
+    "Chinese page has language alternates",
+    "Chinese page has JSON-LD"
+  ]
+}
