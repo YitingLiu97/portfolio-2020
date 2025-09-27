@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Enable for Vercel deployment - supports both static and SSR
-  // output: 'export', // Disable for Vercel (enables API routes & ISR)
+  // Vercel deployment - no static export needed
   trailingSlash: true,
   images: {
     unoptimized: false, // Vercel handles image optimization
@@ -10,10 +9,10 @@ const nextConfig: NextConfig = {
   
   // Production build settings
   typescript: {
-    ignoreBuildErrors: false,
+    ignoreBuildErrors: false, // Enable type checking for production
   },
   eslint: {
-    ignoreDuringBuilds: true, // Temporary: ignore lint errors during build
+    ignoreDuringBuilds: true, // Temporarily ignore lint errors
   },
   
   // Minimal webpack config

@@ -12,7 +12,7 @@ export default function ZhHomePage() {
   return (
     <>
       <LanguageSwitcher currentLang="zh" />
-      <Header lang="zh" />
+      <Header />
       
       <div>
         <section className="hero-section">
