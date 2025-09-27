@@ -161,7 +161,9 @@ export default function ClientHomePageHumaan({ posts }: ClientHomePageProps) {
           </div>
           
           <div className="scroll-indicator-minimal">
-            <div className="scroll-line"></div>
+            {/* <div className="scroll-line">
+              <p>scroll down</p>
+            </div> */}
           </div>
         </div>
       </section>

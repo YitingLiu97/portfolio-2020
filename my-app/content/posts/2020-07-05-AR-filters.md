@@ -22,7 +22,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 
 <div class="video-grid-2">
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/DOcL6WPwM3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://www.instagram.com/ar/624572091465386/">To do BLM</a></h3>
@@ -30,7 +30,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/icw54khD9sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/384247682536212/">George Floyd</a></h3>
@@ -38,7 +38,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/9nzHOaSxth4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/855888854895272/">Face Changing</a></h3>
@@ -46,7 +46,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jcbApqlP8xQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/948732372236648/">Cry me a River</a></h3>
@@ -54,7 +54,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CnYZOe4dqMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/236310671119444/">Feels</a></h3>
@@ -62,7 +62,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2gSJVx-LkMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/2736256606480132/">Existential Crisis</a></h3>
@@ -70,7 +70,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/anstzm97H2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/268298264313019/">Property</a></h3>
@@ -78,7 +78,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/cSQ1LnA04GA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/896483817492469/">Barbara Kruger</a></h3>
@@ -86,7 +86,7 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 </div>
 </div>
 
-<div class="iframe-container">
+<div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ihbGRpPZMjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div class="video-description">
 <h3><a href="https://instagram.com/ar/571194523779960/">Drawing in the World</a></h3>
