@@ -1165,6 +1165,64 @@ a:hover {
   border: none;
 }
 
+.post-content .video-card-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.post-content .video-card-vertical .iframe-container-vertical {
+  margin: 0;
+  max-width: 380px;
+  width: 100%;
+}
+
+.post-content .video-card-vertical .video-description {
+  display: block;
+  width: 100%;
+  max-width: 380px;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--color-gray-dark);
+  border-radius: 12px;
+  border-top: none;
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.08);
+  flex: none;
+  text-align: left;
+}
+
+.post-content .video-card-vertical .video-description h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  color: var(--brand-accent);
+}
+
+.post-content .video-card-vertical .video-description h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-content .video-card-vertical .video-description h3 a:hover {
+  color: var(--brand-secondary);
+}
+
+.post-content .video-card-vertical .video-description p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-gray-dark);
+}
+
+.post-content .video-card-vertical .video-description p a {
+  color: var(--brand-accent);
+}
+
+.post-content .video-card-vertical .video-description p a:hover {
+  color: var(--brand-secondary);
+}
+
 /* When iframe-container has video-description, adjust aspect ratio */
 .post-content .iframe-container:has(.video-description) {
   aspect-ratio: auto;

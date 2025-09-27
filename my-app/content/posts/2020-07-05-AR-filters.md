@@ -22,76 +22,121 @@ Since May 2020, I have been creating AR filters using Spark AR, a platform for a
 
 <div class="video-grid-2">
 
+<div class="video-card-vertical">
+
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/DOcL6WPwM3M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://www.instagram.com/ar/624572091465386/">To do BLM</a></h3>
 <p>This is created to target people to act towards the movement to defund the police in 2020. Actions speak louder than words.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/icw54khD9sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/384247682536212/">George Floyd</a></h3>
 <p>Inspired by the incident that 75 policemen guarded in front of Derek Chauvin's place after the murder of George Floyd on May 25, 2020. The brutality and the flawed system terrified me.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/9nzHOaSxth4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/855888854895272/">Face Changing</a></h3>
 <p>This is inspired by the <a href="https://www.youtube.com/watch?v=9m45LXxX-IY">Chinese ancient dramatic art</a> from Sichuan Opera. Constant face changing reveals the emotional states of the performer.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/jcbApqlP8xQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/948732372236648/">Cry me a River</a></h3>
 <p>You can drown in your sorrow in the most beautiful way possible. Blink to cry and open mouth to survive. I incorporated audio in this piece.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/CnYZOe4dqMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/236310671119444/">Feels</a></h3>
 <p>Choose your colors of mood by moving your head. I customized several LUT and manipulated the pixelations with head rotation.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/2gSJVx-LkMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/2736256606480132/">Existential Crisis</a></h3>
 <p>Questions I constantly ask myself: Who am I? What's the point? Why do we exist?</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/anstzm97H2w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/268298264313019/">Property</a></h3>
 <p>We have many roles in life. I am a citizen, daughter, friend, a student and many more. There are some conflicts between different roles. How should we do when dealing with conflicts among the roles?</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/cSQ1LnA04GA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/896483817492469/">Barbara Kruger</a></h3>
 <p>This filter is made to honor Barbara Kruger. Some of her messages are timely even today. Her original messages are mostly about female reproductive rights but the messages chosen in the filter can be applied to broader groups.</p>
 </div>
+
 </div>
+
+<div class="video-card-vertical">
 
 <div class="iframe-container iframe-container-vertical">
 <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ihbGRpPZMjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<div class="video-description">
+</div>
+
+<div class="video-description video-description-below">
 <h3><a href="https://instagram.com/ar/571194523779960/">Drawing in the World</a></h3>
 <p>I experimented with color sampler, audio, particle system to let you draw in your world in a musical way. Talk to have your voice altered. Long press the screen to draw in your physical environment. The color is sampled from your background.</p>
 </div>
+
 </div>
 
 </div>
