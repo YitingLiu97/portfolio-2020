@@ -1,134 +1,66 @@
 ---
 layout: post
 title: "All Connecting"
-date:   2020-03-05
+date: 2020-03-05
 permalink: all-connect
-description: "All Connect is an interactive video sculpture that exposes the underlying systems of the Internet in real-time, providing a unique digital experience."
-
+description: "A collaborative video sculpture that makes live internet traffic visible through projection mapping."
 category: sculpture
-tags: 
-- Installation 
+tags:
+- Installation
 preview: /assets/all-connecting/demo.png
-author: Yiting Liu 
-
+author: Yiting Liu
 ---
 
-<!-- collaborator: Wenjing Liu; Stefan Skripak. -->
+![All Connecting video sculpture with packet data projected across the installation](/assets/all-connecting/demo.png)
 
-![All Connect interactive video sculpture displaying real-time systems of the Internet](assets/all-connecting/demo.png)
+**A web search sets data in motion. All Connecting makes that movement visible.**
 
-**An interactive video sculpture that exposes the systems of the Internet in real-time.**
-
-| Title                     | Details |
-|---------------------------|-----------------------------------|
-| Role                     | Developer |
-| Tools                     | Processing, Syphon Recorder, MadMapper |
-| Skills |Video Sculpture, Projection, Real-Time, MadMapper, Processing, Synphon Recorder, Max/MSP|                     
-| Length                    | 3 weeks |
-| Project                   | An interactive video sculpture that exposes the systems of the Internet in real-time.|
-|Collaborators| Wenjing Liu & Stefan Skripak|
+Created with Wenjing Liu and Stefan Skripak, this video sculpture interprets network activity as moving text and mapped projection. My role was creative technologist: I researched ways to capture traffic, built the Processing logic that read packet addresses, and organized those addresses into visual paths for the installation.
 
 <div class="iframe-container">
-<iframe class="responsive-iframe" src="https://player.vimeo.com/video/416693709" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe class="responsive-iframe" src="https://player.vimeo.com/video/416693709" title="All Connecting video sculpture demo" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+*The recorded study shows the projected result. The team developed it remotely during the COVID-19 shutdown.*
 
-## Highlights
+## Situation and task
 
-Inspired by The Wave(1965) by Hans Haacke, we aim to expose the digital systems of a simple web request. It looks effortless to search anything. However, the system covered up shows multiple packets retrieving information from different servers.
+Inspired by Hans Haacke’s *The Wave* (1965), we asked how an invisible digital system could become a physical experience. A browser request appears simple on screen, while data moves between a computer and remote servers. Our task was to reveal some of that exchange in the room as it happened.
 
-I worked as a creative technologist splitting the packets into 16 strings given the sender’s IP addresses and receiver’s IP addresses. The content of the packets are then projected onto the wall with mapped paths when the performer or user interacts with the computer.
+![Research moodboard exploring cables, pipes, and network connections](/assets/all-connecting/moodboard-all-connecting.png)
 
-<!-- **Skills:** Video Sculpture, Projection, Real-Time, MadMapper, Processing, Synphon Recorder, Max/MSP
+*Early visual research explored cables and pipes as a way to give the data a spatial form.*
 
-**Time:** Mar. 2020 -->
+![Early interaction sketch showing a visitor, browser request, and projected response](/assets/all-connecting/Interaction-design-all-connecting.png)
 
-## Problem Statement
-How might we reinterpret the system in the digital world?
+*The interaction sketch starts with someone using a browser and ends with information appearing around them.*
 
-## Concept
+## How the system developed
 
-All Connecting is an interactive video sculpture that exposes the systems to the users when they make search requests online in real-time. It visualizes the flow of packets transmitting between performers in the video and servers in real-time. This project is a reinterpretation for The Wave (1965) by Hans Haacke.
+The first experiments tried to bring web request data into Max/MSP through OSC, Node for Max, MaxURL, and a packet capture prototype. These tests helped clarify the problem: page content was not the packet flow we wanted to show, and the packet capture approach did not work reliably in that setup. We moved the capture and routing work to Processing with the Carnivore library.
 
-## Role
+![All Connecting architecture progression: an early Max/MSP experiment gives way to a Processing, Syphon, and MadMapper projection pipeline](/assets/all-connecting/system-architecture.svg)
 
-Creative technologist working with Carnivore library in Processing to fetch and section packets into 16 strings.
+*Architecture of the experiments and the recorded study. The Max/MSP path was a prototype; the lower path shows the working visual pipeline.*
 
-## Research
+In Processing, I compared sender and receiver IP addresses with the computer’s network address, then grouped address data into eight sections for each direction. Those sixteen paths gave the team a structure for moving strings of packet information. Wenjing developed the moving text; Stefan brought the projection into MadMapper and mapped it to the installation space.
 
-Inspired by the artwork, The Wave by Hans Haacke (1965), in which he captured and analyzed the physical systems and presented them in a museum setting. We brainstormed in terms of the representations for the systems in the digital world in terms of information exchange and attention exchange.
+![Processing console showing captured packet information](/assets/all-connecting/get-packet-1.png)
 
-![assets/all-connecting/hans.png](assets/all-connecting/hans.png)
+*Processing test: packet information captured and prepared for the visual system.*
 
-We started off by the recent exhibition of his [All Connected at the New Museum](https://www.newmuseum.org/exhibitions/view/hans-haacke).
+![Original tool-flow diagram showing Processing, Syphon Recorder, and MadMapper](/assets/all-connecting/elements-all-connecting.png)
 
-It was mentioned that Haacke was inspired by the ‘System Esthetics’ by Jack Burnham that analyzed the influence of Ludwig von Bertalanffy’s General System Theory (1968) on 20th century sculpture. [[Source]](https://www.theartstory.org/movement/institutional-critique/history-and-concepts/)
+*An earlier tool-flow sketch shows how the team planned to move visuals from Processing into the projection mapper.*
 
-> *“inspired me to continue with my kinetic, process-oriented works, and also to expand into biological and – toward the late 1960s – to deal with social ‘systems.”[–Hans Haacke](https://www.theartstory.org/movement/institutional-critique/history-and-concepts/)*
+![MadMapper interface with paths arranged for the projection](/assets/all-connecting/madmapper.png)
 
-## Ideation/Exploration
-<!-- remake mood board again -->
+*Syphon carried the Processing output into MadMapper, where the visual paths were placed in the room.*
 
-![assets//all-connecting/moodboard-all-connecting.png](assets//all-connecting/moodboard-all-connecting.png)
+## Result
 
-We then started to branch out from here to think of forms such as
+The team produced a recorded video sculpture study that exposes live packet activity through moving text and mapped projection. It demonstrates the full experience from browser interaction to spatial output, while leaving room to refine the physical installation and visual treatment in a future version.
 
-- telepole and wires underground
-- fiber optics that are for information transfer
-- black tubes that collect the wires
-- ethernet cables
+[Read my detailed process notes](https://yitingliu97.wordpress.com/2020/04/01/video-sculpture-all-connecting/) · [Explore my current portfolio](https://www.yitingliu.com/){:target="_blank" rel="noopener noreferrer"}
 
-We were talking about how each request from the web browser generated several packages on the back-end. We wanted to visualize the amount of packages through projection mapping since this digital system is always happening yet not being presented as is to the users.
-
-### Rough Idea
-
-![assets/all-connecting/Interaction-design-all-connecting.png](assets/all-connecting/Interaction-design-all-connecting.png)
-
-- A user enters a room with a computer in it
-- He/she is prompted to do something to a computer – web browser
-- We gather the packages generated
-- Shows the packages generated in the room through video projection and video mapping
-
-## Testing
-
-I was looking to get the packets from Max and I tried several methods: OSC and external CNMET, Node for Max, MaxURL. However, it didn’t work for me to get the packet data from any website.
-
-OSC and external CNMET don’t work with my Max which was unfortunate. I used Node for Max and tried several npm libraries such as curl, http, request, and pcap (sort of work). MaxURL is good for getting the html content from a certain website.
-
-**[Learn more about my struggles](https://yitingliu97.wordpress.com/2020/04/01/video-sculpture-all-connecting/)**
-
-## Development
-
-I worked mainly on getting the packet data from the computer to processing. I then started working with processing using Carnivore library to get the packet data. I worked on getting the IP address of the receiver and sender address and compare if it is processed through my computer’s ip address. We will have 16 pipes, 8 pipes of information will be going from the sender to the receiver while the rest will be vice versa.
-
-![assets/all-connecting/elements-all-connecting.png](assets/all-connecting/elements-all-connecting.png)
-
-I wrote some code to help divide the ip address into 8 sections. Since the first part of the IP address has a range of 0-255(reference), I made sure each part has the range of 255/8. I wrote a function in processing to get all the information needed to return the text as a string which will be transported into madmapper. Below shows the packet information in the console in Processing. [My code can be found here](https://drive.google.com/drive/folders/10VUQl0vsMkciVnkXINt0KHBGixaJ4sCt?usp=sharing) . The final combined code can be found [here](https://drive.google.com/open?id=1he5iUf8QqjOFdluyKZK_ZKAvk9P1Ll2C).
-
-![assets//all-connecting/get-packet-1.png](assets//all-connecting/get-packet-1.png)
-
-We used Syphon to project the processing content and used MadMapper to map different pipes of corresponding sections of packet data.
-
-![assets//all-connecting/madmapper.png](assets//all-connecting/madmapper.png)
-
-<!-- ## Solution
-
-Here is our interpretation of Hans Haacke's The Wave.
-
-<div class="iframe-container">
-<iframe class="responsive-iframe" src="https://player.vimeo.com/video/416693709" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-</div> -->
-
-## Conclusion
-
-I like how we still managed to work with each other and achieve an ideal end goal during COVID-19. We plan to keep working on it when we are able to fabricate things in our workplace.
-
-## Moving forward
-
-- Refine video sculpture to be represented in the installation
-- Refine the type of data being exposed to the users
-- Think about ways to represent the data in terms of fading, overlapping and more
-
-*Special thanks to Wenjing Liu, and Stefan Skripak.*
-
-[Check out my detailed documentation here.](https://yitingliu97.wordpress.com/2020/04/01/video-sculpture-all-connecting/)
+*Created with Wenjing Liu and Stefan Skripak.*
