@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Interactive Video Sculpture - All Connect"
+title: "All Connecting"
 date:   2020-03-05
-permalink: all-connect-internet-systems-sculpture
+permalink: all-connect
 description: "All Connect is an interactive video sculpture that exposes the underlying systems of the Internet in real-time, providing a unique digital experience."
 
 category: sculpture
