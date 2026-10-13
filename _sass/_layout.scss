@@ -76,6 +76,39 @@ ul.contact-list li::before {
 
 }
 
+.project-about {
+    position: relative;
+    display: inline-block;
+    margin: 0 0 1rem;
+}
+.project-about summary {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.project-about summary::-webkit-details-marker { display: none; }
+.project-about summary:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.project-about-panel {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + .6rem);
+    left: 0;
+    width: min(20rem, calc(100vw - 3rem));
+    padding: 1.25rem;
+    border: 1px solid #ccc;
+    background: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .16);
+    line-height: 1.5;
+}
+.project-about-panel h2 { margin: 0 0 .75rem; font-size: 1.2rem; }
+.project-about-panel p { margin: 0 0 .75rem; }
+
 .post-description {
     padding: 1rem 0;
     font-style: italic;
