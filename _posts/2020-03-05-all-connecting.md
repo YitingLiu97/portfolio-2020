@@ -39,7 +39,10 @@ Inspired by Hans Haacke’s *The Wave* (1965), we asked how an invisible digital
 
 The first experiments tried to bring web request data into Max/MSP through OSC, Node for Max, MaxURL, and a packet capture prototype. These tests helped clarify the problem: page content was not the packet flow we wanted to show, and the packet capture approach did not work reliably in that setup. We moved the capture and routing work to Processing with the Carnivore library.
 
-![All Connecting architecture progression: an early Max/MSP experiment gives way to a Processing, Syphon, and MadMapper projection pipeline](/assets/all-connecting/system-architecture.svg)
+<picture>
+  <source media="(max-width: 600px)" srcset="/assets/all-connecting/system-architecture-mobile.svg">
+  <img src="/assets/all-connecting/system-architecture.svg" alt="All Connecting architecture progression: an early Max/MSP experiment gives way to a Processing, Syphon, and MadMapper projection pipeline">
+</picture>
 
 *Architecture of the experiments and the recorded study. The Max/MSP path was a prototype; the lower path shows the working visual pipeline.*
 

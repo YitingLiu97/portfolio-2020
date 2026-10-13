@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 985" role="img" aria-labelledby="title desc">
+  <title id="title">All Connecting architecture on mobile</title>
+  <desc id="desc">The first Max/MSP packet experiment did not provide reliable packet flow. The recorded study moved through browser requests, Processing with Carnivore, sixteen visual paths, Syphon, MadMapper, and room projection.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8f5f1}.card{fill:#fff;stroke:#d8d2cb;stroke-width:2}.active{fill:#fff;stroke:#aa2525;stroke-width:2}.ink{fill:#211d1d}.muted{fill:#655f5b}.red{fill:#aa2525}.line{stroke:#d8d2cb;stroke-width:2}.arrow{stroke:#aa2525;stroke-width:2.5;fill:none;marker-end:url(#head)}.arrow-muted{stroke:#9b928b;stroke-width:2;fill:none;marker-end:url(#head-muted)}.label{font:700 16px Arial,Helvetica,sans-serif;letter-spacing:1.5px}.step{font:700 20px Arial,Helvetica,sans-serif}.detail{font:16px Arial,Helvetica,sans-serif}.small{font:14px Arial,Helvetica,sans-serif}
+    </style>
+    <marker id="head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#aa2525"/></marker>
+    <marker id="head-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#9b928b"/></marker>
+  </defs>
+  <rect class="bg" width="420" height="985" rx="18"/>
+  <text x="24" y="42" class="label muted">01 / EXPERIMENT</text>
+  <text x="24" y="68" class="small muted">Testing network data in Max/MSP</text>
+  <rect class="card" x="24" y="88" width="372" height="88" rx="10"/>
+  <text x="42" y="124" class="step ink">Browser request</text>
+  <text x="42" y="151" class="detail muted">Visitor searches online</text>
+  <path class="arrow-muted" d="M210 179V201"/>
+  <rect class="card" x="24" y="204" width="372" height="88" rx="10"/>
+  <text x="42" y="240" class="step ink">Node for Max</text>
+  <text x="42" y="267" class="detail muted">Request and packet capture tests</text>
+  <path class="arrow-muted" d="M210 295V317"/>
+  <rect class="card" x="24" y="320" width="372" height="88" rx="10"/>
+  <text x="42" y="356" class="step ink">Prototype finding</text>
+  <text x="42" y="383" class="detail muted">Packet flow was not reliable here</text>
+  <line class="line" x1="24" x2="396" y1="438" y2="438"/>
+  <text x="24" y="477" class="label red">02 / RECORDED STUDY</text>
+  <text x="24" y="503" class="small muted">Live traffic becomes mapped projection</text>
+  <rect class="active" x="24" y="522" width="372" height="66" rx="10"/>
+  <text x="42" y="562" class="step ink">Browser network request</text>
+  <path class="arrow" d="M210 590V609"/>
+  <rect class="active" x="24" y="612" width="372" height="78" rx="10"/>
+  <text x="42" y="644" class="step ink">Processing + Carnivore</text>
+  <text x="42" y="670" class="detail muted">Capture and group IP addresses</text>
+  <path class="arrow" d="M210 692V711"/>
+  <rect class="active" x="24" y="714" width="372" height="66" rx="10"/>
+  <text x="42" y="754" class="step ink">16 moving-text paths</text>
+  <path class="arrow" d="M210 782V801"/>
+  <rect class="active" x="24" y="804" width="372" height="66" rx="10"/>
+  <text x="42" y="844" class="step ink">Syphon visual output</text>
+  <path class="arrow" d="M210 872V891"/>
+  <rect class="active" x="24" y="894" width="372" height="66" rx="10"/>
+  <text x="42" y="934" class="step ink">MadMapper projection</text>
+</svg>
